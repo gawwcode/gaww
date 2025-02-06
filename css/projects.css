@@ -331,7 +331,7 @@ input {
         max-height: max-content;
     }
     .catalog-content > *:last-child {
-        padding-bottom: var(--space-3);
+        margin-bottom: var(--space-3);
     }
 }
 
