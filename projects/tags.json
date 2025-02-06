@@ -15,6 +15,15 @@
     "photography" : "photographytag",
     "sounddesign" : "sounddesigntag",
     "comic" : "comictag",
+
     "mixedmedia" : "mixedmediatag",
+    "code" : "codetag",
+    "js" : "jstag",
+    "html" : "htmltag",
+    "css" : "csstag",
+    "csharp" : "csharptag",
+    "cplusplus" : "cplusplustag",
+    "python" : "pythontag",
+
     "experiment" : "experimenttag"
 }
