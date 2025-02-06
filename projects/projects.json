@@ -73,7 +73,7 @@
     "title": "WEB FLAPPY BIRD",
     "description": "Recréation de flappy bird dans le navigateur en HTML, CSS et JS",
     "image": "/gaww/addons/images/pictures/webp/",
-    "tags": ["videogame", "web"],
+    "tags": ["videogame", "web", "js", "html", "css"],
     "date": "2025-02-03",
     "locked" : false,
     "file" : "/gaww/projects/experiments/webgame1/flappybird"
