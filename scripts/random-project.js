@@ -2,7 +2,7 @@
 async function goToRandomProject() {
     try {
         // Charger le fichier JSON
-        const response = await fetch('/projects/projects.json');
+        const response = await fetch('/gaww/projects/projects.json');
         const projectsData = await response.json();
 
         // Récupérer un ID au hasard dans le JSON
