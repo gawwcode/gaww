@@ -330,6 +330,9 @@ input {
     .project-description {
         max-height: max-content;
     }
+    .catalog-content > *:last-child {
+        padding-bottom: var(--space-3);
+    }
 }
 
 @media screen and (min-width: 760px) {
