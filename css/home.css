@@ -331,4 +331,8 @@
     .latest-project-image {
         max-height: 30vh;
     }
+
+    #latest .section-container {
+        justifiy-content: flex-start;
+    }
 }
