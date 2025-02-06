@@ -1,22 +1,12 @@
 {
   "1": {
-    "title": "default",
-    "description": "Description du projet 1",
-    "image": "/gaww/addons/images/pictures/webp/picture-8.webp",
-    "tags": ["web", "book", "video"],
-    "date": "2025-02-03",
+    "title": "UPSIDE-DOWN",
+    "description": "Un roman surréaliste dans lequel le monde se retourne (littéralement).",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["book", "drawing"],
+    "date": "",
     "locked" : false,
-    "file" : "/gaww/projects/project-template"
-  },
-
-  "2": {
-    "title": "BOB",
-    "description": "Description du projet 2",
-    "image": "/gaww/addons/images/pictures/webp/picture-5.webp",
-    "tags": ["videogame", "design"],
-    "date": "2000-04-03",
-    "locked" : true,
-    "file" : "project-template"
+    "file" : "/gaww/projects/project-1.html"
   }
 }
   
