@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
         // 1. Charge tags.json
-        const tagsResponse = await fetch('/projects/tags.json');
+        const tagsResponse = await fetch('/gaww/projects/tags.json');
         const tagClasses = await tagsResponse.json();
 
         // 2. Fonction pour styliser les tags
