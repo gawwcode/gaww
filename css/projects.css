@@ -314,6 +314,11 @@ input {
     color: white;
 }
 
+.comictag {
+    background-color: #6A5ACD;
+    color: white;
+}
+
 .experimenttag {
     background-color: rgb(145, 130, 102);
 }
