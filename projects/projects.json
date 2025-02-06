@@ -85,6 +85,17 @@
     "locked" : false,
     "status" : "completed",
     "file" : "/gaww/projects/experiments/webgame1/flappybird"
+  },
+
+  "9": {
+    "title": "SKY RAIDERS",
+    "description": "Jeu de cartes avec génération de terrain procédurale",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["game", "conceptart"],
+    "date": "",
+    "locked" : true,
+    "status" : "completed",
+    "file" : "/gaww/projects/"
   }
 
 }
