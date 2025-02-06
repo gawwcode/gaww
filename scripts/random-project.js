@@ -14,7 +14,8 @@ async function goToRandomProject() {
         const fileName = projectsData[randomProjectId].file;
 
         // Rediriger vers la page HTML correspondante
-        window.location.href = fileName - ".html';
+        console.log('Redirection vers :', fileName);
+        window.location.href = fileName;
     } catch (error) {
         console.error('Erreur lors du chargement du fichier JSON:', error);
     }
