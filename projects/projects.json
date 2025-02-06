@@ -7,6 +7,15 @@
     "date": "",
     "locked" : false,
     "file" : "/gaww/projects/project-1.html"
+  },
+  "2": {
+    "title": "THE CURSE OF THE OVERLORD",
+    "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["videogame", "conceptart", "music"],
+    "date": "",
+    "locked" : false,
+    "file" : "/gaww/projects/project-1.html"
   }
 }
   
