@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const projectElement = document.createElement("a");
                 projectElement.id = `pr${id}`;
                 projectElement.className = "transition-1 project";
-                projectElement.href = project.file + '.html';
+                projectElement.href = '/gaww/projects/' + project.file + '.html';
 
                 // Span pour la date
                 const dateElement = document.createElement("span");
