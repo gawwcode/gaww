@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const projectElement = document.createElement("a");
         projectElement.id = `pr${id}`;
         projectElement.className = "transition-1 project";
-        projectElement.href = `/gaww/blog/' + '${project.file}.html`;
+        projectElement.href = '${project.file}.html';
   
         // Date
         const dateElement = document.createElement("span");
