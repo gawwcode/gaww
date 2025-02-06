@@ -7,7 +7,7 @@ document.addEventListener('projectsLoaded', async () => {
   
     // Chargement du fichier JSON contenant les styles de tags
     try {
-      const response = await fetch('/projects/tags.json');
+      const response = await fetch('/gaww/projects/tags.json');
       if (response.ok) {
         allTags = await response.json();
       } else {
