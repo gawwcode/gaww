@@ -5,17 +5,69 @@
     "image": "/gaww/addons/images/pictures/webp/",
     "tags": ["book", "comic"],
     "date": "",
-    "locked" : false,
-    "file" : "/gaww/projects/project-1"
+    "locked" : true,
+    "file" : "/gaww/projects/upside-down"
   },
+
   "2": {
     "title": "THE CURSE OF THE OVERLORD",
     "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
     "image": "/gaww/addons/images/pictures/webp/",
     "tags": ["videogame", "conceptart", "music"],
     "date": "",
+    "locked" : true,
+    "file" : "/gaww/projects/the-curse-of-the-overlord"
+  },
+
+  "3": {
+    "title": "MYCELIUM",
+    "description": "Projet de jeu vidéo 3D à la troisième personne très énigmatique (à suivre)",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["videogame", "conceptart", "music", "sfx"],
+    "date": "",
+    "locked" : true,
+    "file" : "/gaww/projects/mycelium"
+  }, 
+
+  "4": {
+    "title": "UPFALL",
+    "description": "Univers cyberpunk déclinable en livre puis en jeu vidéo",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["book", "comic", "painting", "conceptart"],
+    "date": "",
+    "locked" : true,
+    "file" : "/gaww/projects/upfall"
+  },
+
+  "5": {
+    "title": "SILLAGE",
+    "description": "Nouvelle de science-fiction se déroulant sur une planète désertique",
+    "image": "/gaww/addons/images/pictures/webp/picture-11.webp",
+    "tags": ["novel", "painting"],
+    "date": "2022-01-30",
     "locked" : false,
-    "file" : "/gaww/projects/project-2"
+    "file" : "/gaww/projects/sillage"
+  }, 
+
+  "6": {
+    "title": "LE VAMPIRE D'ACIER",
+    "description": "Il arrive. Silencieux, invisible, il se plante devant le lit.",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["novel"],
+    "date": "2022-04-15",
+    "locked" : false,
+    "file" : "/gaww/projects/le-vampire-dacier"
+  },
+
+  "7": {
+    "title": "LES OISEAUX",
+    "description": "Roman fantastique (à venir)",
+    "image": "/gaww/addons/images/pictures/webp/",
+    "tags": ["book", "comic"],
+    "date": "",
+    "locked" : true,
+    "file" : "/gaww/projects/les-oiseaux"
   }
+
 }
   
