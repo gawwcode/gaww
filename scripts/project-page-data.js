@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
   
-    fetch('/projects/projects.json')
+    fetch('/gaww/projects/projects.json')
       .then(response => response.json())
       .then(data => {
         const project = data[projectId];
