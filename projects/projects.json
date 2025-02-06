@@ -6,7 +6,7 @@
     "tags": ["book", "comic"],
     "date": "",
     "locked" : false,
-    "file" : "/gaww/projects/project-1.html"
+    "file" : "/gaww/projects/project-1"
   },
   "2": {
     "title": "THE CURSE OF THE OVERLORD",
@@ -15,7 +15,7 @@
     "tags": ["videogame", "conceptart", "music"],
     "date": "",
     "locked" : false,
-    "file" : "/gaww/projects/project-2.html"
+    "file" : "/gaww/projects/project-2"
   }
 }
   
