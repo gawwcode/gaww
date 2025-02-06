@@ -2,7 +2,7 @@
   "1": {
     "title": "default",
     "description": "Description du projet 1",
-    "image": "/addons/images/pictures/webp/picture-8.webp",
+    "image": "/gaww/addons/images/pictures/webp/picture-8.webp",
     "tags": ["web", "book", "video"],
     "date": "2025-02-03",
     "locked" : false,
@@ -12,7 +12,7 @@
   "2": {
     "title": "BOB",
     "description": "Description du projet 2",
-    "image": "/addons/images/pictures/webp/picture-5.webp",
+    "image": "/gaww/addons/images/pictures/webp/picture-5.webp",
     "tags": ["videogame", "design"],
     "date": "2000-04-03",
     "locked" : true,
