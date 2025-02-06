@@ -6,6 +6,7 @@
     "tags": ["book", "comic"],
     "date": "",
     "locked" : true,
+    "status" : "in progress",
     "file" : "/gaww/projects/upside-down"
   },
 
@@ -16,6 +17,7 @@
     "tags": ["videogame", "conceptart", "music"],
     "date": "",
     "locked" : true,
+    "status" : "in progress",
     "file" : "/gaww/projects/the-curse-of-the-overlord"
   },
 
@@ -26,6 +28,7 @@
     "tags": ["videogame", "conceptart", "music", "sfx"],
     "date": "",
     "locked" : true,
+    "status" : "planned",
     "file" : "/gaww/projects/mycelium"
   }, 
 
@@ -36,6 +39,7 @@
     "tags": ["book", "comic", "painting", "conceptart"],
     "date": "",
     "locked" : true,
+    "status" : "in progress",
     "file" : "/gaww/projects/upfall"
   },
 
@@ -46,6 +50,7 @@
     "tags": ["novel", "painting"],
     "date": "2022-01-30",
     "locked" : false,
+    "status" : "completed",
     "file" : "/gaww/projects/sillage"
   }, 
 
@@ -56,6 +61,7 @@
     "tags": ["novel"],
     "date": "2022-04-15",
     "locked" : false,
+    "status" : "on hold",
     "file" : "/gaww/projects/le-vampire-dacier"
   },
 
@@ -66,6 +72,7 @@
     "tags": ["book", "comic"],
     "date": "",
     "locked" : true,
+    "status" : "planned",
     "file" : "/gaww/projects/les-oiseaux"
   },
 
@@ -76,6 +83,7 @@
     "tags": ["videogame", "web", "js", "html", "css"],
     "date": "2025-02-03",
     "locked" : false,
+    "status" : "completed",
     "file" : "/gaww/projects/experiments/webgame1/flappybird"
   }
 

@@ -1,0 +1,5 @@
+A faire : 
+
+1) Créer critère de filtrage par : completed, planned, in progress, pending, cancelled, on hold
+2) faire pages de projet : sillage, le vampire d'acier
+3) montrer le status du projet dans la page de projet
