@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!container) return;
   
     try {
-      const response = await fetch("/blog/blog.json");
+      const response = await fetch("/gaww/blog/blog.json");
       if (!response.ok) throw new Error("Erreur réseau");
       const data = await response.json();
   
