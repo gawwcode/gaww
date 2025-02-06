@@ -325,5 +325,10 @@
         margin-top: var(--space-1);
         margin-left: 0;
     }
-    
+}
+
+@media screen and (max-width: 740px) {
+    .latest-project-image {
+        max-height: 30vh;
+    }
 }
