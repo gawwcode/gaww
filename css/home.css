@@ -333,6 +333,6 @@
     }
 
     #latest .section-container {
-        justifiy-content: start;
+        justify-content: start;
     }
 }
