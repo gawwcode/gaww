@@ -1,0 +1,67 @@
+/* -------------------- PROJECT PAGE COMMON CSS -------------------- */
+
+.project-container {
+    /* background-color: darkslategrey; */
+    overflow-y: scroll;
+}
+
+header {
+    height: 32vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    position: absolute;
+    opacity: 0.6;
+}
+
+header span {
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: var(--menu-font-size);
+    letter-spacing: calc(var(--menu-font-size) / 16);
+    pointer-events: none;
+}
+
+.project-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    color: var(--color-text);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-mid);
+}
+
+.prtags {
+    margin: auto 0;
+    line-height: 1.15;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+@media screen and (max-width: 1279px) {
+    header {
+        height: 24vh;
+    }
+
+    header img {
+        max-height: 24vh;
+    }
+
+    .project-data {
+        flex-direction: column;
+        margin-bottom: var(--space-2);
+    }
+}

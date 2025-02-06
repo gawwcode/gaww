@@ -1,0 +1,32 @@
+{
+    "home": "homes",
+    "projects": "projekten",
+    "blog": "blog",
+    "about": "over mij",
+    "contact": "contact",
+
+    "role" : {
+        "artist": "kunstenaar",
+        "composer": "componeer",
+        "beatmaker": "beatmaker",
+        "webdeveloper": "webontwikkelaar",
+        "gamedeveloper": "spelontwerper",
+        "musician": "musicus",
+        "writer": "schrijver",
+        "comicartist": "striptekenaar",
+        "designer": "designer",
+        "illustrator": "illustrator"
+    },
+
+    "stories" : "verhalen",
+
+    "iamnot" : "Ik ben geen",
+
+    "itell" : "Ik vertel",
+
+    "explore" : "ontdek",
+
+    "contactPage" : {
+        "getInTouch" : "Laten we contact opnemen !"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "videogame" : "videogametag",
+    "book" : "booktag",
+    "novel" : "noveltag",
+    "painting" : "paintingtag",
+    "model" : "modeltag",
+    "conceptart" : "conceptarttag",
+    "web" : "webtag",
+    "design" : "designtag", 
+    "music" : "musictag",
+    "sfx" : "sfxtag",
+    "video" : "videotag",
+    "devlog" : "devlogtag",
+    "animation" : "animationtag",
+    "photography" : "photographytag",
+    "sounddesign" : "sounddesigntag",
+    "experiment" : "experimenttag"
+}

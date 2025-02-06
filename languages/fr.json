@@ -1,0 +1,32 @@
+{
+    "home": "accueil",
+    "projects": "projets",
+    "blog": "blog",
+    "about": "à propos",
+    "contact": "contact",
+
+    "role" : {
+        "artist": "un artiste",
+        "composer": "un compositeur",
+        "beatmaker": "un beatmaker",
+        "webdeveloper": "un développeur web",
+        "gamedeveloper": "concepteur de jeux",
+        "musician": "un musicien",
+        "writer": "un écrivain",
+        "comicartist": "un dessinateur bd",
+        "designer": "un designer",
+        "illustrator": "un illustrateur"
+    },
+
+    "stories" : "des histoires",
+
+    "iamnot" : "Je ne suis pas",
+
+    "itell" : "Je raconte",
+
+    "explore" : "explorer",
+
+    "contactPage" : {
+        "getInTouch" : "Les lettres d'admiration ? C'est par ici ! 👀"
+    }
+}

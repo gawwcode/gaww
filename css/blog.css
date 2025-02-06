@@ -1,0 +1,24 @@
+.catalog-content {
+    grid-template-columns: 1fr;
+}
+
+.blog-content {
+    width: 100%;
+    flex-direction: column;
+}
+
+.paragraph {
+    flex-direction: column;
+    justify-content: left;
+}
+
+.paragraph p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+    .paragraph {
+        margin-left: var(--space-4);
+    }
+}
+

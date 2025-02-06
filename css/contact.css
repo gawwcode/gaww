@@ -1,0 +1,48 @@
+/* -------------------- CONTACT -------------------- */
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+form input,
+form textarea {
+    border: none;
+    outline: 1px solid white;
+    background-color: transparent;
+    color: var(--color-text);
+    width: 60%;
+}
+
+form textarea {
+    min-height: 30vh;
+    max-height: 40vh;
+    font-size: var(--font-size-mid);
+}
+
+.h-captcha {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+    form input,
+    form textarea {
+        width: 95%;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    form textarea {
+        min-height: 10vh;
+        max-height: 10vh;
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "home": "home",
+    "projects": "projects",
+    "blog": "blog",
+    "about": "about",
+    "contact": "contact",
+
+    "role" : {
+        "artist": "an artist",
+        "composer": "a composer",
+        "beatmaker": "a beatmaker",
+        "webdeveloper": "a web developper",
+        "gamedeveloper": "a game designer",
+        "musician": "a musician",
+        "writer": "a writer",
+        "comicartist": "a comic artist",
+        "designer": "a designer",
+        "illustrator": "an illustrator"
+    },
+
+    "stories" : "stories",
+
+    "iamnot" : "I am not",
+
+    "itell" : "I tell",
+
+    "explore" : "explore",
+
+    "contactPage" : {
+        "getInTouch" : "Let's get in touch !"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "1": {
+      "title": "first !",
+      "description": "Le premier article du blog complètement zehef prêt à faire des dingueries",
+      "image": "/addons/images/pictures/webp/picture-8.webp",
+      "tags": ["web"],
+      "date": "2025-02-06",
+      "locked" : false,
+      "file" : "article-1"
+    }
+}
