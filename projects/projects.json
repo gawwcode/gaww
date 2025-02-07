@@ -96,6 +96,17 @@
     "locked" : true,
     "status" : "completed",
     "file" : "/projects/"
+  },
+
+  "10": {
+    "title": "NIVEAU -6, COUCHE 12",
+    "description": "Une courte nouvelle de science-fiction",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["game", "conceptart"],
+    "date": "",
+    "locked" : true,
+    "status" : "completed",
+    "file" : "/projects/"
   }
 
 }
