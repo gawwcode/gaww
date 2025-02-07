@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".catalog-content");
 
-    fetch("/gaww/projects/projects.json")
+    fetch("/projects/projects.json")
         .then(response => response.json())
         .then(data => {
             for (const id in data) {

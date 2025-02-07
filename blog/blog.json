@@ -2,10 +2,10 @@
     "1": {
       "title": "first !",
       "description": "Le premier article du blog complètement zehef prêt à faire des dingueries",
-      "image": "/gaww/addons/images/pictures/webp/picture-8.webp",
+      "image": "/addons/images/pictures/webp/picture-8.webp",
       "tags": ["web"],
       "date": "2025-02-06",
       "locked" : false,
-      "file" : "/gaww/blog/article-1"
+      "file" : "/blog/article-1"
     }
 }

@@ -117,7 +117,7 @@ window.onclick = function(event) {
 
 async function changeLanguage(lang) {
     try {
-        const response = await fetch(`/gaww/languages/${lang}.json`);
+        const response = await fetch(`/languages/${lang}.json`);
         if (!response.ok) throw new Error(`Erreur réseau: ${response.status}`);
 
         const data = await response.json();

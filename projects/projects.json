@@ -2,100 +2,100 @@
   "1": {
     "title": "UPSIDE-DOWN",
     "description": "Un roman surréaliste dans lequel le monde se retourne (littéralement).",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["book", "comic"],
     "date": "",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/gaww/projects/upside-down"
+    "file" : "/projects/upside-down"
   },
 
   "2": {
     "title": "THE CURSE OF THE OVERLORD",
     "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["videogame", "conceptart", "music"],
     "date": "",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/gaww/projects/the-curse-of-the-overlord"
+    "file" : "/projects/the-curse-of-the-overlord"
   },
 
   "3": {
     "title": "MYCELIUM",
     "description": "Projet de jeu vidéo 3D à la troisième personne très énigmatique (à suivre)",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["videogame", "conceptart", "music", "sfx"],
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/gaww/projects/mycelium"
+    "file" : "/projects/mycelium"
   }, 
 
   "4": {
     "title": "UPFALL",
     "description": "Univers cyberpunk déclinable en livre puis en jeu vidéo",
-    "image": "/gaww/addons/images/pictures/webp/picture-10.webp",
+    "image": "/addons/images/pictures/webp/picture-10.webp",
     "tags": ["book", "comic", "painting", "conceptart"],
     "date": "",
     "locked" : true,
     "status" : "on hold",
-    "file" : "/gaww/projects/upfall"
+    "file" : "/projects/upfall"
   },
 
   "5": {
     "title": "SILLAGE",
     "description": "Nouvelle de science-fiction se déroulant sur une planète désertique",
-    "image": "/gaww/addons/images/pictures/webp/picture-11.webp",
+    "image": "/addons/images/pictures/webp/picture-11.webp",
     "tags": ["novel", "painting"],
     "date": "2022-01-30",
     "locked" : false,
     "status" : "completed",
-    "file" : "/gaww/projects/sillage"
+    "file" : "/projects/sillage"
   }, 
 
   "6": {
     "title": "LE VAMPIRE D'ACIER",
     "description": "Il arrive. Silencieux, invisible, il se plante devant le lit.",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["novel"],
     "date": "2022-04-15",
     "locked" : false,
     "status" : "on hold",
-    "file" : "/gaww/projects/le-vampire-dacier"
+    "file" : "/projects/le-vampire-dacier"
   },
 
   "7": {
     "title": "LES OISEAUX",
     "description": "Roman fantastique (à venir)",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["book", "comic"],
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/gaww/projects/les-oiseaux"
+    "file" : "/projects/les-oiseaux"
   },
 
   "8": {
     "title": "WEB FLAPPY BIRD",
     "description": "Recréation de flappy bird dans le navigateur en HTML, CSS et JS",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["videogame", "web", "js", "html", "css"],
     "date": "2025-02-03",
     "locked" : false,
     "status" : "completed",
-    "file" : "/gaww/projects/experiments/webgame1/flappybird"
+    "file" : "/projects/experiments/webgame1/flappybird"
   },
 
   "9": {
     "title": "SKY RAIDERS",
     "description": "Jeu de cartes avec génération de terrain procédurale",
-    "image": "/gaww/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/",
     "tags": ["game", "conceptart"],
     "date": "",
     "locked" : true,
     "status" : "completed",
-    "file" : "/gaww/projects/"
+    "file" : "/projects/"
   }
 
 }

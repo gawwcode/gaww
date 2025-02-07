@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const loadPromises = Array.from(items).map((item, index) => {
             return new Promise(resolve => {
                 const img = new Image();
-                img.src = `/gaww/addons/images/pictures/webp/picture-${(index % totalImages) + 1}.webp`;
+                img.src = `/addons/images/pictures/webp/picture-${(index % totalImages) + 1}.webp`;
                 img.onload = () => {
                     item.appendChild(img);
                     resolve();
