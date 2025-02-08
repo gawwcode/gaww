@@ -22,13 +22,7 @@
 
 .newsletter form {
     position: relative;
-}
-
-form label {
-    position: absolute;
-    opacity: 0.6;
-    z-index: 0;
-    color: var(--color-text);
+    justify-content: center;
 }
 
 #bd-email {
@@ -36,7 +30,13 @@ form label {
     outline: 1px solid white;
     background-color: transparent;
     color: var(--color-text);
-    z-index: 1;
+    z-index: 2;
+    cursor: pointer;
+    font-size: var(--font-size-mid);
+}
+
+form button {
+    width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
