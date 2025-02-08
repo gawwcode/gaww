@@ -37,5 +37,11 @@
     <changefreq>annually</changefreq>
   </url>
 
+  <url>
+    <loc>https://gaww.top/about</loc>
+    <lastmod>2025-02-08T09:02:46+00:00</lastmod>
+    <priority>0.64</priority>
+    <changefreq>annually</changefreq>
+  </url>
 
 </urlset>
