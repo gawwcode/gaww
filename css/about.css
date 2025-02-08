@@ -1,0 +1,10 @@
+#about .section-container {
+    overflow-y: scroll;
+    padding-bottom: var(--space-4);
+}
+
+#about a {
+    color: var(--color-focus);
+    text-decoration: underline;
+    font-size: var(--font-size-mid);
+}
