@@ -152,12 +152,12 @@
 
                     <div href="#" class="newsletter transition-1 montserrat flex-center">
                         <h2>Subscribe to my newsletter !</h2>
-                        <iframe
-                            scrolling="no"
-                            style="width:100%!important;height:220px;border:1px #ccc solid !important"
-                            src="https://buttondown.com/gaww?as_embed=true"
-                            >
-                        </iframe><br /><br />
+                        <form class="" action="https://buttondown.com/api/emails/embed-subscribe/gaww" method="post" target="popupwindow"  onsubmit="window.open('https://buttondown.com/gaww', 'popupwindow')">
+                            <label for="bd-email">Enter your email here</label>
+                            <input type="email" name="email" id="bd-email">
+                            
+                            <button type="submit" value="Subscribe"></button>
+                        </form>
                     </div>
 
                     <!-- <a id="pr1" class="transition-1 project" href="#">
