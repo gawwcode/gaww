@@ -16,6 +16,10 @@
     line-height: 1.5;
 }
 
+.newsletter {
+    
+}
+
 @media screen and (min-width: 1280px) {
     .paragraph {
         margin-left: var(--space-4);
