@@ -15,8 +15,8 @@
     "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
     "image": "/addons/images/pictures/webp/",
     "tags": ["videogame", "conceptart", "music"],
-    "date": "",
-    "locked" : true,
+    "date": "unknown date",
+    "locked" : false,
     "status" : "in progress",
     "file" : "/projects/the-curse-of-the-overlord"
   },
