@@ -194,3 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("projectsLoaded", () => {
+    // Applique le tri par défaut au premier chargement
+    sortProjectsByDate('desc'); 
+    // Marque l'option 'newest' comme active
+    document.querySelector('[data-sort="newest"]').classList.add('active');
+});
