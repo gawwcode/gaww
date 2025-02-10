@@ -5,7 +5,7 @@
     "image": "/addons/images/pictures/webp/",
     "tags": ["book", "comic"],
     "date": "",
-    "locked" : true,
+    "locked" : false,
     "status" : "in progress",
     "file" : "/projects/upside-down"
   },
