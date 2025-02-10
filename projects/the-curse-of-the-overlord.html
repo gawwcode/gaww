@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative portfolio : drawing, writing, video, photography, music, video games, web projects and other cool stuff.">
+    <meta name="author" content="GAWW">
+    <meta name="robots" content="index, follow"> <!-- Permet aux moteurs d'indexer la page -->
+
+    <title>GAWW - THE CURSE OF THE OVERLORD</title>
+
+    <link rel="icon" href="/addons/icons/favicon-black.ico">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/project-page-common.css">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <link rel="stylesheet" href="/projects/the-curse-of-the-overlord.css"> <!-- !!!! Customizer le path du CSS ici !!!! -->
+
+</head>
+<body>
+
+    <div id="grainient" class="trans1"></div>
+
+    <p id="loading" class="flex-center">Loading project template ...</p>
+
+    <p id="credits" class="no-select" type="text/javascript">© GAWW <script>document.write(new Date().getFullYear());</script></p>
+
+    <menu class="w-100vw flex">
+
+        <div class="w-100pr h-0px flex-center transition-2 overlay hidden">
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="home" href="/home">HOME</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="projects" href="/projects">PROJECTS</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="blog" href="/blog">BLOG</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="about" href="/about">ABOUT</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="contact" href="/contact">CONTACT</a>
+        </div>
+
+        <nav class="w-100pr flex">
+
+            <div class="nav-essentials flex-center">
+
+                <div class="m-1 p-1 nav-btn-wrapper">
+                    <a class="flex nav-btn nav-btn-close" href="#">
+                        <span class="nav-btn-line nav-btn-line-short"></span>
+                        <span class="nav-btn-line "></span>
+                        <span class="nav-btn-line nav-btn-line-short"></span>
+                    </a>
+                </div>
+
+                <div class="language">
+
+                    <a class="p-1 language-dropbtn" onclick="dropdown()" href="#">LANGUAGE</a>
+
+                    <div class=" flex language-dropcontent transition-1">
+
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('fr')" >Français</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('en')" >English</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('nl')" >Nederlands</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('it')" >Italiano</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('de')" >Deutsch</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('es')" >Español</a>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="m-1 p-1 logo" href="/home">
+                <svg class="logo-large" version="1.1" viewBox="250 250 3500 700">
+    
+                    <style type="text/css">
+                        .st0{fill:none;stroke:#ffffff;stroke-width:30;stroke-miterlimit:10;}
+                    </style>
+    
+                    <path class="st0" d="M971.08,297.15H679.44c0,0-294.7,0.97-294.7,291.8s293.17,291.8,293.17,291.8l293.18-0.06V588.96 l-293.18,291.8"/>
+                        
+                    <polyline class="st0" points="1263.9,880.76 1263.9,588.96 1263.9,297.15 1555.69,588.96 1847.47,880.76"/>
+                    <polyline class="st0" points="2141.25,296.82 2141.25,880.39 2433.73,587.91 2726.91,881.09 2726.91,296.82"/>
+                    <polyline class="st0" points="3020.42,296.82 3020.42,881.09 3312.38,589.13 3604.16,880.91 3604.16,296.82"/>
+                        
+                    <line class="st0" x1="1263.9" y1="588.96" x2="1555.69" y2="588.96"/>
+                    <line class="st0" x1="3312.38" y1="589.13" x2="3603.99" y2="589.13"/>
+                    <line class="st0" x1="2433.73" y1="587.91" x2="2141.25" y2="587.91"/>
+                        
+                    <circle class="st0" cx="1897.06" cy="587.91" r="50.54"/>
+                </svg>
+    
+                <svg class="logo-square" width="" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="250 250 2500 2500" xml:space="preserve">
+                    <style type="text/css">
+                        .st1{fill:none;stroke:#ffffff;stroke-width:50;stroke-miterlimit:10;}
+                    </style>
+                    
+                    <path class="st1" d="M1293.71,450.75H850.78c0,0-420.54,1.39-420.54,416.4s418.36,416.4,418.36,416.4l418.36-0.08V867.15 l-418.36,416.4"/>
+                    
+                    <polyline class="st1" points="1733.64,1306.82 1733.64,902.13 1733.64,485.73 2150.01,902.13 2550.14,1290.57 "/>
+                    <polyline class="st1" points="431.91,1715.51 431.91,2548.25 849.27,2130.89 1267.63,2549.25 1267.63,1715.51 "/>
+                    <polyline class="st1" points="1733.73,1715.51 1733.73,2549.25 2149.31,2132.63 2565.68,2549 2565.68,1715.51 "/>
+                    
+                    <line class="st1" x1="1733.64" y1="890.41" x2="2150.01" y2="890.41"/>
+                    <line class="st1" x1="2149.3" y1="2122.29" x2="2565.43" y2="2122.29"/>
+                    <line class="st1" x1="849.35" y1="2120.59" x2="431.98" y2="2120.59"/>
+                
+                </svg>
+                
+            </a>
+
+        </nav>
+
+    </menu>
+
+    <main id="2" class="h-100vh w-100vw flex-center">
+        <div class="section-container project-container">
+            <header class="w-100pr flex-center">
+                <span class="project-title transition-2 poppins">LOADING PROJECT...</span>
+                <img class="project-image w-100pr" src="" alt="">
+            </header>
+
+            <div class="project-data w-100pr mb-1 flex"> 
+                <div class="prtags p-1">
+                    <!-- Les tags seront insérés ici dynamiquement -->
+                </div>
+                <span class="date p-1" data-date="">loading date...</span>
+            </div>
+
+            <div class="project-content pl-2 pr-2 pb-3">
+
+                <h2 class="montserrat">Description</h2>
+
+                <div class="paragraph mb-3">
+                    <p>The Curse of The Overlord is a 2D RPG made in the <a href="https://godotengine.org/" class="link">Godot Game Engine</a>.</p>
+                    <p>The game will be about the story of a Fallen Knight in a post-apocalyptic fantasy world that is expelled from his realm on the orders of his own King.</p>
+                    <p>He will then set out in search of a forgotten legendary weapon that will enable him to restore justice in his kingdom.</p>
+                    <p>During his journey, he will discover various characters, creatures and places that will gradually change his vision of the kingdom he had until now.</p>
+                </div>
+
+                <h2 class="montserrat">Dashboard</h2>
+                
+                <div class="dashboard flex">
+
+                    <div class="done">
+                        <h3 class="montserrat">"done"</h3>
+
+                        <ul class="poppins">
+                            <li>Opening Godot</li>
+                        </ul>
+                    </div>
+
+                    <div class="doing">
+                        <h3 class="montserrat">"doing"</h3>
+                        
+                        <ul class="poppins">
+                            <li>Movement system</li>
+                            <li>Story building</li>
+                            <li>Concept Art</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="todo">  
+                        <h3 class="montserrat">"to do"</h3>
+
+                        <ul class="poppins">
+                            <li>Base animations</li>
+                            <li>Combat system</li>
+                            <li>Life bar</li>
+                            <li>Enemies</li>
+                            <li>Environment</li>
+                            <li>SFX</li>
+                            <li>Music</li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+
+                <div class="logs">
+
+                    <a href="/blog/">Movement system</a>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- <script src="/scripts/translation.js"></script> -->
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/project-page-data.js"></script>
+    <script src="/scripts/tags.js"></script>
+    <script src="/scripts/transition.js" defer></script>
+
+</body>

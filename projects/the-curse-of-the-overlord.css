@@ -1,0 +1,31 @@
+.dashboard {
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.dashboard ul {
+    color: var(--color-text);
+    list-style-type: circle;
+    line-height: 1.5;
+}
+
+.dashboard h3 {
+    text-decoration: underline;
+}
+
+.done ul li {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard div {
+        margin-top: var(--space-2);
+    }
+}
