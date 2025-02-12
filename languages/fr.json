@@ -28,5 +28,18 @@
 
     "contactPage" : {
         "getInTouch" : "Les lettres d'admiration ? C'est par ici ! 👀"
+    },
+
+    "projects-catalog" : {
+        "upside-down" : "À L'ENVERS",
+        "tcoto" : "LA MALÉDICTION DU SUZERAIN",
+        "mycelium" : "MYCÉLIUM",
+        "upfall" : "LA CHUTE ASCENSIONNELLE",
+        "sillage" : "SILLAGE",
+        "the-iron-vampire" : "LE VAMPIRE D'ACIER",
+        "the birds" : "LES OISEAUX",
+        "sky-raiders" : "LES PILLEURS DU CIEL",
+        "level-6-layer-12" : "NIVEAU -6, COUCHE 12",
+        "the-harvest" : "LA MOISSON"
     }
 }

@@ -28,5 +28,18 @@
 
     "contactPage" : {
         "getInTouch" : "Let's get in touch !"
+    },
+
+    "projects-catalog" : {
+        "upside-down" : "UPSIDE DOWN",
+        "tcoto" : "THE CURSE OF THE OVERLORD",
+        "mycelium" : "MYCELIUM",
+        "upfall" : "UPFALL",
+        "sillage" : "THE WAKE",
+        "the-iron-vampire" : "THE IRON VAMPIRE",
+        "the birds" : "LES BIRDS",
+        "sky-raiders" : "SKY RAIDERS",
+        "level-6-layer-12" : "LEVEL -6, LAYER 12",
+        "the-harvest" : "THE HARVEST"
     }
 }

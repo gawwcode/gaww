@@ -107,7 +107,17 @@
     "locked" : true,
     "status" : "completed",
     "file" : "/projects/"
-  }
+  },
 
+  "11" : {
+    "title": "THE HARVEST",
+    "description": "Récit dystopique. Critique du développement de l'agriculture intensive.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["book"],
+    "date": "",
+    "locked" : true,
+    "status" : "planned",
+    "file" : "/projects/"
+  }
 }
   
