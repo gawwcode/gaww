@@ -1,10 +1,15 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="99.5" fill="url(#paint0_linear_7502_51286)" stroke="#27272A"/>
-<path d="M131.544 80.5368L148.434 57.8122C121.609 36.5266 80.6364 37.8603 57.0492 64.4295C49.232 73.2351 44.2061 84.7227 43.6259 98.6576C42.8187 118.045 51.5272 136 65.1029 145.638C90.7819 163.867 125.354 159.468 149.997 142.187L134.899 118.121C116.778 132.215 83.5069 130.872 81.2077 102.684C78.9084 74.4967 110.067 66.4429 131.544 80.5368Z" fill="#FAFAFA"/>
-<defs>
-<linearGradient id="paint0_linear_7502_51286" x1="140" y1="174" x2="40" y2="18" gradientUnits="userSpaceOnUse">
-<stop stop-color="#111111"/>
-<stop offset="1" stop-color="#222224"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#27272A;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="145.2703" y1="29.3784" x2="45.2703" y2="185.3784">
+	<stop  offset="0" style="stop-color:#111111"/>
+	<stop  offset="1" style="stop-color:#222224"/>
 </linearGradient>
-</defs>
+<path class="st0" d="M100,0.5C45,0.5,0.5,45,0.5,100S45,199.5,100,199.5s99.5-44.5,99.5-99.5S155,0.5,100,0.5z M65.1,145.6
+	c-13.6-9.6-22.3-27.6-21.5-47c0.6-13.9,5.6-25.4,13.4-34.2c23.6-26.6,64.6-27.9,91.4-6.6l-16.9,22.7c-21.5-14.1-52.6-6-50.3,22.1
+	c2.3,28.2,35.6,29.5,53.7,15.4l15.1,24.1C125.4,159.5,90.8,163.9,65.1,145.6z"/>
 </svg>
