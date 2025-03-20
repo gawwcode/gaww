@@ -79,7 +79,7 @@
   "8": {
     "title": "WEB FLAPPY BIRD",
     "description": "Recréation de flappy bird dans le navigateur en HTML, CSS et JS",
-    "image": "/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/flappy-bird.webp",
     "tags": ["videogame", "web", "js", "html", "css"],
     "date": "2025-02-03",
     "locked" : false,
