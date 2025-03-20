@@ -118,6 +118,17 @@
     "locked" : true,
     "status" : "planned",
     "file" : "/projects/"
+  },
+
+  "12" : {
+    "title": "ART PORTFOLIO",
+    "description": "Where you can see all my professional and personnal artworks.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["painting, conceptart"],
+    "date": "",
+    "locked" : true,
+    "status" : "planned",
+    "file" : "/projects/"
   }
 }
   
