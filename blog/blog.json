@@ -17,5 +17,15 @@
       "date": "2025-03-19",
       "locked" : false,
       "file" : "/blog/article-2"
+    },
+
+    "3": {
+      "title": "tout apprendre",
+      "description": "SPOILER : c'est impossible",
+      "image": "/addons/images/pictures/webp/picture-8.webp",
+      "tags": ["other"],
+      "date": "2025-03-20",
+      "locked" : false,
+      "file" : "/blog/article-3"
     }
 }
