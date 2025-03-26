@@ -6,7 +6,7 @@ button {
 
 #theme {
     color: white;
-    font-size: var(--font-size-big);
+    font-size: 3rem;
 }
 
 .theme-gen-content {
