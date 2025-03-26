@@ -129,6 +129,17 @@
     "locked" : true,
     "status" : "planned",
     "file" : "/projects/"
-  }
+  },
+
+  "13" : {
+    "title": "ART THEME GENERATOR",
+    "description": "A random art theme generator for when you have no inspiration.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["painting, conceptart, web"],
+    "date": "",
+    "locked" : false,
+    "status" : "completed",
+    "file" : "/projects/experiments/themegenerator"
+  },
 }
   
