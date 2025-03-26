@@ -12,3 +12,8 @@ button {
 .theme-gen-content {
     flex-direction: column;
 }
+
+.theme-gen-content a {
+    color: var(--color-focus);
+    text-decoration: underline;
+}
