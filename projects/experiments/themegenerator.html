@@ -128,48 +128,50 @@
                 <button id="generateButton">Click here to generate a random art theme</button>
                 <div id="theme" class="poppins mt-3 mb-3"></div>
                 <p class="mb-2">The random theme is generated with the following python algorithm, which is hosted on <a href="https://www.pythonanywhere.com/">PythonAnywhere</a> which output is than fetched by the Javascript.</p>
-                <pre>
+                
+                <div class="code-wrapper">
                     <div class="code-header flex">
-                        <span class="language-label">Python</span>
-                        <button class="copy-button" onclick="copyCode(this)">Copy</button>
+                        <span class="language-label m-1">Python</span>
+                        <button class="copy-button m-1" onclick="copyCode(this)">Copy</button>
                     </div>
-                    <code class="language-python">
-                    import random
-                    from flask import Flask, jsonify
-                    from flask_cors import cross_origin
-
-                    app = Flask(__name__)
-
-                    # Base de données pour les éléments de la phrase
-                    data = {
-                        "adjectives": ["", "red", "blue", "giant",...],
-                        "subjects": ["robot", "dragon", "unicorn", ...],
-                        "verbs": ["walks", "runs", "flies", ...],
-                        "adverbs": ["", "rapidly", "slowly", "gracefully", ...],
-                        "locations": ["in a giant forest", "on a distant planet", "through a bustling city", ...]
-                    }
-
-                    def generate_theme():
-                        # Sélectionner un élément aléatoire de chaque catégorie
-                        adjective = random.choice(data["adjectives"])
-                        subject = random.choice(data["subjects"])
-                        verb = random.choice(data["verbs"])
-                        adverb = random.choice(data["adverbs"])
-                        location = random.choice(data["locations"])
-
-                        # Construire la phrase
-                        return f"{adjective} {subject} {verb} {adverb} {location}"
-
-                    if __name__ == '__main__':
-                        theme = generate_theme()
-                        print("Phrase générée :", theme)
-
-                    @app.route('/generate-theme', methods=['GET'])
-                    @cross_origin()
-                    def get_theme():
-                        theme = generate_theme()
-                        return jsonify({'theme': theme})
-                </code></pre>
+                    <pre><code class="language-python">
+                        import random
+                        from flask import Flask, jsonify
+                        from flask_cors import cross_origin
+    
+                        app = Flask(__name__)
+    
+                        # Base de données pour les éléments de la phrase
+                        data = {
+                            "adjectives": ["", "red", "blue", "giant",...],
+                            "subjects": ["robot", "dragon", "unicorn", ...],
+                            "verbs": ["walks", "runs", "flies", ...],
+                            "adverbs": ["", "rapidly", "slowly", "gracefully", ...],
+                            "locations": ["in a giant forest", "on a distant planet", "through a bustling city", ...]
+                        }
+    
+                        def generate_theme():
+                            # Sélectionner un élément aléatoire de chaque catégorie
+                            adjective = random.choice(data["adjectives"])
+                            subject = random.choice(data["subjects"])
+                            verb = random.choice(data["verbs"])
+                            adverb = random.choice(data["adverbs"])
+                            location = random.choice(data["locations"])
+    
+                            # Construire la phrase
+                            return f"{adjective} {subject} {verb} {adverb} {location}"
+    
+                        if __name__ == '__main__':
+                            theme = generate_theme()
+                            print("Phrase générée :", theme)
+    
+                        @app.route('/generate-theme', methods=['GET'])
+                        @cross_origin()
+                        def get_theme():
+                            theme = generate_theme()
+                            return jsonify({'theme': theme})
+                    </code></pre>
+                </div>
             </div>
         </div>
 

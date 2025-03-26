@@ -452,25 +452,21 @@
         transform: scale(0.95);
     } 
     
+    .code-wrapper {
+        position: relative;
+        border-radius: 10px;
+    }
+
     .code-header {
         justify-content: space-between;
         align-items: center;
         background-color: #1d3b53;
     }
 
-    .language-label, .copy-button {
+    .language-label {
         color: var(--color-text);
         font-family: monospace;
         font-size: 1rem;
-    }
-
-    .copy-button {
-        padding: 5px 10px;
-        border-radius: 10px;
-    }
-
-    .copy-button:hover {
-        background-color: #396486;
     }
 }
 
