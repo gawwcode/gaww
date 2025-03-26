@@ -161,10 +161,6 @@
         color: var(--color-focus);
         text-decoration: underline;
     }
-
-    code {
-        border-radius: 10px;
-    }
 }
 
 @layer components {
