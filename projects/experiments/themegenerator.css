@@ -5,7 +5,10 @@ button {
 }
 
 #theme {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-text);
+    color: white;
     font-size: var(--font-size-big);
+}
+
+.theme-gen-content {
+    flex-direction: column;
 }
