@@ -3,3 +3,9 @@ button {
     font-size: 1em;
     cursor: pointer;
 }
+
+#theme {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    font-size: var(--font-size-big);
+}
