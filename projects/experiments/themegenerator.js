@@ -2,7 +2,7 @@
 document.getElementById('generateButton').addEventListener('click', async () => {
     try {
         // Afficher un indicateur de chargement
-        document.getElementById('theme').textContent = "Chargement...";
+        document.getElementById('theme').textContent = "Loading...";
 
         // Appeler l'API PythonAnywhere
         const response = await fetch('https://gaww.pythonanywhere.com/generate-theme');
