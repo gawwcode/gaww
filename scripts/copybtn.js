@@ -10,7 +10,7 @@ function copyCode(button) {
         button.textContent = 'Copied !';
         setTimeout(() => {
             button.textContent = 'Copy';
-        }, 2000);
+        }, 1000);
     }).catch(err => {
         console.error('Erreur lors de la copie :', err);
     });

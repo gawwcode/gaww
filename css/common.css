@@ -459,6 +459,10 @@
         background-color: #1d3b53;
     }
 
+    .code-wrapper code {
+        text-wrap: wrap;
+    }
+
     .language-label {
         color: var(--color-text);
         font-family: monospace;
