@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="/css/blog.css">
     
         <link rel="stylesheet" href="/projects/experiments/themegenerator.css"> <!-- !!!! Customizer le path du CSS ici !!!! -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     
     </head>
 <body>
@@ -118,13 +120,51 @@
                 <div class="prtags p-1">
                     <!-- Les tags seront insérés ici dynamiquement -->
                 </div>
-                <span class="date p-1" data-date="">loading date...</span>
+                <span class="date p-1" data-date="">26-03-2025</span>
             </div>
 
             <div class="project-content pl-2 pr-2 pb-3 flex-center theme-gen-content">
                 <h2 class="montserrat">Art theme generator</h2>
                 <button id="generateButton">Click here to generate a random art theme</button>
-                <div id="theme" class="poppins mt-2"></div>
+                <div id="theme" class="poppins mt-2 mb-2"></div>
+                <p>The random theme is generated with the following python algorithm, which is hosted on <a href="https://www.pythonanywhere.com/">PythonAnywhere</a></p>
+                <pre><code class="language-python">
+                    import random
+                    from flask import Flask, jsonify
+                    from flask_cors import cross_origin
+
+                    app = Flask(__name__)
+
+                    # Base de données pour les éléments de la phrase
+                    data = {
+                        "adjectives": ["", "red", "blue", "giant",...],
+                        "subjects": ["robot", "dragon", "unicorn", ...],
+                        "verbs": ["walks", "runs", "flies", ...],
+                        "adverbs": ["", "rapidly", "slowly", "gracefully", ...],
+                        "locations": ["in a giant forest", "on a distant planet", "through a bustling city", ...]
+                    }
+
+                    def generate_theme():
+                        # Sélectionner un élément aléatoire de chaque catégorie
+                        adjective = random.choice(data["adjectives"])
+                        subject = random.choice(data["subjects"])
+                        verb = random.choice(data["verbs"])
+                        adverb = random.choice(data["adverbs"])
+                        location = random.choice(data["locations"])
+
+                        # Construire la phrase
+                        return f"{adjective} {subject} {verb} {adverb} {location}"
+
+                    if __name__ == '__main__':
+                        theme = generate_theme()
+                        print("Phrase générée :", theme)
+
+                    @app.route('/generate-theme', methods=['GET'])
+                    @cross_origin()
+                    def get_theme():
+                        theme = generate_theme()
+                        return jsonify({'theme': theme})
+                </code></pre>
             </div>
         </div>
 
@@ -133,5 +173,9 @@
     <script src="/scripts/main.js"></script>
     <script src="themegenerator.js"></script>
     <script src="/scripts/transition.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+
 </body>
 </html>

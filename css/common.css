@@ -161,6 +161,10 @@
         color: var(--color-focus);
         text-decoration: underline;
     }
+
+    code {
+        background-color: var(--color-overlay);
+    }
 }
 
 @layer components {
