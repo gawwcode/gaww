@@ -460,8 +460,16 @@
         background-color: #1d3b53;
     }
 
+    .code-wrapper pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-x: auto;
+    }
+
     .code-wrapper code {
         text-wrap: wrap;
+        display: inline-block;
+        max-width: 100%;
     }
 
     .language-label {
