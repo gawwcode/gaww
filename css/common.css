@@ -451,6 +451,7 @@
     .code-wrapper {
         position: relative;
         border-radius: 10px;
+        max-width: 100%;
     }
 
     .code-header {
