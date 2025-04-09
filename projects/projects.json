@@ -94,7 +94,7 @@
     "tags": ["game", "conceptart"],
     "date": "",
     "locked" : true,
-    "status" : "completed",
+    "status" : "planned",
     "file" : "/projects/"
   },
 
@@ -102,7 +102,7 @@
     "title": "NIVEAU -6, COUCHE 12",
     "description": "Une courte nouvelle de science-fiction",
     "image": "/addons/images/pictures/webp/picture-17.webp",
-    "tags": ["game", "conceptart"],
+    "tags": ["writing", "conceptart"],
     "date": "",
     "locked" : true,
     "status" : "completed",
@@ -135,7 +135,7 @@
     "title": "ART THEME GENERATOR",
     "description": "A random art theme generator for when you have no inspiration.",
     "image": "/addons/images/pictures/webp/picture-16.webp",
-    "tags": ["painting", "conceptart", "web"],
+    "tags": ["web"],
     "date": "2025-03-26",
     "locked" : false,
     "status" : "completed",
@@ -149,7 +149,7 @@
     "tags": ["comic", "drawing", "writing"],
     "date": "2025-04-09",
     "locked" : false,
-    "status" : "completed",
+    "status" : "in progress",
     "file" : "/projects/lcda.html"
   }
 }
