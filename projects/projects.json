@@ -13,7 +13,7 @@
   "2": {
     "title": "THE CURSE OF THE OVERLORD",
     "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
-    "image": "/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/picture-15.webp",
     "tags": ["videogame", "conceptart", "music"],
     "date": "unknown date",
     "locked" : false,
@@ -134,7 +134,7 @@
   "13" : {
     "title": "ART THEME GENERATOR",
     "description": "A random art theme generator for when you have no inspiration.",
-    "image": "/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/picture-16.webp",
     "tags": ["painting", "conceptart", "web"],
     "date": "2025-03-26",
     "locked" : false,
