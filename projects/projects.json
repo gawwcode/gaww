@@ -140,6 +140,17 @@
     "locked" : false,
     "status" : "completed",
     "file" : "/projects/experiments/themegenerator"
+  },
+
+  "14" : {
+    "title": "LA CITÉ DES ABYSSES",
+    "description": "Une réinterprétation post-apocalyptique du mythe de l'Atlantide.",
+    "image": "/addons/images/pictures/webp/picture-16.webp",
+    "tags": ["comic", "drawing", "writing"],
+    "date": "2025-04-09",
+    "locked" : false,
+    "status" : "completed",
+    "file" : "/projects/lcda.html"
   }
 }
   
