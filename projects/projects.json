@@ -123,7 +123,7 @@
   "12" : {
     "title": "ART PORTFOLIO",
     "description": "Where you can see all my professional and personnal artworks.",
-    "image": "/addons/images/pictures/webp/",
+    "image": "/addons/images/pictures/webp/picture-1.webp",
     "tags": ["painting", "conceptart"],
     "date": "",
     "locked" : true,
@@ -145,10 +145,21 @@
   "14" : {
     "title": "LA CITÉ DES ABYSSES",
     "description": "Une réinterprétation post-apocalyptique du mythe de l'Atlantide.",
-    "image": "/addons/images/pictures/webp/picture-16.webp",
+    "image": "/addons/images/pictures/webp/picture-6.webp",
     "tags": ["comic", "drawing", "writing"],
     "date": "2025-04-09",
     "locked" : false,
+    "status" : "in progress",
+    "file" : "/projects/lcda.html"
+  },
+
+  "15" : {
+    "title": "DA ASRUNN",
+    "description": "La direction artistique graphique d'ASRUNN.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["design", "web"],
+    "date": "2025",
+    "locked" : true,
     "status" : "in progress",
     "file" : "/projects/lcda.html"
   }
