@@ -27,7 +27,11 @@
     "explore" : "ontdek",
 
     "contactPage" : {
-        "getInTouch" : "Laten we contact opnemen !"
+        "getInTouch" : "Laten we contact opnemen !",
+        "last-first-name" : "Uw voor-en achternaam",
+        "email" : "Uw e-mail adres",
+        "subject" : "Onderwerp van uw bericht",
+        "message" : "Uw bericht"
     },
 
     "projects-catalog" : {

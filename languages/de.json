@@ -27,7 +27,11 @@
     "explore" : "erkunden",
 
     "contactPage" : {
-        "getInTouch" : "Lass uns in Kontakt treten !"
+        "getInTouch" : "Lass uns in Kontakt treten !",
+        "last-first-name" : "Ihr Vor- und Nachname",
+        "email" : "deine E-Mail-Adresse",
+        "subject" : "Betreff Ihres Kontakts",
+        "message" : "Ihre Nachricht"
     },
 
     "projects-catalog" : {

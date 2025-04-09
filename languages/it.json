@@ -27,7 +27,11 @@
     "explore" : "esploratore",
 
     "contactPage" : {
-        "getInTouch" : "Mettiamoci in contatto!"
+        "getInTouch" : "Mettiamoci in contatto!",
+        "last-first-name" : "Nome e cognome",
+        "email" : "Indirizzo e-mail",
+        "subject" : "Oggetto del messaggio",
+        "message" : "Il vostro messaggio"
     },
 
     "projects-catalog" : {
