@@ -27,7 +27,8 @@
     "explore" : "explorer",
 
     "contactPage" : {
-        "getInTouch" : "Les lettres d'admiration ? C'est par ici ! 👀"
+        "getInTouch" : "Les lettres d'admiration ? C'est par ici ! 👀",
+        "last-first-name" : "Votre nom et prénom"
     },
 
     "projects-catalog" : {

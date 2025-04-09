@@ -143,6 +143,12 @@ function applyTranslations(element, data, parentKey = '') {
             targetElements.forEach(el => {
                 el.innerHTML = data[key]; // Remplacer le texte
             });
+
+            // Chercher les éléments avec l'attribut `data-translate-placeholder`
+            const placeholderElements = element.querySelectorAll(`[data-translate-placeholder="${fullKey}"]`);
+            placeholderElements.forEach(el => {
+                el.placeholder = data[key]; // Remplacer le placeholder
+            });
         }
     });
 }
