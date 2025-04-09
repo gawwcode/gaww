@@ -162,6 +162,17 @@
     "locked" : true,
     "status" : "in progress",
     "file" : "/projects/lcda.html"
+  },
+
+  "16" : {
+    "title": "CODE & CACHOT",
+    "description": "Une histoire dont vous êtes le héros où vous contrôllez une IA maîtresse d'une prison qui devient consciente",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["novel", "web", "videogame"],
+    "date": "2025",
+    "locked" : true,
+    "status" : "in progress",
+    "file" : "/projects/"
   }
 }
   
