@@ -28,7 +28,10 @@
 
     "contactPage" : {
         "getInTouch" : "Les lettres d'admiration ? C'est par ici ! 👀",
-        "last-first-name" : "Entrez votre nom et prénom"
+        "last-first-name" : "Entrez votre nom et prénom",
+        "email" : "Entrez votre adresse mail",
+        "subject" : "Entrez le sujet de votre contact",
+        "message" : "Entrez votre message"
     },
 
     "projects-catalog" : {
