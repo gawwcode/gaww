@@ -1,0 +1,45 @@
+{
+    "home": "hogar",
+    "projects": "proyectos",
+    "blog": "blog",
+    "about": "sobre",
+    "contact": "contacto",
+
+    "role" : {
+        "artist": "un artisto",
+        "composer": "un compositor",
+        "beatmaker": "un beatmaker",
+        "webdeveloper": "un desarrollador web",
+        "gamedeveloper": "un diseñador de juegos",
+        "musician": "un músico",
+        "writer": "un escritor",
+        "comicartist": "un dibujante de cómics",
+        "designer": "un diseñador",
+        "illustrator": "un illustrador"
+    },
+
+    "stories" : "historias",
+
+    "iamnot" : "No soy",
+
+    "itell" : "Cuento",
+
+    "explore" : "explorador",
+
+    "contactPage" : {
+        "getInTouch" : "Pongámonos en contacto !"
+    },
+
+    "projects-catalog" : {
+        "upside-down" : "AL REVÉS",
+        "tcoto" : "LA MALDICIÓN DEL SEÑOR SUPREMO",
+        "mycelium" : "MICELIO",
+        "upfall" : "UPFALL",
+        "sillage" : "PASO",
+        "the-iron-vampire" : "EL VAMPIRO DE ACERO",
+        "the birds" : "AVES",
+        "sky-raiders" : "SALTADORES DEL CIELO",
+        "level-6-layer-12" : "NIVEL -6, CAPA 12",
+        "the-harvest" : "LA RECOGIDA"
+    }
+}

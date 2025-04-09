@@ -1,0 +1,47 @@
+{
+    "home": "home",
+    "projects": "progetti",
+    "blog": "blog",
+    "about": "circa",
+    "contact": "contatto",
+
+    "role" : {
+        "artist": "un artista",
+        "composer": "un compositore",
+        "beatmaker": "un beatmaker",
+        "webdeveloper": "uno sviluppatore web",
+        "gamedeveloper": "un game designer",
+        "musician": "un musicista",
+        "writer": "uno scrittore",
+        "comicartist": "un artista di fumetti",
+        "designer": "un designer",
+        "illustrator": "un illustratore"
+    },
+
+    "stories" : "storie",
+
+    "iamnot" : "Non sono",
+
+    "itell" : "Racconto",
+
+    "explore" : "esploratore",
+
+    "contactPage" : {
+        "getInTouch" : "Mettiamoci in contatto!"
+    },
+
+    "projects-catalog" : {
+        "upside-down" : "CAPOVOLTO",
+        "tcoto" : "LA MALEDIZIONE DEL SIGNORE SUPREMO",
+        "mycelium" : "MICELIO",
+        "upfall" : "UPFALL",
+        "sillage" : "SCIA",
+        "the-iron-vampire" : "IL VAMPIRO D'ACCACIAIO",
+        "the birds" : "GLI UCCELLI",
+        "sky-raiders" : "RAZZIATORI DEL CIELO",
+        "level-6-layer-12" : "LIVELLO -6, STRATO 12",
+        "the-harvest" : "IL RACCOLTO",
+        "art-portfolio" : "PORTAFOGLIO D'ARTE",
+        "art-theme-generator" : "GENERATORE DI TEMI D'ARTE"
+    }
+}

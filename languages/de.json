@@ -1,13 +1,13 @@
 {
-    "home": "home",
-    "projects": "projects",
+    "home": "nach hause",
+    "projects": "projekten",
     "blog": "blog",
-    "about": "about",
-    "contact": "contact",
+    "about": "über mich",
+    "contact": "kontakt",
 
     "role" : {
-        "artist": "an artist",
-        "composer": "a composer",
+        "artist": "Künstler",
+        "composer": "Komponist",
         "beatmaker": "a beatmaker",
         "webdeveloper": "a web developper",
         "gamedeveloper": "a game designer",
@@ -18,16 +18,16 @@
         "illustrator": "an illustrator"
     },
 
-    "stories" : "stories",
+    "stories" : "Geschichten",
 
-    "iamnot" : "I am not",
+    "iamnot" : "Ich bin keine",
 
-    "itell" : "I tell",
+    "itell" : "Ich erzähle",
 
-    "explore" : "explore",
+    "explore" : "erkunden",
 
     "contactPage" : {
-        "getInTouch" : "Let's get in touch !"
+        "getInTouch" : "Lass uns in Kontakt treten !"
     },
 
     "projects-catalog" : {
@@ -36,10 +36,12 @@
         "mycelium" : "MYCELIUM",
         "upfall" : "NACH OBEN FALLEN",
         "sillage" : "SPUR",
-        "the-iron-vampire" : "DE IJZEREN VAMPIER",
-        "the birds" : "DE VOGELS",
-        "sky-raiders" : "DE LUCHTROVERS",
-        "level-6-layer-12" : "NIVEAU -6, LAAG 12",
-        "the-harvest" : "DE OOGST"
+        "the-iron-vampire" : "DER EISERNE VAMPIR",
+        "the birds" : "VÖGEL",
+        "sky-raiders" : "DIE HIMMELSJÄGER",
+        "level-6-layer-12" : "EBENE 6, SCHICHT 12",
+        "the-harvest" : "DIE ERNTE",
+        "art-portfolio" : "KUNSTPORTFOLIO",
+        "art-theme-generator" : "KUNSTTHEMEN-GENERATOR"
     }
 }
