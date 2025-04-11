@@ -1,18 +1,18 @@
 .mosaic {
     margin: 0 auto;
-  }
+}
   
-  .mosaic-item {
+.mosaic-item {
     break-inside: avoid;
     margin: 5px; /* Espacement entre les images */
     overflow: hidden;
     position: relative;
-    width: calc(33.33% - 10px); /* 3 images par ligne (33.33% = 1/3) */
-  }
+    width: calc(50% - 10px);
+}
   
-  .mosaic-item img {
+.mosaic-item img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-  }
+}

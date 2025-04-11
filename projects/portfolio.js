@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       new Masonry(container, {
         itemSelector: '.mosaic-item',
         columnWidth: '.mosaic-item', // Largeur des colonnes basée sur les items
-        gutter: 4, // Espacement entre les items réduit
+        gutter: 0, // Espacement entre les items réduit
         fitWidth: true // Ajuste la largeur du conteneur
       });
     }
