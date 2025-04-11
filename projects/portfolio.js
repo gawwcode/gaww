@@ -1,41 +1,54 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.mosaic');
-    const imageCount = 21;
+    const folderPath = 'addons/images/pictures/webp/';
+    const columnCount = 3; // Nombre de colonnes
+    const gutter = 10; // Espace entre les colonnes
+    const initialCount = 21; // Nombre initial d'images
   
-    function initializeMasonry() {
-      new Masonry(container, {
-        itemSelector: '.mosaic-item',
-        columnWidth: '.mosaic-item', // Largeur des colonnes basée sur les items
-        gutter: 0, // Espacement entre les items réduit
-        fitWidth: true // Ajuste la largeur du conteneur
-      });
-    }
-  
-    let loadedImages = 0;
-  
-    for (let i = 1; i <= imageCount; i++) {
-      const item = document.createElement('div');
-      item.className = 'mosaic-item';
-  
+    // Générer les images
+    const images = [];
+    for (let i = 1; i <= initialCount; i++) {
       const img = document.createElement('img');
-      img.src = `/addons/images/pictures/webp/picture-${i}.webp`;
-      img.alt = `Image ${i}`;
-      img.onload = () => {
-        loadedImages++;
-        item.appendChild(img);
-        container.appendChild(item);
-  
-        if (loadedImages === imageCount) {
-          initializeMasonry();
-        }
-      };
-  
-      img.onerror = () => {
-        console.error(`Erreur de chargement de l'image ${i}`);
-        loadedImages++;
-        if (loadedImages === imageCount) {
-          initializeMasonry();
-        }
-      };
+      img.src = `${folderPath}picture-${i}.webp`;
+      container.appendChild(img);
+      images.push(img);
     }
+  
+    // Attendre que toutes les images soient chargées
+    const promises = images.map(img => new Promise(resolve => {
+      if (img.complete) resolve();
+      else img.onload = resolve;
+    }));
+  
+    Promise.all(promises).then(() => {
+      // Calculer la disposition
+      const columnWidth = 200; // Largeur des colonnes
+      const columnHeights = Array(columnCount).fill(0);
+      
+      images.forEach(img => {
+        const imgHeight = img.naturalHeight;
+        let minColIndex = 0;
+        let minHeight = Infinity;
+        
+        // Trouver la colonne la plus courte
+        columnHeights.forEach((h, i) => {
+          if (h < minHeight) {
+            minHeight = h;
+            minColIndex = i;
+          }
+        });
+        
+        // Positionner l'image
+        const left = (columnWidth + gutter) * minColIndex;
+        const top = columnHeights[minColIndex];
+        img.style.left = `${left}px`;
+        img.style.top = `${top}px`;
+        
+        // Mettre à jour la hauteur de la colonne
+        columnHeights[minColIndex] += imgHeight + gutter;
+      });
+      
+      // Ajuster la hauteur du conteneur
+      container.style.height = `${Math.max(...columnHeights) - gutter}px`;
+    });
   });

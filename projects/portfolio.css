@@ -1,18 +1,13 @@
 .mosaic {
-    margin: 0 auto;
-}
-  
-.mosaic-item {
-    break-inside: avoid;
-    margin: 5px; /* Espacement entre les images */
-    overflow: hidden;
     position: relative;
-    width: calc(50% - 10px);
-}
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   
-.mosaic-item img {
-    width: 100%;
+  .mosaic img {
+    position: absolute;
+    width: 200px; /* Largeur fixe pour les colonnes */
     height: auto;
-    display: block;
-    object-fit: cover;
-}
+    box-sizing: border-box;
+    border: 1px solid #eee;
+  }
