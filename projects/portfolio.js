@@ -2,12 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.mosaic');
     const imageCount = 21;
   
-    // Fonction pour initialiser Masonry
     function initializeMasonry() {
       new Masonry(container, {
         itemSelector: '.mosaic-item',
         columnWidth: '.mosaic-item', // Largeur des colonnes basée sur les items
-        gutter: 10, // Espacement entre les items
+        gutter: 4, // Espacement entre les items réduit
         fitWidth: true // Ajuste la largeur du conteneur
       });
     }
