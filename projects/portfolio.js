@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.mosaic-container');
+    const container = document.querySelector('.mosaic');
     const imageCount = 21; // Nombre d'images
   
     // Fonction pour initialiser Masonry après le chargement des images
