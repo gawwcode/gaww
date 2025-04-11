@@ -9,10 +9,11 @@
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
+    max-width: 300px; /* Taille maximale des images */
   }
   
   .mosaic-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Pour conserver les proportions */
+    height: auto; /* Pour conserver les proportions */
+    display: block; /* Pour supprimer les marges supplémentaires */
   }
