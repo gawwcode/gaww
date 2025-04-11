@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.mosaic');
-    const imageCount = 21; // Nombre d'images
+    const imageCount = 21;
   
-    // Fonction pour initialiser Masonry après le chargement des images
+    // Fonction pour initialiser Masonry
     function initializeMasonry() {
       new Masonry(container, {
         itemSelector: '.mosaic-item',
-        columnWidth: '.mosaic-item',
-        gutter: 10,
-        fitWidth: true
+        columnWidth: '.mosaic-item', // Largeur des colonnes basée sur les items
+        gutter: 10, // Espacement entre les items
+        fitWidth: true // Ajuste la largeur du conteneur
       });
     }
   
@@ -26,15 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
         item.appendChild(img);
         container.appendChild(item);
   
-        // Initialiser Masonry une fois toutes les images chargées
         if (loadedImages === imageCount) {
           initializeMasonry();
         }
       };
   
-      // Gérer les erreurs de chargement d'images
       img.onerror = () => {
-        console.error(`Erreur de chargement de l'image picture-${i}.webp`);
+        console.error(`Erreur de chargement de l'image ${i}`);
         loadedImages++;
         if (loadedImages === imageCount) {
           initializeMasonry();
