@@ -34,6 +34,14 @@
         "message" : "Entrez votre message"
     },
 
+    "aboutPage" : {
+        "copycats" : "Vous êtes libre de copier, modifier et réutiliser mon code à n'importe quelle fin.",
+        "moreDetails" : "Pour plus de détails, veuillez consulter la",
+        "githubRepo" : "depuis le dépôt Github de ce site.",
+        "policy" : "Avis de confidentalité",
+        "personalData" : "Aucune donnée personnelle n'est collectée"
+    },
+
     "projects-catalog" : {
         "upside-down" : "À L'ENVERS",
         "tcoto" : "LA MALÉDICTION DU SUZERAIN",
