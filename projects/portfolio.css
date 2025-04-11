@@ -1,17 +1,18 @@
-.mosaic-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes flexibles */
-    gap: 10px;
-    width: 100%;
+.mosaic {
+    column-count: 4; /* Pour les navigateurs qui ne supportent pas Masonry */
+    column-gap: 10px;
+    margin: 0 auto;
   }
   
   .mosaic-item {
-    position: relative;
+    break-inside: avoid;
+    margin-bottom: 10px;
     overflow: hidden;
+    position: relative;
   }
   
   .mosaic-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Pour garder les proportions */
+    object-fit: cover; /* Pour conserver les proportions */
   }
