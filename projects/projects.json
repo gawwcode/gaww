@@ -126,9 +126,9 @@
     "image": "/addons/images/pictures/webp/picture-1.webp",
     "tags": ["painting", "conceptart"],
     "date": "",
-    "locked" : true,
+    "locked" : false,
     "status" : "planned",
-    "file" : "/projects/"
+    "file" : "/projects/portfolio.html"
   },
 
   "13" : {
