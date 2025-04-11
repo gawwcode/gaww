@@ -1,18 +1,14 @@
-// Script pour indexer automatiquement les images
 document.addEventListener('DOMContentLoaded', () => {
-    const mosaic = document.querySelector('.mosaic'); // Sélectionne le premier élément avec la classe .mosaic
-    const imageCount = 21; // Nombre actuel d'images, ajustable
-
-    // Vérifie que l'élément mosaic existe
+    const mosaic = document.querySelector('.mosaic');
     if (mosaic) {
-        // Boucle pour générer les balises <img> pour chaque image
+        const imageCount = 21; // Nombre d'images dans picture/webp
         for (let i = 1; i <= imageCount; i++) {
             const img = document.createElement('img');
             img.src = `/addons/images/pictures/webp/picture-${i}.webp`;
-            img.alt = `Image ${i}`; // Texte alternatif personnalisable
+            img.alt = `Image ${i}`;
             mosaic.appendChild(img);
         }
     } else {
-        console.error("L'élément avec la classe 'mosaic' n'a pas été trouvé.");
+        console.error("L'élément '.mosaic' n'a pas été trouvé.");
     }
 });
