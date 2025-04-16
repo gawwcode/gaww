@@ -1,0 +1,7 @@
+.couverture {
+    max-width: 30%;
+}
+
+.project-content {
+    flex-direction: column;
+}
