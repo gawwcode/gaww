@@ -41,7 +41,7 @@ form button {
 
 @media screen and (min-width: 1280px) {
     .paragraph {
-        margin-left: var(--space-4);
+        /* margin-left: var(--space-4); */
     }
 }
 
