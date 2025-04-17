@@ -58,7 +58,7 @@
         "privacyValue" : "La privacy è importante. Questo sito web utilizza <a href=\"https://www.goatcounter.com/\">GoatCounter</a>, uno strumento di analisi open-source e rispettoso della privacy, per raccogliere dati anonimi sulle interazioni dei visitatori.",
         "personalData" : "<span class=\"color-focus\">Non vengono raccolti dati personali</span> - GoatCounter non utilizza cookie né traccia informazioni identificabili.",
         "openSource" : "<span class=\"color-focus\">Completamente open-source e transparente</span> - È possibile esaminare il codice sorgente e il modo in cui vengono gestiti i dati.",
-        "secure" : "<span class=\"color-focus\"Sicuro e non intrusivo></span> - Il dati raccolti sono minimi e non possono essere utilizzati per identificare l'utente in alcun modo.",
+        "secure" : "<span class=\"color-focus\">Sicuro e non intrusivo</span> - Il dati raccolti sono minimi e non possono essere utilizzati per identificare l'utente in alcun modo.",
         "me" : "... me",
         "myWork" : "Di solito preferisco non parlare di ... me. Il mio lavoro parla da solo."
     }

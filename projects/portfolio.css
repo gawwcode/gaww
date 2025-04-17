@@ -5,9 +5,7 @@
   }
   
   .mosaic img {
-    position: absolute;
     width: 200px; /* Largeur fixe pour les colonnes */
     height: auto;
     box-sizing: border-box;
-    border: 1px solid #eee;
   }
