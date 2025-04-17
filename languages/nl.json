@@ -47,5 +47,18 @@
         "the-harvest" : "DE OOGST",
         "art-portfolio" : "KUNST PORTFOLIO",
         "art-theme-generator" : "KUNST THEMA GENERATOR"
+    },
+
+    "aboutPage" : {
+        "copycats-h3" : "Copycats",
+        "copycats" : "You are free to copy, modify, and reuse my code for any purpose.",
+        "moredetails" : "For more details, please refer to the <a href=\"https://github.com/gawwcode/gaww/blob/main/LICENSE\">MIT LICENSE</a>. from this website's Github repository.",
+        "policy" : "Privacy notice",
+        "privacyValue" : "I value privacy. This website uses <a href=\"https://www.goatcounter.com/\">GoatCounter</a>, an open-source and privacy-friendly analytics tool, to collect anonymous data about visitor interactions",
+        "personalData" : "No personal data is collected",
+        "openSource" : "Fully open-source & transparent",
+        "secure" : "Secure and non-intrusive",
+        "me" : "... me",
+        "myWork" : "I usally prefer to not talk about ... me. My work speaks for itself."
     }
 }

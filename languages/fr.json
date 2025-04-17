@@ -34,14 +34,6 @@
         "message" : "Entrez votre message"
     },
 
-    "aboutPage" : {
-        "copycats" : "Vous êtes libre de copier, modifier et réutiliser mon code à n'importe quelle fin.",
-        "moreDetails" : "Pour plus de détails, veuillez consulter la",
-        "githubRepo" : "depuis le dépôt Github de ce site.",
-        "policy" : "Avis de confidentalité",
-        "personalData" : "Aucune donnée personnelle n'est collectée"
-    },
-
     "projects-catalog" : {
         "upside-down" : "À L'ENVERS",
         "tcoto" : "LA MALÉDICTION DU SUZERAIN",
@@ -55,5 +47,18 @@
         "the-harvest" : "LA MOISSON",
         "art-portfolio" : "PORTFOLIO ARTISTIQUE",
         "art-theme-generator" : "GÉNÉRATEUR DE THÈMES ARTISTIQUES"
+    },
+
+    "aboutPage" : {
+        "copycats-h3" : "Propriété intellectuelle",
+        "copycats" : "Vous êtes libre de copier, modifier et réutiliser mon code à n'importe quelle fin.",
+        "moredetails" : "Pour plus de détails, veuillez consulter la <a href=\"https://github.com/gawwcode/gaww/blob/main/LICENSE\">LICENSE MIT</a> du dépôt Github.",
+        "policy" : "Avis de confidentalité",
+        "privacyValue" : "I value privacy. This website uses <a href=\"https://www.goatcounter.com/\">GoatCounter</a>, an open-source and privacy-friendly analytics tool, to collect anonymous data about visitor interactions",
+        "personalData" : "Aucune donnée personnelle n'est collectée",
+        "openSource" : "Fully open-source & transparent",
+        "secure" : "Secure and non-intrusive",
+        "me" : "... me",
+        "myWork" : "I usally prefer to not talk about ... me. My work speaks for itself."
     }
 }
