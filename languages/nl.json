@@ -50,6 +50,7 @@
     },
 
     "aboutPage" : {
+        "sitemap" : "sitemap",
         "copycats-h3" : "Copycats",
         "copycats" : "You are free to copy, modify, and reuse my code for any purpose.",
         "moredetails" : "For more details, please refer to the <a href=\"https://github.com/gawwcode/gaww/blob/main/LICENSE\">MIT LICENSE</a>. from this website's Github repository.",

@@ -50,6 +50,7 @@
     },
 
     "aboutPage" : {
+        "sitemap" : "sitemap",
         "copycats-h3" : "Propriété intellectuelle",
         "copycats" : "Vous êtes libre de copier, modifier et réutiliser mon code à n'importe quelle fin.",
         "moredetails" : "Pour plus de détails, veuillez consulter la <a href=\"https://github.com/gawwcode/gaww/blob/main/LICENSE\">LICENSE MIT</a> du dépôt Github.",

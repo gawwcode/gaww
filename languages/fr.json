@@ -50,15 +50,19 @@
     },
 
     "aboutPage" : {
+        "about" : "À propos de...",
+        "website" : "... ce site web",
+        "sitemap" : "Carte du site",
+        "sourceCode" : "Le code source",
         "copycats-h3" : "Propriété intellectuelle",
         "copycats" : "Vous êtes libre de copier, modifier et réutiliser mon code à n'importe quelle fin.",
         "moredetails" : "Pour plus de détails, veuillez consulter la <a href=\"https://github.com/gawwcode/gaww/blob/main/LICENSE\">LICENSE MIT</a> du dépôt Github.",
         "policy" : "Avis de confidentalité",
-        "privacyValue" : "I value privacy. This website uses <a href=\"https://www.goatcounter.com/\">GoatCounter</a>, an open-source and privacy-friendly analytics tool, to collect anonymous data about visitor interactions",
-        "personalData" : "Aucune donnée personnelle n'est collectée",
-        "openSource" : "Fully open-source & transparent",
-        "secure" : "Secure and non-intrusive",
-        "me" : "... me",
-        "myWork" : "I usally prefer to not talk about ... me. My work speaks for itself."
+        "privacyValue" : "J'accorde beaucoup de valeur à la confidentalité. Ce site web utilise <a href=\"https://www.goatcounter.com/\">GoatCounter</a>, un outil d'analyse open-source et respectueux de la vie privée, pour collecter des données anonymes sur les interactions des visiteurs.",
+        "personalData" : "<span class=\"color-focus\">Aucune donnée personnelle n'est collectée</span> - GoatCounter n'utilise pas de cookis ou d'informations identifiables.",
+        "openSource" : "<span class=\"color-focus\">Complètement open-source et transparent</span> - Vous pouvez consulter le code source et la façon dont les données sont traitées",
+        "secure" : "<span class=\"color-focus\">Securisé & non-intrusif</span> - Les données collectées sont minimes et ne peuvent être utilisées pour vous identifier de quelque manière que ce soit.",
+        "me" : "... moi",
+        "myWork" : "Je préfère ne pas parler de ... moi. Je préfère penser que mon travail 'parle de lui-même'."
     }
 }
