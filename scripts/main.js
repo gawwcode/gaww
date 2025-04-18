@@ -2,8 +2,13 @@
 
 const gradient = document.getElementById("grainient");
 
-// Optimisation du mouvement de la souris
-if (window.innerWidth > 768 && gradient) {
+const isLowPerformanceDevice = () => {
+    const cores = navigator.hardwareConcurrency || 2; // Valeur par défaut si non disponible
+    return cores <= 2; // Considérer les appareils avec 2 cœurs ou moins comme peu performants
+};
+
+if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
+    // Exécuter le script uniquement sur des appareils performants
     let isMouseMoving = false;
     let lastEvent = null;
     let mouseTimeout;
@@ -23,7 +28,7 @@ if (window.innerWidth > 768 && gradient) {
         isMouseMoving = false;
     };
 
-    document.addEventListener("mousemove", (event) => {
+    const throttledMouseMove = (event) => {
         lastEvent = event;
         clearTimeout(mouseTimeout); // Réinitialise le timeout
         if (!isMouseMoving) {
@@ -33,7 +38,11 @@ if (window.innerWidth > 768 && gradient) {
         mouseTimeout = setTimeout(() => {
             isMouseMoving = false; // Désactive les calculs après 2 secondes d'inactivité
         }, 2000);
-    });
+    };
+
+    document.addEventListener("mousemove", throttledMouseMove);
+} else {
+    console.log("Gradient désactivé pour cet appareil en raison de performances limitées.");
 }
 
 // ---------------------------------------- LOADING ----------------------------------------
@@ -120,6 +129,35 @@ window.onclick = function(event) {
 //     });
 // }
 
+as
+// async function changeLanguage(lang) {
+//     try {
+//         const response = await fetch(`/languages/${lang}.json`);
+//         if (!response.ok) throw new Error(`Erreur réseau: ${response.status}`);
+
+//         const data = await response.json();
+//         applyTranslations(document.body, data);
+//     } catch (error) {
+//         console.error("Erreur lors du chargement de la langue :", error);
+//     }
+// }
+
+// // 🔥 Fonction RÉCURSIVE qui applique les traductions en fonction de la hiérarchie du JSON
+// function applyTranslations(element, data) {
+//     if (!data || typeof data !== 'object') return;
+
+//     Object.keys(data).forEach(key => {
+//         const targetElements = element.querySelectorAll(`[data-translate="${key}"]`);
+        
+//         targetElements.forEach(el => {
+//             if (typeof data[key] === "object") {
+//                 applyTranslations(el, data[key]); // 🔄 Appel récursif si c'est un objet
+//             } else {
+//                 el.innerHTML = data[key]; // ✨ Remplacement du texte si c'est une chaîne
+//             }
+//         });
+//     });
+// }
 async function changeLanguage(lang) {
     try {
         const response = await fetch(`/languages/${lang}.json`);
