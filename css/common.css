@@ -73,9 +73,9 @@
         list-style: none; /* Supprime les puces des listes */
     }
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         z-index: 10;
-    }
+    } */
 }
 
 /* -------------------- LAYERS -------------------- */
@@ -260,6 +260,7 @@
 
     .nav-btn-wrapper {
         cursor: pointer;
+        pointer-events: auto;
     }
     
     .nav-btn {
