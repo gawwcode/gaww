@@ -1,11 +1,11 @@
 .mosaic {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
   
-  .mosaic img {
-    width: 200px; /* Largeur fixe pour les colonnes */
-    height: auto;
-    box-sizing: border-box;
-  }
+.mosaic img {
+  width: 200px; /* Largeur fixe pour les colonnes */
+  height: auto;
+  box-sizing: border-box;
+}
