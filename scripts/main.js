@@ -2,10 +2,11 @@
 
 const gradient = document.getElementById("grainient");
 
-// Vérifie si l'utilisateur est sur mobile
+// Optimisation du mouvement de la souris
 if (window.innerWidth > 768 && gradient) {
     let isMouseMoving = false;
     let lastEvent = null;
+    let mouseTimeout;
 
     const moveGradient = () => {
         if (lastEvent) {
@@ -18,16 +19,20 @@ if (window.innerWidth > 768 && gradient) {
 
             gradient.style.setProperty("--mouse-x", `${mouseX}%`);
             gradient.style.setProperty("--mouse-y", `${mouseY}%`);
-            isMouseMoving = false;
         }
+        isMouseMoving = false;
     };
 
-    document.addEventListener("mousemove", event => {
+    document.addEventListener("mousemove", (event) => {
         lastEvent = event;
+        clearTimeout(mouseTimeout); // Réinitialise le timeout
         if (!isMouseMoving) {
             isMouseMoving = true;
             requestAnimationFrame(moveGradient);
         }
+        mouseTimeout = setTimeout(() => {
+            isMouseMoving = false; // Désactive les calculs après 2 secondes d'inactivité
+        }, 2000);
     });
 }
 
