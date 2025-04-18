@@ -41,12 +41,13 @@ if (gradient && window.innerWidth > 768) {
     };
 
     // Détection des appareils à faible performance
-    const isLowPerformance = () => {
-        // Critères simples pour détecter les appareils à faible performance
-        const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory < 4; // Moins de 4GB
-        const hasLowCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2; // 2 cœurs ou moins
-        return hasLowMemory || hasLowCores;
-    };
+    const isLowPerformance = () => true;
+    // () => {
+    //     // Critères simples pour détecter les appareils à faible performance
+    //     const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory < 4; // Moins de 4GB
+    //     const hasLowCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2; // 2 cœurs ou moins
+    //     return hasLowMemory || hasLowCores;
+    // };
 
     // Activer/désactiver l'animation selon performance
     if (!isLowPerformance()) {
