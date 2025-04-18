@@ -129,7 +129,6 @@ window.onclick = function(event) {
 //     });
 // }
 
-as
 // async function changeLanguage(lang) {
 //     try {
 //         const response = await fetch(`/languages/${lang}.json`);
