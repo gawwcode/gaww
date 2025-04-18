@@ -64,3 +64,21 @@
 #website {
     flex-direction: column;
 }
+
+.mobile {
+    flex-wrap: wrap;
+}
+
+.mobile img {
+    max-width: 20%;
+}
+
+@media screen and (max-width: 620px) {
+    .mobile img {
+        max-width: 90%;
+    }
+
+    #banner img {
+        max-width: 100%;
+    }
+}
