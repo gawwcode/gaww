@@ -159,8 +159,8 @@
     "image": "/projects/asrunn/photo_asrunn_1.webp",
     "tags": ["design", "web"],
     "date": "2025-05-18",
-    "locked" : true,
-    "status" : "in progress",
+    "locked" : false,
+    "status" : "done",
     "file" : "/projects/lcda.html"
   },
 
