@@ -12,6 +12,7 @@ if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
     let isMouseMoving = false;
     let lastEvent = null;
     let mouseTimeout;
+    let throttleTimeout;
 
     const moveGradient = () => {
         if (lastEvent) {
@@ -29,11 +30,12 @@ if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
     };
 
     const throttledMouseMove = (event) => {
-        lastEvent = event;
-        clearTimeout(mouseTimeout); // Réinitialise le timeout
-        if (!isMouseMoving) {
-            isMouseMoving = true;
-            requestAnimationFrame(moveGradient);
+        if (!throttleTimeout) {
+            throttleTimeout = setTimeout(() => {
+                lastEvent = event;
+                requestAnimationFrame(moveGradient);
+                throttleTimeout = null; // Réinitialiser le throttle
+            }, 50); // Mettre à jour toutes les 50ms (20 FPS)
         }
         mouseTimeout = setTimeout(() => {
             isMouseMoving = false; // Désactive les calculs après 2 secondes d'inactivité
@@ -157,6 +159,7 @@ window.onclick = function(event) {
 //         });
 //     });
 // }
+
 async function changeLanguage(lang) {
     try {
         const response = await fetch(`/languages/${lang}.json`);
