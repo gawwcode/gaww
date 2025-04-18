@@ -2,60 +2,35 @@
 
 const gradient = document.getElementById("grainient");
 
-const isLowPerformanceDevice = () => {
-    const cores = navigator.hardwareConcurrency || 2; // Valeur par défaut si non disponible
-    const memory = navigator.deviceMemory || 4; // Mémoire en Go (par défaut 4 si non disponible)
-    return cores <= 2 || memory <= 2; // Considérer les appareils avec 2 cœurs ou 2 Go de RAM comme peu performants
-};
-
-if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
-    let lastEvent = null;
-    let throttleTimeout;
-    let currentMouseX = 50; // Valeur initiale
+if (gradient && window.innerWidth > 768) {
+    let currentMouseX = 50;
     let currentMouseY = 50;
+    let targetMouseX = 50;
+    let targetMouseY = 50;
 
     const moveGradient = () => {
-        if (lastEvent) {
-            const { pageX, pageY } = lastEvent;
-            const winWidth = window.innerWidth;
-            const winHeight = window.innerHeight;
+        // Interpolation linéaire pour lisser les mouvements
+        currentMouseX += (targetMouseX - currentMouseX) * 0.2; // Ajuster le facteur pour plus ou moins de fluidité
+        currentMouseY += (targetMouseY - currentMouseY) * 0.2;
 
-            const targetMouseX = Math.round((pageX / winWidth) * 100);
-            const targetMouseY = Math.round((pageY / winHeight) * 100);
+        gradient.style.setProperty("--mouse-x", `${currentMouseX}%`);
+        gradient.style.setProperty("--mouse-y", `${currentMouseY}%`);
 
-            // Interpolation linéaire
-            currentMouseX += (targetMouseX - currentMouseX) * 0.1; // Ajuster le facteur (0.1 pour un lissage plus lent)
-            currentMouseY += (targetMouseY - currentMouseY) * 0.1;
-
-            gradient.style.setProperty("--mouse-x", `${currentMouseX}%`);
-            gradient.style.setProperty("--mouse-y", `${currentMouseY}%`);
-        }
+        // Continuer l'animation
+        requestAnimationFrame(moveGradient);
     };
-
-    const throttledMouseMove = (event) => {
-        lastEvent = event;
-        if (!throttleTimeout) {
-            throttleTimeout = setTimeout(() => {
-                requestAnimationFrame(moveGradient);
-                throttleTimeout = null; // Réinitialiser le throttle
-            }, 100); // Mettre à jour toutes les 100ms (10 FPS)
-        }
-    };
-
-    const stopGradientEffect = () => {
-        document.removeEventListener("mousemove", throttledMouseMove);
-        console.log("Gradient désactivé après une période d'inactivité.");
-    };
-
-    let inactivityTimeout = setTimeout(stopGradientEffect, 5000); // Désactiver après 5 secondes d'inactivité
 
     document.addEventListener("mousemove", (event) => {
-        clearTimeout(inactivityTimeout); // Réinitialiser le timer d'inactivité
-        inactivityTimeout = setTimeout(stopGradientEffect, 5000);
-        throttledMouseMove(event);
+        const winWidth = window.innerWidth;
+        const winHeight = window.innerHeight;
+
+        // Calculer les nouvelles positions cibles
+        targetMouseX = (event.pageX / winWidth) * 100;
+        targetMouseY = (event.pageY / winHeight) * 100;
     });
-} else {
-    console.log("Gradient désactivé pour cet appareil en raison de performances limitées.");
+
+    // Démarrer l'animation
+    moveGradient();
 }
 
 // ---------------------------------------- LOADING ----------------------------------------
