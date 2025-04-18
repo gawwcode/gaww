@@ -2,35 +2,81 @@
 
 const gradient = document.getElementById("grainient");
 
+// Vérifier si l'élément existe et si la largeur d'écran est suffisante
 if (gradient && window.innerWidth > 768) {
     let currentMouseX = 50;
     let currentMouseY = 50;
     let targetMouseX = 50;
     let targetMouseY = 50;
+    let isActive = true; // Contrôle l'état de l'animation
 
-    const moveGradient = () => {
-        // Interpolation linéaire pour lisser les mouvements
-        currentMouseX += (targetMouseX - currentMouseX) * 0.2; // Ajuster le facteur pour plus ou moins de fluidité
-        currentMouseY += (targetMouseY - currentMouseY) * 0.2;
+    // Fonction d'interpolation pour lisser le mouvement
+    const moveGradient = (timestamp) => {
+        if (!isActive) return; // Arrêter si désactivé
 
-        gradient.style.setProperty("--mouse-x", `${currentMouseX}%`);
-        gradient.style.setProperty("--mouse-y", `${currentMouseY}%`);
+        // Interpolation linéaire avec facteur de fluidité
+        currentMouseX += (targetMouseX - currentMouseX) * 0.1; // Réduit pour moins de calculs
+        currentMouseY += (targetMouseY - currentMouseY) * 0.1;
+
+        // Mettre à jour les propriétés CSS uniquement si changement significatif
+        if (Math.abs(currentMouseX - targetMouseX) > 0.1 || Math.abs(currentMouseY - targetMouseY) > 0.1) {
+            gradient.style.setProperty("--mouse-x", `${currentMouseX}%`);
+            gradient.style.setProperty("--mouse-y", `${currentMouseY}%`);
+        }
 
         // Continuer l'animation
-        requestAnimationFrame(moveGradient);
+        if (isActive) {
+            requestAnimationFrame(moveGradient);
+        }
     };
 
-    document.addEventListener("mousemove", (event) => {
+    // Gestionnaire d'événements pour la souris
+    const handleMouseMove = (event) => {
         const winWidth = window.innerWidth;
         const winHeight = window.innerHeight;
 
-        // Calculer les nouvelles positions cibles
+        // Calculer les positions cibles
         targetMouseX = (event.pageX / winWidth) * 100;
         targetMouseY = (event.pageY / winHeight) * 100;
+    };
+
+    // Détection des appareils à faible performance
+    const isLowPerformance = () => {
+        // Critères simples pour détecter les appareils à faible performance
+        const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory < 4; // Moins de 4GB
+        const hasLowCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2; // 2 cœurs ou moins
+        return hasLowMemory || hasLowCores;
+    };
+
+    // Activer/désactiver l'animation selon performance
+    if (!isLowPerformance()) {
+        document.addEventListener("mousemove", handleMouseMove);
+        requestAnimationFrame(moveGradient);
+    } else {
+        // Appliquer une position statique pour les appareils faibles
+        gradient.style.setProperty("--mouse-x", "50%");
+        gradient.style.setProperty("--mouse-y", "50%");
+    }
+
+    // Gérer le redimensionnement pour désactiver sur mobile
+    window.addEventListener("resize", () => {
+        if (window.innerWidth <= 768) {
+            isActive = false;
+            document.removeEventListener("mousemove", handleMouseMove);
+            gradient.style.setProperty("--mouse-x", "50%");
+            gradient.style.setProperty("--mouse-y", "50%");
+        } else if (isActive === false && !isLowPerformance()) {
+            isActive = true;
+            document.addEventListener("mousemove", handleMouseMove);
+            requestAnimationFrame(moveGradient);
+        }
     });
 
-    // Démarrer l'animation
-    moveGradient();
+    // Nettoyage lors du déchargement de la page
+    window.addEventListener("unload", () => {
+        isActive = false;
+        document.removeEventListener("mousemove", handleMouseMove);
+    });
 }
 
 // ---------------------------------------- LOADING ----------------------------------------
