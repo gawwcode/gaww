@@ -73,9 +73,9 @@
         list-style: none; /* Supprime les puces des listes */
     }
 
-    /* ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         z-index: 10;
-    } */
+    }
 }
 
 /* -------------------- LAYERS -------------------- */
@@ -632,8 +632,10 @@
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 620px) {
+    ::-webkit-scrollbar {
+        z-index: 1;
+    }
 }
 
 @media screen and (max-width: 1279px) {
