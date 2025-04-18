@@ -4,15 +4,15 @@ const gradient = document.getElementById("grainient");
 
 const isLowPerformanceDevice = () => {
     const cores = navigator.hardwareConcurrency || 2; // Valeur par défaut si non disponible
-    return cores <= 2; // Considérer les appareils avec 2 cœurs ou moins comme peu performants
+    const memory = navigator.deviceMemory || 4; // Mémoire en Go (par défaut 4 si non disponible)
+    return cores <= 2 || memory <= 2; // Considérer les appareils avec 2 cœurs ou 2 Go de RAM comme peu performants
 };
 
 if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
-    // Exécuter le script uniquement sur des appareils performants
-    let isMouseMoving = false;
     let lastEvent = null;
-    let mouseTimeout;
     let throttleTimeout;
+    let currentMouseX = 50; // Valeur initiale
+    let currentMouseY = 50;
 
     const moveGradient = () => {
         if (lastEvent) {
@@ -20,29 +20,40 @@ if (!isLowPerformanceDevice() && window.innerWidth > 768 && gradient) {
             const winWidth = window.innerWidth;
             const winHeight = window.innerHeight;
 
-            const mouseX = Math.round((pageX / winWidth) * 100);
-            const mouseY = Math.round((pageY / winHeight) * 100);
+            const targetMouseX = Math.round((pageX / winWidth) * 100);
+            const targetMouseY = Math.round((pageY / winHeight) * 100);
 
-            gradient.style.setProperty("--mouse-x", `${mouseX}%`);
-            gradient.style.setProperty("--mouse-y", `${mouseY}%`);
+            // Interpolation linéaire
+            currentMouseX += (targetMouseX - currentMouseX) * 0.1; // Ajuster le facteur (0.1 pour un lissage plus lent)
+            currentMouseY += (targetMouseY - currentMouseY) * 0.1;
+
+            gradient.style.setProperty("--mouse-x", `${currentMouseX}%`);
+            gradient.style.setProperty("--mouse-y", `${currentMouseY}%`);
         }
-        isMouseMoving = false;
     };
 
     const throttledMouseMove = (event) => {
+        lastEvent = event;
         if (!throttleTimeout) {
             throttleTimeout = setTimeout(() => {
-                lastEvent = event;
                 requestAnimationFrame(moveGradient);
                 throttleTimeout = null; // Réinitialiser le throttle
-            }, 50); // Mettre à jour toutes les 50ms (20 FPS)
+            }, 100); // Mettre à jour toutes les 100ms (10 FPS)
         }
-        mouseTimeout = setTimeout(() => {
-            isMouseMoving = false; // Désactive les calculs après 2 secondes d'inactivité
-        }, 2000);
     };
 
-    document.addEventListener("mousemove", throttledMouseMove);
+    const stopGradientEffect = () => {
+        document.removeEventListener("mousemove", throttledMouseMove);
+        console.log("Gradient désactivé après une période d'inactivité.");
+    };
+
+    let inactivityTimeout = setTimeout(stopGradientEffect, 5000); // Désactiver après 5 secondes d'inactivité
+
+    document.addEventListener("mousemove", (event) => {
+        clearTimeout(inactivityTimeout); // Réinitialiser le timer d'inactivité
+        inactivityTimeout = setTimeout(stopGradientEffect, 5000);
+        throttledMouseMove(event);
+    });
 } else {
     console.log("Gradient désactivé pour cet appareil en raison de performances limitées.");
 }
@@ -75,8 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 // -------------------- MENU - LANGUAGE - DROPDOWN --------------------
 
 var dropdowncontent = document.querySelector('.language-dropcontent');
@@ -101,64 +110,6 @@ window.onclick = function(event) {
 // ---------------------------------------- LANGUAGE ----------------------------------------
 
 // -------------------- LANGUAGE - TRANSLATION --------------------
-
-// async function changeLanguage(lang) {
-//     try {
-//         const response = await fetch(`/languages/${lang}.json`);
-//         if (!response.ok) throw new Error(`Erreur réseau: ${response.status}`);
-
-//         const data = await response.json();
-//         applyTranslations(document.body, data);
-//     } catch (error) {
-//         console.error("Erreur lors du chargement de la langue :", error);
-//     }
-// }
-
-// // 🔥 Fonction RÉCURSIVE qui applique les traductions en fonction de la hiérarchie du JSON
-// function applyTranslations(element, data) {
-//     if (!data || typeof data !== 'object') return;
-
-//     Object.keys(data).forEach(key => {
-//         const targetElements = element.querySelectorAll(`[data-translate="${key}"]`);
-        
-//         targetElements.forEach(el => {
-//             if (typeof data[key] === "object") {
-//                 applyTranslations(el, data[key]); // 🔄 Appel récursif si c'est un objet
-//             } else {
-//                 el.innerHTML = data[key]; // ✨ Remplacement du texte si c'est une chaîne
-//             }
-//         });
-//     });
-// }
-
-// async function changeLanguage(lang) {
-//     try {
-//         const response = await fetch(`/languages/${lang}.json`);
-//         if (!response.ok) throw new Error(`Erreur réseau: ${response.status}`);
-
-//         const data = await response.json();
-//         applyTranslations(document.body, data);
-//     } catch (error) {
-//         console.error("Erreur lors du chargement de la langue :", error);
-//     }
-// }
-
-// // 🔥 Fonction RÉCURSIVE qui applique les traductions en fonction de la hiérarchie du JSON
-// function applyTranslations(element, data) {
-//     if (!data || typeof data !== 'object') return;
-
-//     Object.keys(data).forEach(key => {
-//         const targetElements = element.querySelectorAll(`[data-translate="${key}"]`);
-        
-//         targetElements.forEach(el => {
-//             if (typeof data[key] === "object") {
-//                 applyTranslations(el, data[key]); // 🔄 Appel récursif si c'est un objet
-//             } else {
-//                 el.innerHTML = data[key]; // ✨ Remplacement du texte si c'est une chaîne
-//             }
-//         });
-//     });
-// }
 
 async function changeLanguage(lang) {
     try {
