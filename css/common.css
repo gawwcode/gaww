@@ -484,6 +484,10 @@
 }
 
 @layer utilities {
+
+    .invert {
+        filter: invert(100%);
+    }
     
     /* ---------- FLEX ---------- */
 

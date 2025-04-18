@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'rpg'; /* Nom que vous donnez à la police */
+    src: url('/projects/asrunn/rpg\ font\ 2.woff') format('woff2'); /* Chemin vers le fichier */
+    font-weight: normal; /* Poids de la police (ex. normal, bold) */
+    font-style: normal; /* Style de la police (ex. normal, italic) */
+}
+
+#intentions {
+    flex-direction: column;
+}
+
+#logo {
+    flex-direction: column;
+}
+
+.logo-manuscrit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    max-width: 75%;
+}
+
+.logo-manuscrit-container img {
+    max-width: 100%;
+}
+
+.logo-large {
+    max-width: 40%;
+}
+
+.logo-complexe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    max-width: 75%;
+    gap: var(--space-2);
+}
+
+.logo-complexe-container img {
+    max-width: 100%;
+}
+
+#banner {
+    flex-direction: column;
+}
+
+#banner img {
+    max-width: 60%;
+}
+
+#typo {
+    flex-direction: column;
+}
+
+.rpg-font {
+    font-family: rpg;
+    color: var(--color-text);
+    font-size: 3rem;
+    max-width: 60%;
+    text-wrap: wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    letter-spacing: 1rem;
+}
+
+#website {
+    flex-direction: column;
+}
