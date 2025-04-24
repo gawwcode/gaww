@@ -328,7 +328,13 @@ input {
 }
 
 .reviewtag {
-    background-color: rgb(94, 93, 74);
+    background-color: darkkhaki;
+    color: black;
+}
+
+.othertag {
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width: 760px) {

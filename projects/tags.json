@@ -1,4 +1,5 @@
 {
+    "other" : "othertag",
     "videogame" : "videogametag",
     "book" : "booktag",
     "novel" : "noveltag",
@@ -25,5 +26,7 @@
     "cplusplus" : "cplusplustag",
     "python" : "pythontag",
 
-    "experiment" : "experimenttag"
+    "experiment" : "experimenttag",
+
+    "review" : "reviewtag"
 }
