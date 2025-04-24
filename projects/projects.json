@@ -15,7 +15,7 @@
     "description": "Un jeu vidéo RPG en 2D post-apocalyptique médiéval.",
     "image": "/addons/images/pictures/webp/picture-15.webp",
     "tags": ["videogame", "conceptart", "music"],
-    "date": "unknown date",
+    "date": "",
     "locked" : false,
     "status" : "in progress",
     "file" : "/projects/the-curse-of-the-overlord"
@@ -125,7 +125,7 @@
     "description": "Where you can see all my professional and personnal artworks.",
     "image": "/addons/images/pictures/webp/picture-1.webp",
     "tags": ["painting", "conceptart"],
-    "date": "",
+    "date": "3000",
     "locked" : false,
     "status" : "planned",
     "file" : "/projects/portfolio.html"

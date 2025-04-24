@@ -148,6 +148,11 @@
         max-width: 60ch; /* Ajustement pour la lisibilité de l'oeil humain : sinon l'oeil doit revenir trop en arrière */
     }
 
+    .justified {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     p:hover {
         cursor: text;
     }
