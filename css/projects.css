@@ -323,6 +323,11 @@ input {
     color: white;
 }
 
+.movietag {
+    background-color: rgb(26, 25, 71);
+    color: white;
+}
+
 .experimenttag {
     background-color: rgb(145, 130, 102);
 }
