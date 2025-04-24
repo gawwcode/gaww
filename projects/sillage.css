@@ -5,3 +5,7 @@
 .project-content {
     flex-direction: column;
 }
+
+.download-novel {
+    flex-direction: column;
+}
