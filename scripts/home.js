@@ -1,18 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
     const rows = document.querySelectorAll(".prs-grid-row");
     const items = document.querySelectorAll(".prs-item");
-    const totalImages = 21;
+    const totalImages = 26;
     const factors = [0.05, 0.1, 0.2, 0.1, 0.05];
     let centerX = window.innerWidth / 2;
     let isMobile = window.matchMedia("(max-width: 768px)").matches; // Détection mobile
 
     // Configuration initiale
     const init = () => {
+
+        // Créer une liste d'images disponibles
+        const imagePaths = Array.from({ length: totalImages }, (_, i) => 
+            `/addons/images/pictures/webp/picture-${i + 1}.webp`
+        );
+
+        // Mélanger les chemins d'images pour un ordre aléatoire
+        const shuffledPaths = imagePaths.sort(() => Math.random() - 0.5);
+
         // Chargement des images
         const loadPromises = Array.from(items).map((item, index) => {
             return new Promise(resolve => {
                 const img = new Image();
-                img.src = `/addons/images/pictures/webp/picture-${(index % totalImages) + 1}.webp`;
+                // Utiliser une image aléatoire depuis la liste mélangée
+                img.src = shuffledPaths[index % totalImages];
                 img.onload = () => {
                     item.appendChild(img);
                     resolve();
