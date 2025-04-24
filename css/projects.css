@@ -327,6 +327,10 @@ input {
     background-color: rgb(145, 130, 102);
 }
 
+.reviewtag {
+    background-color: rgb(94, 93, 74);
+}
+
 @media screen and (max-width: 760px) {
     .project {
         justify-content: flex-end;

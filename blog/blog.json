@@ -27,5 +27,15 @@
       "date": "2025-03-20",
       "locked" : false,
       "file" : "/blog/article-3"
-    }
+    },
+
+    "4": {
+      "title": "REVIEW: Dune - Part Two",
+      "description": "SPOILER : c'est incroyable",
+      "image": "/addons/images/pictures/webp/picture-24.webp",
+      "tags": ["review"],
+      "date": "2025-04-22",
+      "locked" : false,
+      "file" : "/blog/reviews/dune2.html"
+    },
 }

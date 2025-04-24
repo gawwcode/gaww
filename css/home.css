@@ -165,13 +165,14 @@
 
 #latest .section-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #latest-project-description {
     height: 100%;
     width: calc(50% - var(--space-3));
     align-items: center;
+    justify-content:flex-end;
 }
 
 .latest-project-image {
