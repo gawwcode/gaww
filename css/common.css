@@ -422,7 +422,7 @@
         overflow: hidden;
     }
 
-    button {
+    button, .button {
         border: none;
         outline: none;
         
@@ -444,17 +444,17 @@
         transition: var(--transition3);
     }
 
-    button img {
+    button > img, .button > img {
         height: var(--space-2);
     }
 
-    button:hover {
+    button:hover, .button:hover {
         cursor: pointer;
         box-shadow: var(--shadow);
         transform: translateY(-5px);
     }
     
-    button:active {
+    button:active, .button:active {
         transform: scale(0.95);
     } 
     

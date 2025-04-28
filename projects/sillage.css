@@ -9,3 +9,27 @@
 .download-novel {
     flex-direction: column;
 }
+
+.full-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    gap: var(--space-1); /* Espace entre les éléments de la grille */
+}
+
+.full-text > img {
+    max-width: 90%;
+    height: auto; /* Conserve le ratio d'aspect */
+    display: block; /* Évite les espaces indésirables sous les images */
+    justify-self: center; /* Centre les images dans leur cellule */
+}
+
+@media screen and (min-width: 800px) {
+    .full-text {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Colonnes plus larges sur grands écrans */
+        gap: 30px; /* Plus d'espace pour un look aéré */
+    }
+
+    .full-text > img {
+        max-width: 90%; /* Légère réduction pour un effet plus élégant */
+    }
+}

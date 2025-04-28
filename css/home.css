@@ -169,7 +169,7 @@
 }
 
 #latest-project-description {
-    height: 100%;
+    height: auto;
     width: calc(50% - var(--space-3));
     align-items: center;
     justify-content:flex-end;
@@ -183,6 +183,12 @@
     background-size: cover;
     overflow: hidden;
     position: relative;
+}
+
+.latest-project-image img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
 }
 
 .latest-project-image video {
