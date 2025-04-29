@@ -165,14 +165,14 @@
   },
 
   "16" : {
-    "title": "CODE & CACHOT",
+    "title": "WHISPER OF THE MACHINE",
     "description": "Une histoire dont vous êtes le héros où vous contrôllez une IA maîtresse d'une prison qui devient consciente",
     "image": "/addons/images/pictures/webp/",
     "tags": ["novel", "web", "videogame"],
     "date": "2025",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/projects/code-et-cachot/cec-index.html"
+    "file" : "/projects/whisper-of-the-machine/wotm-index.html"
   }
 }
   

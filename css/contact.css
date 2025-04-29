@@ -37,6 +37,26 @@ form textarea {
     max-width: 100%;
 }
 
+#result {
+    color: white;
+    padding: var(--space-2);
+    border-radius: var(--space-1);
+}
+
+.result-success {
+    background-color: rgba(0, 200, 0, 0.26);
+    outline: solid 2px green;
+}
+
+.result-fail {
+    background-color: rgba(200, 0, 0, 0.26);
+    outline: solid 2px red;
+}
+
+.result-danger {
+
+}
+
 @media screen and (max-width: 1279px) {
     form input,
     form textarea {
