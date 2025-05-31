@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const rows = document.querySelectorAll(".prs-grid-row");
     const items = document.querySelectorAll(".prs-item");
-    const totalImages = 29;
+    const totalImages = 30;
     const factors = [0.05, 0.1, 0.2, 0.1, 0.05];
     let centerX = window.innerWidth / 2;
     let isMobile = window.matchMedia("(max-width: 768px)").matches; // Détection mobile

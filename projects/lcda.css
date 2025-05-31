@@ -1,0 +1,30 @@
+.project-content {
+    flex-direction: column;
+}
+
+.rg {
+    flex-direction: column;
+}
+
+.characters {
+    flex-direction: row;
+}
+
+.characters .character {
+    max-width: 20%;
+    flex-direction: column;
+}
+
+.ca {
+    max-width: 60%;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .characters {
+        flex-direction: column;
+    }
+    .characters .character {
+        max-width: 80%;
+    }
+}
