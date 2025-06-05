@@ -5,7 +5,7 @@
     "image": "/addons/images/pictures/webp/",
     "tags": ["book", "comic"],
     "date": "",
-    "locked" : false,
+    "locked" : true,
     "status" : "in progress",
     "file" : "/projects/upside-down"
   },
@@ -60,7 +60,7 @@
     "image": "/addons/images/pictures/webp/",
     "tags": ["novel"],
     "date": "2022-04-15",
-    "locked" : false,
+    "locked" : true,
     "status" : "on hold",
     "file" : "/projects/le-vampire-dacier"
   },

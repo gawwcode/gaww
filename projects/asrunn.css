@@ -42,12 +42,16 @@
     max-width: 100%;
 }
 
-#banner {
+#banner, #cover {
     flex-direction: column;
 }
 
 #banner img {
     max-width: 60%;
+}
+
+#cover img {
+    max-width: 40%;
 }
 
 #typo {
