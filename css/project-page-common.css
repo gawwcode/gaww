@@ -57,6 +57,97 @@ header span {
     align-items: center;
 } */
 
+.sidenav {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-width: 25%;
+    background: var(--color-overlay);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    overflow-y: auto;
+    left: -25%;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidenav-links-container a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: var(--montserrat);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin: var(--space-1);
+    transition: var(--transition1);
+    transform-origin: left;
+}
+
+.sidenav-links-container a:hover {
+    color: white;
+}
+
+.sidenav-links-container a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--color-text);
+    transition: var(--transition1);
+}
+
+.sidenav-links-container a.active-link::after,
+.sidenav-links-container a:hover::after {
+  width: 100%;
+}
+
+.active-link {
+    color: white;
+    font-weight: 600;
+}
+
+/* .active-link::before {
+    content: "•";
+    color: white;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+.sidenav-toggle {
+    position: fixed;
+    top: 50%;
+    left: 3.5%;
+}
+
+.sidenav-toggle, .sidenav-close {
+    display: inline-block;
+    user-select: none;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: var(--space-2);
+}
+
+.sidenav-close:hover {
+    transform: scale(0.8);
+}
+
+.sidenav.open {
+    left: 0;
+}
+
+.sidenav-links-container {
+    text-align: left;
+    flex-direction: column;
+}
+
+.active-link {
+    color: red;
+}
+
 @media screen and (max-width: 1279px) {
     header {
         height: 24vh;
@@ -70,4 +161,18 @@ header span {
         flex-direction: column;
         margin-bottom: var(--space-2);
     }
+
+    .sidenav {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-width: 100%;
+    background: var(--color-overlay);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    overflow-y: auto;
+    left: -100%;
+    flex-direction: column;
+    z-index: 1000;
+}
 }
