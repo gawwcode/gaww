@@ -173,6 +173,28 @@
     "locked" : true,
     "status" : "in progress",
     "file" : "/projects/whisper-of-the-machine/wotm-index.html"
+  },
+
+  "17" : {
+    "title": "LES PREMIERS HOMMES",
+    "description": "Nouvelle de science-fiction dans laquelle des Hommes d'une civilisation antérieure se réveillent.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["novel"],
+    "date": "2025-06-08",
+    "locked" : true,
+    "status" : "in progress",
+    "file" : "/projects/premiers-hommes.html"
+  },
+
+  "18" : {
+    "title": "SPHÈRES",
+    "description": "Nouvelle d'horeur cosmique.",
+    "image": "/addons/images/pictures/webp/",
+    "tags": ["novel"],
+    "date": "",
+    "locked" : true,
+    "status" : "in progress",
+    "file" : "/projects/spheres.html"
   }
 }
   
