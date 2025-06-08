@@ -20,6 +20,10 @@
     flex-direction: column;
 }
 
+.ca2 {
+    max-width: 30%;
+}
+
 @media screen and (max-width: 800px) {
     .characters {
         flex-direction: column;
