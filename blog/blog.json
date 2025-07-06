@@ -20,11 +20,11 @@
     },
 
     "3": {
-      "title": "tout apprendre",
-      "description": "SPOILER : c'est impossible",
-      "image": "/addons/images/pictures/webp/picture-14.webp",
-      "tags": ["other"],
-      "date": "2025-03-20",
+      "title": "Concevoir un dossier d'édition",
+      "description": "Explications, trucs & astuces pour concevoir un dossier d'édition en béton pour convaincre l'éditeur",
+      "image": "/addons/images/pictures/webp/picture-30.webp",
+      "tags": ["comic", "tutorial"],
+      "date": "2025-07-06",
       "locked" : false,
       "file" : "/blog/article-3"
     },
@@ -37,5 +37,15 @@
       "date": "2025-04-22",
       "locked" : false,
       "file" : "/blog/reviews/dune2.html"
+    },
+
+    "5": {
+      "title": "Un site web à moindre cout en 2025",
+      "description": "Trucs et astuces (code (html, css, js), hébergement, nom de domaine pas cher)",
+      "image": "/addons/images/pictures/webp/picture-24.webp",
+      "tags": ["web", "tutorial"],
+      "date": "2025-07-07",
+      "locked" : true,
+      "file" : ""
     }
 }

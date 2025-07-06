@@ -7,15 +7,6 @@
     flex-direction: column;
 }
 
-.paragraph {
-    flex-direction: column;
-    justify-content: left;
-}
-
-.paragraph p {
-    line-height: 1.5;
-}
-
 .newsletter {
     flex-direction: column;
 }
@@ -39,9 +30,6 @@ form button {
     width: 100%;
 }
 
-@media screen and (min-width: 1280px) {
-    .paragraph {
-        /* margin-left: var(--space-4); */
-    }
+.tag-list {
+    list-style: none;
 }
-

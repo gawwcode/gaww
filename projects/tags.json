@@ -29,5 +29,6 @@
 
     "experiment" : "experimenttag",
 
-    "review" : "reviewtag"
+    "review" : "reviewtag",
+    "tutorial" : "tutorialtag"
 }

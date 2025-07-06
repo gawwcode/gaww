@@ -57,6 +57,11 @@ header span {
     align-items: center;
 } */
 
+.reel {
+    max-height: 75vh;
+    max-width: 100%;
+}
+
 .sidenav {
     position: fixed;
     top: 0;
@@ -65,10 +70,10 @@ header span {
     background: var(--color-overlay);
     backdrop-filter: blur(6.9px);
     -webkit-backdrop-filter: blur(6.9px);
-    overflow-y: auto;
+    /* overflow-y: auto; */
     left: -25%;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .sidenav-links-container a {
@@ -76,9 +81,9 @@ header span {
     position: relative;
     text-decoration: none;
     font-family: var(--montserrat);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--color-text);
-    margin: var(--space-1);
+    margin: calc(var(--space-1) * 0.75);
     transition: var(--transition1);
     transform-origin: left;
 }
@@ -142,10 +147,50 @@ header span {
 .sidenav-links-container {
     text-align: left;
     flex-direction: column;
+    max-height: 75%;
+    overflow-y: auto;
 }
 
 .active-link {
     color: red;
+}
+
+.card {
+    background: var(--color-card);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border-radius: 10px;
+}
+/* --------------- TIMELINE --------------- */
+
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-line {
+    width: 5px;
+    background-color: var(--color-text);
+}
+
+.timeline-item {
+    padding: var(--space-1);
+    margin: var(--space-1);
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    border: 3px solid var(--color-text);
+}
+
+.card.active {
+    background: #4b4a46;
 }
 
 @media screen and (max-width: 1279px) {
@@ -163,16 +208,23 @@ header span {
     }
 
     .sidenav {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    min-width: 100%;
-    background: var(--color-overlay);
-    backdrop-filter: blur(6.9px);
-    -webkit-backdrop-filter: blur(6.9px);
-    overflow-y: auto;
-    left: -100%;
-    flex-direction: column;
-    z-index: 1000;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        min-width: 100%;
+        background: var(--color-overlay);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        /* overflow-y: auto;
+        overflow-x: hidden; */
+        left: -100%;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .sidenav-links-container {
+        max-height: 66%;
+    }
+
 }
-}
+
