@@ -49,6 +49,27 @@
         "art-theme-generator" : "KUNSTTHEMEN-GENERATOR"
     },
 
+    "projects-descriptions": {
+        "upside-down": "Ein surrealistischer Roman, in dem sich die Welt buchstäblich auf den Kopf stellt",
+        "tcoto": "Ein 2D-Postapokalyptisches Rollenspiel im mittelalterlichen Stil",
+        "mycelium": "Ein sehr rätselhaftes 3D-Videospiel aus der Third-Person-Perspektive",
+        "upfall": "Cyberpunk-Universum, das zuerst als Buch und dann als Videospiel entwickelt wird",
+        "sillage": "Science-Fiction-Kurzgeschichte, die auf einem Wüstenplaneten spielt",
+        "the-iron-vampire": "Er kommt. Lautlos, unsichtbar, steht er plötzlich vor dem Bett...",
+        "les-oiseaux": "Heroischer Fantasy-Roman",
+        "sky-raiders": "Kartenspiel mit prozeduraler Geländegenerierung",
+        "level-6-layer-12": "Eine Science-Fiction-Kurzgeschichte, die in einer Mine spielt",
+        "the-harvest": "Dystopische Erzählung. Kritik an der Entwicklung der industriellen Landwirtschaft",
+        "art-portfolio": "Hier kannst du all meine beruflichen und persönlichen Arbeiten sehen",
+        "art-theme-generator": "Ein Zufallsgenerator für künstlerische Themen, wenn dir die Inspiration fehlt",
+        "lcda": "Eine postapokalyptische Neuinterpretation des Atlantis-Mythos",
+        "da_asrunn": "Das grafische Art-Design von Asrunn",
+        "wotm": "Du steuerst eine KI, die ein Gefängnis in einer dystopischen Zukunft verwaltet und ein Bewusstsein entwickelt",
+        "firstmen": "Science-Fiction-Kurzgeschichte, in der Menschen aus einer früheren Zivilisation erwachen",
+        "spheres": "Kosmische Horror-Kurzgeschichte über familiäres Erbe"
+    },
+
+
     "aboutPage" : {
         "sitemap" : "sitemap",
         "copycats-h3" : "Propriété intellectuelle",

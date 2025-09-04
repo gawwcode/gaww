@@ -222,15 +222,12 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: not-allowed;
 }
 
 .prlocked svg {
     height: 32vh;
     width: 32vw;
-}
-
-.prlocked:hover {
-    cursor: not-allowed;
 }
 
 .prtags {

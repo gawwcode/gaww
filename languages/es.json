@@ -44,7 +44,34 @@
         "the birds" : "AVES",
         "sky-raiders" : "SALTADORES DEL CIELO",
         "level-6-layer-12" : "NIVEL -6, CAPA 12",
-        "the-harvest" : "LA RECOGIDA"
+        "the-harvest" : "LA RECOGIDA",
+        "art-portfolio" : "PORTFOLIO ARTÍSTICO",
+        "art-theme-generator" : "GENERADOR DE TEMAS ARTÍSTICOS",
+        "lcda" : "LA CIUDAD DE LAS PROFUNDIDADES",
+        "da_asrunn" : "DA ASRUNN",
+        "wotm" : "EL SUSURRO DE LA MÁQUINA",
+        "firstmen" : "LOS PRIMEROS HOMBRES",
+        "spheres" : "ESFERAS"
+    },
+
+    "projects-descriptions": {
+        "upside-down": "Una novela surrealista en la que el mundo se da literalmente la vuelta",
+        "tcoto": "Un videojuego RPG en 2D de estilo medieval postapocalíptico",
+        "mycelium": "Proyecto de videojuego 3D en tercera persona muy enigmático",
+        "upfall": "Universo cyberpunk que puede desarrollarse primero como libro y después como videojuego",
+        "sillage": "Relato de ciencia ficción que tiene lugar en un planeta desértico",
+        "the-iron-vampire": "Él llega. Silencioso, invisible, de repente está frente a la cama...",
+        "les-oiseaux": "Novela de fantasía heroica",
+        "sky-raiders": "Juego de cartas con generación procedural de terrenos",
+        "level-6-layer-12": "Un relato de ciencia ficción ambientado en una mina",
+        "the-harvest": "Relato distópico. Crítica al desarrollo de la agricultura intensiva",
+        "art-portfolio": "Donde puedes ver todos mis trabajos profesionales y personales",
+        "art-theme-generator": "Un generador aleatorio de temas artísticos para cuando te falte inspiración",
+        "lcda": "Una reinterpretación postapocalíptica del mito de la Atlántida",
+        "da_asrunn": "La dirección artística gráfica de Asrunn",
+        "wotm": "Controlas una IA que administra una prisión en un futuro distópico y que desarrolla conciencia propia",
+        "firstmen": "Relato de ciencia ficción en el que hombres de una civilización anterior despiertan",
+        "spheres": "Relato de horror cósmico sobre la herencia familiar"
     },
 
     "aboutPage" : {

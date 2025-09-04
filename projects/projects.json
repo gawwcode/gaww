@@ -7,7 +7,8 @@
     "date": "",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/projects/upside-down"
+    "file" : "/projects/upside-down",
+    "translationKey" : "upside-down"
   },
 
   "2": {
@@ -18,7 +19,8 @@
     "date": "",
     "locked" : false,
     "status" : "in progress",
-    "file" : "/projects/the-curse-of-the-overlord"
+    "file" : "/projects/the-curse-of-the-overlord",
+    "translationKey" : "tcoto"
   },
 
   "3": {
@@ -29,7 +31,8 @@
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/projects/mycelium"
+    "file" : "/projects/mycelium",
+    "translationKey" : "mycelium"
   }, 
 
   "4": {
@@ -40,7 +43,8 @@
     "date": "",
     "locked" : true,
     "status" : "on hold",
-    "file" : "/projects/upfall"
+    "file" : "/projects/upfall",
+    "translationKey" : "upfall"
   },
 
   "5": {
@@ -51,7 +55,8 @@
     "date": "2022-01-30",
     "locked" : false,
     "status" : "completed",
-    "file" : "/projects/sillage"
+    "file" : "/projects/sillage",
+    "translationKey" : "sillage"
   }, 
 
   "6": {
@@ -62,7 +67,8 @@
     "date": "2022-04-15",
     "locked" : true,
     "status" : "on hold",
-    "file" : "/projects/le-vampire-dacier"
+    "file" : "/projects/le-vampire-dacier",
+    "translationKey" : "the-iron-vampire"
   },
 
   "7": {
@@ -73,7 +79,8 @@
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/projects/les-oiseaux"
+    "file" : "/projects/les-oiseaux",
+    "translationKey" : "les-oiseaux"
   },
 
   "8": {
@@ -95,18 +102,21 @@
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/projects/"
+    "file" : "/projects/",
+    "translationKey" : "sky-raiders"
   },
 
   "10": {
     "title": "NIVEAU -6, COUCHE 12",
-    "description": "Une courte nouvelle de science-fiction",
+    "description": "Une nouvelle de science-fiction dans une mine",
     "image": "/addons/images/pictures/webp/picture-17.webp",
     "tags": ["novel", "conceptart"],
-    "date": "",
-    "locked" : true,
+    "date": "2021-01-01",
+    "locked" : false,
     "status" : "completed",
-    "file" : "/projects/"
+    "file" : "/projects/l6l12.html",
+    "translationKey" : "level-6-layer-12"
+    
   },
 
   "11" : {
@@ -117,18 +127,20 @@
     "date": "",
     "locked" : true,
     "status" : "planned",
-    "file" : "/projects/"
+    "file" : "/projects/",
+    "translationKey" : "the-harvest"
   },
 
   "12" : {
     "title": "ART PORTFOLIO",
-    "description": "Where you can see all my professional and personnal artworks.",
+    "description": "Where you can see all my professional and personnal artworks",
     "image": "/addons/images/pictures/webp/picture-1.webp",
     "tags": ["painting", "conceptart"],
     "date": "3000",
     "locked" : false,
     "status" : "planned",
-    "file" : "/projects/portfolio.html"
+    "file" : "/projects/portfolio.html",
+    "translationKey" : "art-portfolio"
   },
 
   "13" : {
@@ -139,7 +151,8 @@
     "date": "2025-03-26",
     "locked" : false,
     "status" : "completed",
-    "file" : "/projects/experiments/themegenerator"
+    "file" : "/projects/experiments/themegenerator",
+    "translationKey" : "art-theme-generator"
   },
 
   "14" : {
@@ -150,7 +163,8 @@
     "date": "2025-04-09",
     "locked" : false,
     "status" : "in progress",
-    "file" : "/projects/lcda.html"
+    "file" : "/projects/lcda.html",
+    "translationKey" : "lcda"
   },
 
   "15" : {
@@ -161,7 +175,8 @@
     "date": "2025-05-18",
     "locked" : false,
     "status" : "done",
-    "file" : "/projects/asrunn.html"
+    "file" : "/projects/asrunn.html",
+    "translationKey" : "da_asrunn"
   },
 
   "16" : {
@@ -172,7 +187,8 @@
     "date": "2025",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/projects/whisper-of-the-machine/wotm-index.html"
+    "file" : "/projects/whisper-of-the-machine/wotm-index.html",
+    "translationKey" : "wotm"
   },
 
   "17" : {
@@ -183,7 +199,8 @@
     "date": "2025-06-08",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/projects/premiers-hommes.html"
+    "file" : "/projects/premiers-hommes.html",
+    "translationKey" : "firstmen"
   },
 
   "18" : {
@@ -194,7 +211,8 @@
     "date": "",
     "locked" : true,
     "status" : "in progress",
-    "file" : "/projects/spheres.html"
+    "file" : "/projects/spheres.html",
+    "translationKey" : "spheres"
   }
 }
   

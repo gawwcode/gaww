@@ -46,7 +46,32 @@
         "level-6-layer-12" : "LIVELLO -6, STRATO 12",
         "the-harvest" : "IL RACCOLTO",
         "art-portfolio" : "PORTAFOGLIO D'ARTE",
-        "art-theme-generator" : "GENERATORE DI TEMI D'ARTE"
+        "art-theme-generator" : "GENERATORE DI TEMI D'ARTE",
+        "lcda" : "LA CITTÀ DEGLI ABISSI",
+        "da_asrunn" : "DA ASRUNN",
+        "wotm" : "IL SUSSURRO DELLA MACCHINA",
+        "firstmen" : "I PRIMI UOMINI",
+        "spheres" : "SFERE"
+    },
+
+    "projects-descriptions": {
+        "upside-down": "Un romanzo surreale in cui il mondo si capovolge letteralmente",
+        "tcoto": "Un videogioco RPG in 2D post-apocalittico in stile medievale",
+        "mycelium": "Progetto di videogioco 3D in terza persona molto enigmatico",
+        "upfall": "Universo cyberpunk che può essere sviluppato prima come libro e poi come videogioco",
+        "sillage": "Racconto di fantascienza ambientato su un pianeta desertico",
+        "the-iron-vampire": "Sta arrivando. Silenzioso, invisibile, si ferma davanti al letto...",
+        "les-oiseaux": "Romanzo di fantasy eroica",
+        "sky-raiders": "Gioco di carte con generazione procedurale del terreno",
+        "level-6-layer-12": "Un racconto di fantascienza ambientato in una miniera",
+        "the-harvest": "Racconto distopico. Critica allo sviluppo dell'agricoltura intensiva",
+        "art-portfolio": "Dove puoi vedere tutti i miei lavori professionali e personali",
+        "art-theme-generator": "Un generatore casuale di temi artistici per quando ti manca l'ispirazione",
+        "lcda": "Una reinterpretazione post-apocalittica del mito di Atlantide",
+        "da_asrunn": "La direzione artistica grafica di Asrunn",
+        "wotm": "Controlli un'IA che gestisce una prigione in un futuro distopico e che sviluppa coscienza propria",
+        "firstmen": "Racconto di fantascienza in cui uomini di una civiltà precedente si risvegliano",
+        "spheres": "Racconto di orrore cosmico sull'eredità familiare"
     },
 
     "aboutPage" : {

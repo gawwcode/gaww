@@ -41,17 +41,42 @@
         "upfall" : "LA CHUTE ASCENSIONNELLE",
         "sillage" : "SILLAGE",
         "the-iron-vampire" : "LE VAMPIRE D'ACIER",
-        "the birds" : "LES OISEAUX",
+        "les-oiseaux" : "LES OISEAUX",
         "sky-raiders" : "LES PILLEURS DU CIEL",
         "level-6-layer-12" : "NIVEAU -6, COUCHE 12",
         "the-harvest" : "LA MOISSON",
         "art-portfolio" : "PORTFOLIO ARTISTIQUE",
-        "art-theme-generator" : "GÉNÉRATEUR DE THÈMES ARTISTIQUES"
+        "art-theme-generator" : "GÉNÉRATEUR DE THÈMES ARTISTIQUES",
+        "lcda" : "LA CITÉ DES ABYSSES",
+        "da_asrunn" : "DA ASRUNN",
+        "wotm" : "LE MURMURE DE LA MACHINE",
+        "firstmen" : "LES PREMIERS HOMMES",
+        "spheres" : "SPHÈRES"
+    },
+
+    "projects-descriptions" : {
+        "upside-down" : "Un roman surréaliste dans lequel le monde se retourne (littéralement)",
+        "tcoto" : "Un jeu vidéo RPG en 2D post-apocalyptique médiéval",
+        "mycelium" : "Projet de jeu vidéo 3D à la troisième personne très énigmatique",
+        "upfall" : "Univers cyberpunk déclinable en livre puis en jeu vidéo",
+        "sillage" : "Nouvelle de science-fiction se déroulant sur une planète désertique",
+        "the-iron-vampire" : "Il arrive. Silencieux, invisible, il se plante devant le lit...",
+        "les-oiseaux" : "Roman fantastique héroïque",
+        "sky-raiders" : "Jeu de cartes avec génération de terrain procédurale",
+        "level-6-layer-12" : "Une nouvelle de science-fiction dans une mine",
+        "the-harvest" : "Récit dystopique. Critique du développement de l'agriculture intensive",
+        "art-portfolio" : "Où vous pouvez voir tous mes travaux professionnels et personnels",
+        "art-theme-generator" : "Un générateur aléatoire de thèmes artistiques pour quand vous manquez d'inspiration",
+        "lcda" : "Une réinterprétation post-apocalyptique du mythe de l'Atlantide",
+        "da_asrunn" : "La direction artistique graphique d'Asrunn",
+        "wotm" : "Vous contrôlez une IA administratrice d'une prison dans un futur dystopique qui acquiert la conscience",
+        "firstmen" : "Nouvelle de science-fiction dans laquelle des Hommes d'une civilisation antérieure se réveillent",
+        "spheres" : "Nouvelle d'horeur cosmique sur l'héritage familial"
     },
 
     "aboutPage" : {
         "about" : "À propos de...",
-        "website" : "... ce site web",
+        "website" : "... de ce site web",
         "sitemap" : "Carte du site",
         "sourceCode" : "Le code source",
         "copycats-h3" : "Propriété intellectuelle",
@@ -62,7 +87,7 @@
         "personalData" : "<span class=\"color-focus\">Aucune donnée personnelle n'est collectée</span> - GoatCounter n'utilise pas de cookis ou d'informations identifiables.",
         "openSource" : "<span class=\"color-focus\">Complètement open-source et transparent</span> - Vous pouvez consulter le code source et la façon dont les données sont traitées",
         "secure" : "<span class=\"color-focus\">Securisé & non-intrusif</span> - Les données collectées sont minimes et ne peuvent être utilisées pour vous identifier de quelque manière que ce soit.",
-        "me" : "... moi",
+        "me" : "... de moi",
         "myWork" : "Je préfère ne pas parler de ... moi. Je préfère penser que mon travail 'parle de lui-même'."
     }
 }

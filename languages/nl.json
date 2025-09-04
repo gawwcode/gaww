@@ -46,7 +46,32 @@
         "level-6-layer-12" : "NIVEAU -6, LAAG 12",
         "the-harvest" : "DE OOGST",
         "art-portfolio" : "KUNST PORTFOLIO",
-        "art-theme-generator" : "KUNST THEMA GENERATOR"
+        "art-theme-generator" : "KUNST THEMA GENERATOR",
+        "lcda" : "DE STAD OP DE BODEM VAN DE ZEE",
+        "da_asrunn" : "DA ASRUNN",
+        "wotm" : "HET GEFLUISTER VAN DE MACHINE",
+        "firstmen" : "DE EERSTE MENSEN",
+        "spheres" : "SFEREN"
+    },
+
+    "projects-descriptions": {
+        "upside-down": "Een surrealistische roman waarin de wereld zich letterlijk omkeert",
+        "tcoto": "Een 2D post-apocalyptische middeleeuwse RPG-videogame",
+        "mycelium": "Een zeer raadselachtig 3D-videogame in derde persoon",
+        "upfall": "Cyberpunk-universum dat kan worden uitgebreid tot boek en vervolgens videogame",
+        "sillage": "Sciencefictionverhaal dat zich afspeelt op een woestijnplaneet",
+        "the-iron-vampire": "Hij komt. Stil, onzichtbaar, hij staat plotseling voor het bed...",
+        "les-oiseaux": "Heroïsche fantasyroman",
+        "sky-raiders": "Kaartspel met procedurele terreingeneratie",
+        "level-6-layer-12": "Een sciencefictionverhaal dat zich afspeelt in een mijn",
+        "the-harvest": "Dystopisch verhaal. Kritiek op de ontwikkeling van intensieve landbouw",
+        "art-portfolio": "Waar je al mijn professionele en persoonlijke werk kunt bekijken",
+        "art-theme-generator": "Een willekeurige generator voor artistieke thema's, voor wanneer je inspiratie ontbreekt",
+        "lcda": "Een post-apocalyptische herinterpretatie van de mythe van Atlantis",
+        "da_asrunn": "De grafische art direction van Asrunn",
+        "wotm": "Je bestuurt een AI die een gevangenis beheert in een dystopische toekomst, en die bewustzijn ontwikkelt",
+        "firstmen": "Sciencefictionverhaal waarin mensen van een eerdere beschaving ontwaken",
+        "spheres": "Kosmisch horrorverhaal over familie-erfgoed"
     },
 
     "aboutPage" : {

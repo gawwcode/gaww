@@ -41,12 +41,37 @@
         "upfall" : "UPFALL",
         "sillage" : "THE WAKE",
         "the-iron-vampire" : "THE IRON VAMPIRE",
-        "the birds" : "LES BIRDS",
+        "les-oiseaux" : "LES BIRDS",
         "sky-raiders" : "SKY RAIDERS",
         "level-6-layer-12" : "LEVEL -6, LAYER 12",
         "the-harvest" : "THE HARVEST",
         "art-portfolio" : "ART PORTFOLIO",
-        "art-theme-generator" : "ART THEME GENERATOR"
+        "art-theme-generator" : "ART THEME GENERATOR",
+        "lcda" : "THE CITY OF THE DEEP",
+        "da_asrunn" : "DA ASRUNN",
+        "wotm" : "WHISPER OF THE MACHINE",
+        "firstmen" : "THE FIRST MEN",
+        "spheres" : "SPHERES"
+    },
+
+    "projects-descriptions" : {
+        "upside-down" : "A surreal novel in which the world turns upside down (literally)",
+        "tcoto" : "A medieval post-apocalyptic 2D RPG video game",
+        "mycelium" : "Highly enigmatic third-person 3D video game project",
+        "upfall" : "Cyberpunk universe adaptable into a book and then a video game",
+        "sillage" : "Science fiction short story set on a desert planet",
+        "the-iron-vampire" : "He arrives. Silent, invisible, he stands in front of the bed...",
+        "les-oiseaux" : "Heroic fantasy novel",
+        "sky-raiders" : "Card game with procedural terrain generation",
+        "level-6-layer-12" : "A science fiction short story set in a mine",
+        "the-harvest" : "Dystopian narrative. Critique of the development of intensive agriculture",
+        "art-portfolio" : "Where you can see all my personal & professional work",
+        "art-theme-generator" : "A random art theme generator for when you have no inspiration",
+        "lcda" : "A post-apocalyptic reinterpretation of the myth of Atlantis",
+        "da_asrunn" : "The graphic art direction of Asrunn",
+        "wotm" : "You control an AI prison administrator in a dystopian future who gains consciousness.",
+        "firstmen" : "A science fiction short story in which humans from an earlier civilisation awaken.",
+        "spheres" : "Cosmic horror story about family heritage"
     },
 
     "aboutPage" : {

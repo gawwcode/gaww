@@ -140,6 +140,9 @@ async function changeLanguage(lang) {
 
         const data = await response.json();
         applyTranslations(document.body, data);
+
+        // Ajoute cette ligne :
+        if (window.updateProjectTranslations) window.updateProjectTranslations(lang);
     } catch (error) {
         console.error("Erreur lors du chargement de la langue :", error);
     }

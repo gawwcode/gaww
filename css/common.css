@@ -521,6 +521,76 @@
         font-family: monospace;
         font-size: 1rem;
     }
+
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-overlay);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .lightbox.active {
+        opacity: 1;
+    }
+
+    .lightbox img, 
+    .lightbox video {
+        max-width: 90%;
+        max-height: 90vh;
+        object-fit: contain;
+        pointer-events: auto;
+    }
+
+    .lightbox-close {
+        position: absolute;
+        top: var(--space-2);
+        left: var(--space-2);
+        color: white;
+        font-size: var(--space-2);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .lightbox-close:hover {
+        transform: scale(1.2) rotate(90deg);
+    }
+
+    #lightbox-content {
+        pointer-events: none; /* Désactive les interactions sur le conteneur */
+    }
+
+    .lightbox-media:hover  {
+        cursor: zoom-in;
+        box-shadow: var(--shadow);
+        transform: translateY(-5px);
+    }
+
+    .lightbox-timelapse {
+        display: none;
+        font-weight: 600;
+        font-size: var(--font-size-mid);
+    }
+
+    .lightbox-timelapse:hover {
+        transform: scale(1.1);
+    }
+
+    .lightbox-timelapse svg {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
 }
 
 @layer utilities {
