@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative portfolio : drawing, writing, video, photography, music, video games, web projects and other cool stuff.">
+    <meta name="author" content="GAWW">
+    <meta name="robots" content="index, follow"> <!-- Permet aux moteurs d'indexer la page -->
+
+    <title>GAWW - "n-TOPIA"</title>
+
+    <link rel="icon" href="/gaww/addons/icons/favicon-black.ico">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/project-page-common.css">
+
+    <link rel="stylesheet" href="/projects/ntopia.css">
+
+</head>
+<body>
+
+    <div id="grainient" class="trans1"></div>
+
+    <p id="loading" class="flex-center">Loading "n-TOPIA" ...</p>
+
+    <p id="credits" class="no-select" type="text/javascript">© GAWW <script>document.write(new Date().getFullYear());</script></p>
+
+    <menu class="w-100vw flex">
+
+        <div class="w-100pr h-0px flex-center transition-2 overlay hidden">
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="home" href="/home">HOME</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="projects" href="/projects">PROJECTS</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="blog" href="/blog">BLOG</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="about" href="/about">ABOUT</a>
+            <a class="transition-2 poppins p-1 text-upper menulink hidden no-select" data-translate="contact" href="/contact">CONTACT</a>
+        </div>
+
+        <nav class="w-100pr flex">
+
+            <div class="nav-essentials flex-center">
+
+                <div class="m-1 p-1 nav-btn-wrapper">
+                    <a class="flex nav-btn nav-btn-close" href="#">
+                        <span class="nav-btn-line nav-btn-line-short"></span>
+                        <span class="nav-btn-line "></span>
+                        <span class="nav-btn-line nav-btn-line-short"></span>
+                    </a>
+                </div>
+
+                <div class="language">
+
+                    <a class="p-1 language-dropbtn" onclick="dropdown()" href="#">LANGUAGE</a>
+
+                    <div class=" flex language-dropcontent transition-1">
+
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('fr')" >Français</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('en')" >English</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('nl')" >Nederlands</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('it')" >Italiano</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('de')" >Deutsch</a>
+                        <a  class="transition-1 m-1 p-1" onclick="changeLanguage('es')" >Español</a>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="m-1 p-1 logo" href="/home">
+                <svg class="logo-large" height="" width="" version="1.1" id="" viewBox="250 250 3500 700">
+    
+                    <style type="text/css">
+                        .st0{fill:none;stroke:#ffffff;stroke-width:30;stroke-miterlimit:10;}
+                    </style>
+    
+                    <path class="st0" d="M971.08,297.15H679.44c0,0-294.7,0.97-294.7,291.8s293.17,291.8,293.17,291.8l293.18-0.06V588.96 l-293.18,291.8"/>
+                        
+                    <polyline class="st0" points="1263.9,880.76 1263.9,588.96 1263.9,297.15 1555.69,588.96 1847.47,880.76"/>
+                    <polyline class="st0" points="2141.25,296.82 2141.25,880.39 2433.73,587.91 2726.91,881.09 2726.91,296.82"/>
+                    <polyline class="st0" points="3020.42,296.82 3020.42,881.09 3312.38,589.13 3604.16,880.91 3604.16,296.82"/>
+                        
+                    <line class="st0" x1="1263.9" y1="588.96" x2="1555.69" y2="588.96"/>
+                    <line class="st0" x1="3312.38" y1="589.13" x2="3603.99" y2="589.13"/>
+                    <line class="st0" x1="2433.73" y1="587.91" x2="2141.25" y2="587.91"/>
+                        
+                    <circle class="st0" cx="1897.06" cy="587.91" r="50.54"/>
+                </svg>
+    
+                <svg class="logo-square" width="" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="250 250 2500 2500" xml:space="preserve">
+                    <style type="text/css">
+                        .st1{fill:none;stroke:#ffffff;stroke-width:50;stroke-miterlimit:10;}
+                    </style>
+                    
+                    <path class="st1" d="M1293.71,450.75H850.78c0,0-420.54,1.39-420.54,416.4s418.36,416.4,418.36,416.4l418.36-0.08V867.15 l-418.36,416.4"/>
+                    
+                    <polyline class="st1" points="1733.64,1306.82 1733.64,902.13 1733.64,485.73 2150.01,902.13 2550.14,1290.57 "/>
+                    <polyline class="st1" points="431.91,1715.51 431.91,2548.25 849.27,2130.89 1267.63,2549.25 1267.63,1715.51 "/>
+                    <polyline class="st1" points="1733.73,1715.51 1733.73,2549.25 2149.31,2132.63 2565.68,2549 2565.68,1715.51 "/>
+                    
+                    <line class="st1" x1="1733.64" y1="890.41" x2="2150.01" y2="890.41"/>
+                    <line class="st1" x1="2149.3" y1="2122.29" x2="2565.43" y2="2122.29"/>
+                    <line class="st1" x1="849.35" y1="2120.59" x2="431.98" y2="2120.59"/>
+                
+                </svg>
+                
+            </a>
+
+        </nav>
+
+    </menu>
+
+    <div class="lightbox transition-1">
+        <span class="lightbox-close transition-1">&times;</span>
+        <div class="flex-center" id="lightbox-content"></div> <!-- Conteneur pour image ou vidéo -->
+        <a href="#" class="lightbox-timelapse color-focus mt-1 transition-1">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M23.498 6.186a2.994 2.994 0 0 0-2.108-2.117C19.073 3.5 12 3.5 12 3.5s-7.073 0-9.39.569A2.994 2.994 0 0 0 .502 6.186C0 8.504 0 12 0 12s0 3.496.502 5.814a2.994 2.994 0 0 0 2.108 2.117C4.927 20.5 12 20.5 12 20.5s7.073 0 9.39-.569a2.994 2.994 0 0 0 2.108-2.117C24 15.496 24 12 24 12s0-3.496-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span class="ml-1 poppins">TIME-LAPSE</span>
+        </a>
+    </div>
+
+    <main id="19" class="h-100vh w-100vw flex-center">
+        <div class="section-container project-container">
+            <header class="w-100pr flex-center">
+                <span class="project-title transition-2 poppins">LOADING PROJECT...</span>
+                <img class="project-image w-100pr" src="" alt="">
+            </header>
+
+            <div class="project-data w-100pr mb-1 flex"> 
+                <div class="prtags p-1">
+                    <!-- Les tags seront insérés ici dynamiquement -->
+                </div>
+                <span class="date p-1" data-date="">loading date...</span>
+            </div>
+
+            <div class="sidenav-toggle p1">☰</div>
+
+            <div class="sidenav p1 transition-1 flex-center" id="toc">
+                <div class="sidenav-close p1 transition-1 mb-2">✕</div>
+                <div class="sidenav-links-container flex"></div>
+            </div>
+
+            <div class="project-content pl-2 pr-2 pb-3 flex-center">
+
+                <div class="paragraph justified mb-3">
+                    <h2 class="montserrat">∩-TOPIA</h2>
+                    <h3 class="montserrat">1. La cité suspendue</h3>
+                    <p>Il court à perdre haleine sur la passerelle translucide, ses pas résonnant contre le verre. Sous ses pieds, la Cité flotte, éclatante de blancheur, suspendue entre ciel et brume.</p>
+                    <p class="mb-1">— Veuillez ralentir, citoyen D-444-3</p>
+                    <p class="mb-1">La voix avenante d’un robot grésille derrière lui. Il ignore l’avertissement, un sourire immense aux lèvres.</p>
+                    <p class="mb-1">Aujourd’hui, il avait été Assigné. Ingénierie biotechnologique — Section extérieure.</p>
+                    <p class="mb-1">Il zigzague entre les silhouettes qui marchent d’un pas tranquille, glissant sur la passerelle comme sur un fil de lumière. Autour de lui, la ville bruisse doucement : un murmure régulier de moteurs suspendus, de drones patrouillant en silence, d’oiseaux voletant entre les tours couvertes de verdure.</p>
+                    <p class="mb-1">— Hé, Damien ! Tu cours comme si le ciel allait s’écrouler ! s’exclame un homme en uniforme blanc, un voisin sans doute.</p>
+                    <p class="mb-1">— J’ai été assigné ! Section extérieure ! crie-t-il sans s’arrêter.</p>
+                    <p class="mb-1">L’homme rit, secoue la tête.</p>
+                    <p class="mb-1">— Félicitations, petit ! Garde un peu de souffle pour plus tard !</p>
+                    <p class="mb-1">Il tourne à droite, traverse un pont suspendu, la tête bourdonnante d’excitation. Sur les façades immaculées, les panneaux lumineux affichent les nouvelles du jour : Taux d’oxygène stable. Équilibre atmosphérique optimal. Rien ne bouge jamais ici.</p>
+                    <p class="mb-1">Un drone de régulation s’approche de lui, clignotant doucement.</p>
+                    <p class="mb-1">— Rythme cardiaque élevé. Risque de surchauffe. Veuillez ralentir.</p>
+                    <p class="mb-1">— Pas maintenant ! souffle-t-il en riant, accélérant encore.</p>
+                    <p class="mb-1">Le drone tente de le suivre, vibre d’un air contrarié, puis abandonne en émettant un bip résigné.</p>
+                    <p class="mb-1">Il saute par-dessus un ruban lumineux signalant des travaux sur la passerelle, manque de percuter une vieille dame accompagnée d’un robot d’assistance.</p>
+                    <p class="mb-1">— Doucement, jeune homme !</p>
+                    <p class="mb-1">— Pardon, madame ! Je viens d’être assigné !</p>
+                    <p class="mb-1">— Oh ! Alors félicitations !</p>
+                    <p class="mb-1">Il disparaît déjà au détour d’une arcade végétale.</p>
+                    <p class="mb-1">L’air se fait plus frais à mesure qu’il grimpe dans les niveaux supérieurs. Plus haut, les jardins suspendus diffusent des parfums sucrés, et l’eau claire s’écoule des canaux transparents. Des enfants jouent sous des dômes de verre, des familles flânent sur les promenades lumineuses.</p>
+                    <p class="mb-1">Il effleure les parois, frôle un robot-jardinier en équilibre sur ses pattes métalliques.</p>
+                    <p class="mb-1">— Zone non piétonne. Restez sur la trajectoire centrale, gronde la voix robotique.</p>
+                    <p class="mb-1">Il se faufile entre deux haies flottantes, ignorant complètement la remarque.</p>
+                    <p class="mb-1">Devant lui, la grande arche de son quartier apparaît, blanche et polie. Derrière, les habitations s’enchaînent, suspendues au bord du vide. Son cœur bondit. Chez lui.</p>
+                    <p class="mb-1">Un groupe d’adolescents sort d’un ascenseur aérien. L’un d’eux, son ami Kael, l’aperçoit.</p>
+                    <p class="mb-1">— Alors ? Dis-nous ! C’était quoi ton affectation ?</p>
+                    <p class="mb-1">— Ingénierie biotechnologique ! Section extérieure !</p>
+                    <p class="mb-1">Un silence admiratif s’installe. Kael siffle, impressionné.</p>
+                    <p class="mb-1">— Sérieux ? C’est rare, ça. Tu vas travailler sur les couches inférieures, non ?</p>
+                    <p class="mb-1">— Oui ! Enfin, je crois !</p>
+                    <p class="mb-1">Et il repart en riant, laissant ses amis derrière lui, leurs voix se perdant dans le vent. Il traverse l’allée puis son jardin et ralentit enfin, essoufflé, les joues rouges, le cœur vibrant de fierté.</p>
+                    <p class="mb-1">Devant lui, la façade lisse de son habitation. Des plantes pendantes tapissent les balcons, un petit automate circulaire entretient la pelouse.</p>
+                    <p class="mb-1">Il inspire profondément. Il veut leur annoncer lui-même, avant que le système central ne le fasse pour lui. Avant que la cité ne parle à sa place.</p>
+                    <p class="mb-1">La maison est baignée d’une lumière paisible, teintée par les couleurs chaudes des murs intérieurs. L’air y sent la fleur synthétique et le métal neuf.</p>
+                    <p class="mb-1">— Papa ! Maman ! crie-t-il en franchissant le seuil.</p>
+                    <p class="mb-1">Son père lève la tête de son terminal, assis dans le salon minimaliste. Sa mère, penchée sur une table lumineuse où poussent des plantes hydroponiques, tourne vers lui un visage radieux.</p>
+                    <p class="mb-1">— Eh bien, on dirait que quelqu’un a de bonnes nouvelles, dit-elle en souriant.</p>
+                    <p class="mb-1">— J’ai été assigné !</p>
+                    <p class="mb-1">Le mot claque dans l’air comme une victoire. Damien se tient droit, fier, un peu essoufflé encore.</p>
+                    <p class="mb-1">— Ingénierie biotechnologique ! Section extérieure !</p>
+                    <p class="mb-1">Sa mère joint les mains, un rire léger lui échappe.</p>
+                    <p class="mb-1">— C’est formidable, Damien ! Une spécialisation d’avenir !</p>
+                    <p class="mb-1">Le père incline légèrement la tête, le regard empli de calme satisfaction.</p>
+                    <p class="mb-1">— Ingénierie biotechnologique… c’est un honneur. Peu d’enfants y sont affectés. Tu devras être à la hauteur.</p>
+                    <p class="mb-1">— Bien sûr ! lui répond-il, les yeux brillants.</p>
+                    <p class="mb-1">Un léger tintement retentit alors, venu du mur principal. La surface vitrée s’allume d’elle-même. Une voix féminine, douce et parfaitement articulée, emplit la pièce :</p>
+                    <p class="mb-1">“Notification d’assignation confirmée : citoyen D-444-3, Ingénierie biotechnologique – Section extérieure. Formation initiale prévue dans la Cité d’Altura-5. Départ programmé pour demain, cycle 3, à l’aube. Veuillez préparer les effets personnels selon le protocole standard. Félicitations pour votre contribution au Grand Équilibre.”</p>
+                    <p class="mb-1">Le silence tombe aussitôt. Damien cligne des yeux, le souffle coupé.</p>
+                    <p class="mb-1">— Altura-5 ? répète-t-il. C’est… ailleurs ?</p>
+                    <p class="mb-1">Sa mère échange un regard discret avec son mari. Le père se redresse, croise les mains.</p>
+                    <p class="mb-1">— Oui. Une autre cité. C’est normal, tu sais. Chaque affectation implique un déplacement pour la formation. Cela a aussi été le cas pour moi et ta mère.</p>
+                    <p class="mb-1">— Mais… je dois partir demain ?</p>
+                    <p class="mb-1">— C’est la règle, dit doucement sa mère. Ne t’inquiète pas, tu reviendras sûrement après la formation.</p>
+                    <p class="mb-1">— Mais je veux pas partir ! Et vous ? Et mes amis…</p>
+                    <p class="mb-1">La phrase lui échappe, pleine de cette sincérité d’enfant qui n’a jamais connu la peur du dehors.</p>
+                    <p class="mb-1">Sa mère s’avance d’un pas et pose une main sur son épaule.</p>
+                    <p class="mb-1">— Damien… tout le monde passe par là. C’est une chance, pas une punition. Tu vas te faire plein de nouveaux amis.</p>
+                    <p class="mb-1">— Mais pourquoi moi ? Pourquoi pas Kael ? Il pourrait…</p>
+                    <p class="mb-1">— Ce n’est pas une question de choix, coupe doucement son père. La Cité sait ce dont elle a besoin, et ce que chacun peut lui offrir.</p>
+                    <p class="mb-1">Damien baisse la tête. Il sait qu’il ne gagnera pas cette discussion. Dans cette maison, les décisions ne s’expliquent pas. Elles s’acceptent.</p>
+                    <p class="mb-1">Le garçon jette un coup d’œil au terminal mural.</p>
+                    <p class="mb-1">“Merci de votre coopération. Ensemble, nous élevons l’humanité.”</p>
+                    <p class="mb-1">La lumière des murs se nuance d’un bleu apaisant. Sa mère force un sourire.</p>
+                    <p class="mb-1">— Tu verras, tout ira bien. Altura-5 est une belle cité, paraît-il.</p>
+                    <p class="mb-1">— Oui, souffle son père. Et tu rendras ta famille fière.</p>
+                    <p class="mb-1">Damien hoche la tête, mais son cœur s’est alourdi. La lumière blanche lui semble soudain plus froide.</p>
+
+                    <h3 class="montserrat">2. La navette</h3>
+
+                    <p>Le vent siffle doucement au-dessus du plateau d’envol. Les turbines silencieuses vibrent, prêtes à se déployer. La navette attend, immobile et lisse comme un coquillage suspendu au bord du vide.</p>
+                    <p class="mb-1">Damien serre son petit sac contre lui. Ses parents se tiennent à quelques pas, droits, impassibles, la lumière du matin dessinant des reflets d’or sur leurs visages.</p>
+                    <p class="mb-1">Son père lui donne un dernier conseil : — N’oublie pas, Damien. L’assignation n’est pas une fin, c’est un commencement. Sois curieux, appliqué, et obéis aux directives.</p>
+                    <p class="mb-1">Le garçon esquisse un sourire nerveux. Il voudrait leur dire qu’il a peur, qu’il préférerait rester ici encore un jour ou deux, mais les mots restent coincés. Autour d’eux, le silence est presque religieux. Seul le ronflement sourd de la navette trouble l’air.</p>
+                    <p class="mb-1">Une femme s’avance vers eux, vêtue d’un uniforme argenté. Son visage est d’une beauté presque irréelle, figé dans une sérénité parfaite.</p>
+                    <p class="mb-1">— Citoyen D-444-3 ? Je suis votre accompagnatrice. Vous pouvez me suivre, s’il vous plaît.</p>
+                    <p class="mb-1">Damien se retourne une dernière fois vers ses parents. Ils lui adressent un sourire.</p>
+                    <p class="mb-1">— À bientôt, murmurent-ils.</p>
+                    <p class="mb-1">Damien acquiesce, sans trouver de réponse. Il s’avance.</p>
+                    <p class="mb-1">Les portes de la navette s’ouvrent dans un souffle, libérant une lumière douce, presque chaude. L’intérieur est vaste, sans fenêtres. Les parois sont couvertes d’écrans diffusant des images de forêts, de rivières, d’animaux. Une illusion de nature.</p>
+                    <p class="mb-1">— C’est pour éviter le vertige, explique l’hôtesse, devinant sa surprise. Les images sont apaisantes pour les passagers.</p>
+                    <p class="mb-1">— Mais… on ne peut pas voir dehors ?</p>
+                    <p class="mb-1">Elle incline la tête, le sourire immobile. — Il n’y a rien à voir. Les Cités sont très éloignées les unes des autres, et, comme tu le sais, on ne peut pas apercevoir la Terre d’ici.</p>
+                    <p class="mb-1">Damien fronce les sourcils, observe la forêt numérique qui ondule autour de lui. Les oiseaux volent, la lumière du soleil traverse les feuilles, mais quelque chose cloche. Les mouvements se répètent, comme une boucle.</p>
+                    <p class="mb-1">— C’est joli, dit-il simplement.</p>
+                    <p class="mb-1">— Oui, répond l’hôtesse. La nature est toujours belle, même synthétique.</p>
+                    <p class="mb-1">Elle l’invite à s’asseoir. Le siège épouse la forme de son corps, diffusant une chaleur agréable. Un léger sifflement se fait entendre.</p>
+                    <p class="mb-1">— Le décollage aura lieu dans dix secondes. Merci de garder votre calme.</p>
+                    <p class="mb-1">Damien se retourne instinctivement. À travers le sas arrière, il aperçoit encore ses parents, immobiles sur la plateforme. Sa mère lève la main. Le père ne bouge pas. Puis le sas se referme lentement, dans un souffle d’air comprimé. Le visage de ses parents disparaît derrière la cloison.</p>
+                    <p class="mb-1">La navette vibre, s’élève doucement. Les écrans autour de lui changent d’image : la forêt laisse place à un ciel bleu, traversé d’oiseaux. Il sent son cœur battre plus vite.</p>
+                    <p class="mb-1">— Combien de temps va durer le trajet ? demande-t-il.</p>
+                    <p class="mb-1">— Six heures et quarante-trois minutes, répond simplement l’hôtesse.</p>
+                    <p class="mb-1">Il s’enfonce dans le siège, le regard perdu dans les images qui défilent. Un cerf lève la tête dans un champ de fleurs.</p>
+                    <p class="mb-1">— Profitons donc de ce temps pour parler de votre orientation, continue-t-elle d’une voix égale. Votre formation initiale durera six cycles. Vous serez logé dans un centre d’adaptation climatique, au sein du complexe d’étude de la surface. Là-bas, vous apprendrez les protocoles d’entretien biologique et les interactions avec les systèmes vivants hybrides.</p>
+                    <p class="mb-1">Damien hoche la tête sans tout comprendre.</p>
+                    <p class="mb-1">— C’est… sur Terre ? demande-t-il.</p>
+                    <p class="mb-1">L’hôtesse esquisse un sourire presque sincère. — Non. Le complexe d’étude se trouve sur Altura-5, mais vous descendrez effectivement à la surface. Vous travaillerez sur le maintien des écosystèmes cultivés. C’est une grande responsabilité.</p>
+                    <p class="mb-1">Le garçon se redresse un peu, fier, mais aussi troublé. Il n’a jamais vu la Terre autrement qu’à travers les documentaires de la Cité.</p>
+                    <p class="mb-1">— Est-ce que… on peut sortir ? Je veux dire, dehors, sans combinaison ?</p>
+                    <p class="mb-1">— Parfois. Quand les conditions le permettent.</p>
+                    <p class="mb-1">Elle s’apprête à poursuivre, mais sa voix s’interrompt un bref instant. Un léger bourdonnement parcourt la coque. Les écrans autour d’eux vacillent, comme si un souffle invisible passait à travers la navette.</p>
+                    <p class="mb-1">— Ce n’est rien, précise-t-elle aussitôt, en consultant son terminal. Une perturbation mineure.</p>
+                    <p class="mb-1">Les images reprennent.</p>
+                    <p class="mb-1">Mais cette fois, la lumière des écrans semble différente — trop blanche, trop froide. Les arbres paraissent se déformer lentement, comme sous l’effet d’un courant invisible.</p>
+                    <p class="mb-1">Damien baisse les yeux, inquiet. — Vous êtes sûre ?</p>
+                    <p class="mb-1">— Oui, tout à fait.</p>
+                    <p class="mb-1">Elle affiche un sourire programmé mais le protagoniste sent que quelque chose ne tourne pas rond, que son interlocutrice panique.</p>
+                    <p class="mb-1">Un nouveau grondement résonne, plus profond. Les parois vibrent. Puis, d’un coup, les écrans s’éteignent, plongeant ainsi la pièce dans les ténèbres. Le silence s’abat. Damien lève la tête, et voit enfin — derrière la paroi désormais transparente — les nuages. Ils défilent à une vitesse folle, vers le haut. Non. Pas vers le haut. La navette descend.</p>
+                    <p class="mb-1">— Pourquoi… pourquoi on… ? commence-t-il.</p>
+                    <p class="mb-1">Mais il est brusquement interrompu par une alarme stridente qui déchire l’air. Les lumières deviennent rouges, pulsantes. Damien sent le sol se dérober sous ses pieds — la gravité se dérègle. Des objets flottent, puis retombent violemment.</p>
+                    <p class="mb-1">— Attachez-vous ! hurle l’hôtesse, sa voix couverte par le vacarme.</p>
+                    <p class="mb-1">Il obéit, les mains tremblantes, cherchant la sangle qui glisse dans le vide. L’air devient lourd, saturé d’ozone et de peur. La navette tangue, bascule, les parois gémissent sous la pression.</p>
+                    <p class="mb-1">Un flash aveuglant. Un cri. Peut-être le sien.</p>
+                    <p class="mb-1">Puis plus rien. Juste le souffle du vent, et le noir total.</p>
+
+                    <h3 class="montserrat">3. Le réveil</h3>
+
+                    <p>Un goût de fer et de cendre. Quelque chose ruisselle sur son front, tiède d’abord, puis glacé. Damien ouvre les yeux.</p>
+
+                    <p class="mb-1">La pluie tombe à travers la carcasse éventrée de la navette. Des éclairs illuminent les parois déformées, révélant par instants des fragments de sièges, des câbles pendus, un écran fendu clignotant encore faiblement. L’air sent le métal brûlé et la mousse fondue.</p>
+                    <p class="mb-1">Il tousse. Sa gorge est sèche. Un vertige le prend. Il s’agrippe à un pan de tôle, glisse sur le sol détrempé. Ses mains tremblent, couvertes d’une fine poussière noire.</p>
+                    <p class="mb-1">Un peu plus loin, contre la cloison, l’accompagnatrice repose immobile. Sa moitié supérieure dépasse des débris, sa main pend doucement dans une flaque. Damien reste figé, le souffle coupé. Il n’ose pas s’approcher. Il comprend.</p>
+                    <p class="mb-1">Il se force à respirer lentement.</p>
+                    <p class="mb-1">— Je suis vivant.</p>
+                    <p class="mb-1">C’est tout ce qu’il parvient à se dire.</p>
+                    <p class="mb-1">Les lumières de secours pulsent faiblement, rouges, mourantes. Il avance à tâtons jusqu’à ce qu’il distingue une ouverture béante, là où la coque s’est fendue. Dehors, c’est la nuit — profonde, épaisse, sans les halos familiers de la Cité. Le vent s’engouffre, hurle à travers la carcasse. La pluie martèle le métal dans un vacarme sourd.</p>
+                    <p class="mb-1">Il grimpe vers ce qu’il pense être la cabine de pilotage. Mais il n’y a rien : pas de siège, pas de commandes, pas même de hublot. Seulement un panneau mural éclaté d’où dépassent des câbles luminescents.</p>
+                    <p class="mb-1">Un boîtier luit faiblement dans un coin : la balise de détresse. Il la saisit, la secoue, l’active. Un bip s’échappe, hésitant, puis plus rien. Le voyant clignote rouge : signal obstrué.</p>
+                    <p class="mb-1">Il lève les yeux vers la fente du plafond. Le ciel est si bas, si dense, qu’on dirait qu’il touche les arbres. Aucun horizon, aucun repère.</p>
+                    <p class="mb-1">Alors il prend ce qu’il peut : une couverture thermique, un outil multifonction, une lampe dont la batterie s’éteint déjà. Ses mains sont engourdies, ses vêtements lourds de pluie.</p>
+                    <p class="mb-1">Il s’éloigne de la carcasse, trébuchant sur les racines, les pierres, la boue. Chaque éclair déchire la forêt en silhouettes monstrueuses. Le tonnerre roule, interminable.</p>
+                    <p class="mb-1">Plus loin, il distingue l’ombre d’un renfoncement — une grotte, à moitié dissimulée derrière des feuillages. Il s’y glisse, haletant. L’intérieur est étroit, humide. Le vent siffle à l’entrée, portant des éclats de pluie glacée. Il s’adosse contre la paroi, épuisé. Il se demande pendant combien de temps il est resté inconscient pour que le froid l’ait autant rongé.</p>
+                    <p class="mb-1">Un instant, il se dit que c’est peut-être là qu’il va mourir. De froid, de peur, peu importe. Tout semble si lointain. La Cité, ses parents… Il tremblote en sanglotant contre la paroi froide de pierre.</p>
+                    <p class="mb-1">Puis quelque chose en lui refuse. Un instinct brut, primaire.</p>
+                    <p class="mb-1">Il rampe vers l’entrée, ramasse des branches, des feuilles, de la mousse détrempée. Il cale les plus grandes contre la pierre pour former une palissade grossière, y glisse de la végétation pour couper le vent. Ses doigts sont bleus, mais il continue.</p>
+                    <p class="mb-1">Il étale au sol des couches de fougères épaisses, se couche dessus et se roule dedans, tremblant. Le parfum de la terre humide le berce.</p>
+                    <p class="mb-1">Ses paupières se ferment lentement. Pour la première fois, il entend autre chose que le silence mécanique de la Cité. Le souffle du vent, la pluie, le crépitement des feuilles. Le bruit du monde. Et dans ce chaos, Damien s’endort.</p>
+                    <p class="mb-1">Le silence. Un silence qu’il ne connaissait pas.</p>
+                    <p class="mb-1">Un craquement sec. Puis un autre, plus proche. Damien entrouvre les yeux. La pluie s’est arrêtée, mais quelque chose bouge dehors.</p>
+                    <p class="mb-1">Il se redresse lentement, le souffle court. Son instinct lui hurle de ne pas faire un bruit. À travers les branches, il aperçoit d’abord une ombre. Puis deux yeux ambrés qui luisent dans la pénombre.</p>
+                    <p class="mb-1">L’animal est gigantesque. Une masse sombre, hirsute, qui s’avance à pas lents, reniflant le sol détrempé. Ses épaules roulent sous une fourrure épaisse, et sa respiration emplit la grotte d’un grondement sourd.</p>
+                    <p class="mb-1">Un ours.</p>
+                    <p class="mb-1">Damien ne bouge plus. Chaque battement de son cœur résonne dans sa tête. L’animal s’arrête, relève la tête, renifle à nouveau. Une odeur étrangère, métallique — celle d’un monde venu du ciel.</p>
+                    <p class="mb-1">Le garçon recule d’un centimètre. La pierre craque sous sa chaussure.</p>
+                    <p class="mb-1">L’ours pousse un grognement rauque et s’avance, lentement, vers lui. Sa silhouette remplit presque toute l’ouverture de la grotte.</p>
+                    <p class="mb-1">Damien cherche à tâtons sa lampe, les doigts tremblants. L’animal n’est plus qu’à quelques pas. Son souffle chaud et fauve lui caresse le visage.</p>
+                    <p class="mb-1">Il ferme les yeux. Puis d’un geste brusque, allume la lampe.</p>
+                    <p class="mb-1">Le faisceau jaillit, blanc, brutal. L’ours recule, aveuglé, rugissant. Damien dirige la lumière directement sur ses yeux, la main crispée sur le manche. L’animal recule encore, secoue la tête, frappe la roche d’une patte puissante.</p>
+                    <p class="mb-1">Un instant, le monde entier vacille entre deux souffles.</p>
+                    <p class="mb-1">Puis la bête tourne sur elle-même et s’enfuit dans les bois, brisant les branches sur son passage.</p>
+                    <p class="mb-1">Damien reste là, immobile, la lampe tremblante dans sa main, le cœur battant à lui rompre la poitrine.</p>
+                
+                    <h3 class="montserrat">4. L'ascension</h3>
+
+                    <p>Un rai de lumière blanche perce l'ouverture de la grotte, tranchant l'obscurité comme une lame. Damien ouvre les yeux, le souffle court. Pendant quelques secondes, il ne sait plus où il est. Le souvenir du crash remonte lentement — la secousse, la peur, le cri, puis le noir. Il s'assoit, les muscles raides, et observe autour de lui. Son abri de fortune tient toujours. La pluie a cessé, mais l'humidité a tout imprégné : ses vêtements, ses cheveux, jusqu'à la moindre fibre de sa peau. Son lit de fougères trempé a agi comme une éponge.</p>
+                    <p>Il rampe jusqu'à l'entrée et lève les yeux vers un ciel laiteux. Les nuages glissent lentement, massifs, opaques. Aucun signe de la cité suspendue. Aucune trace de vie.</p>
+                    <p>Il attrape la balise qu'il garde près de lui. Elle fonctionne encore, mais son voyant clignote faiblement : aucun signal. Il tente plusieurs fois de la relancer, sans succès. Le message d'erreur reste le même : « Environnement obstrué. Signal impossible. »</p>
+                    <p>Un soupir.</p>
+                    <p>Il faut bouger.</p>
+                    <p>Dehors, le jour s'est levé sur une forêt immense. Les arbres s'étendent à perte de vue, leurs feuillages d'un vert profond miroitant sous la rosée. L'air est dense, saturé d'odeurs de terre et de sève. C'est la première fois qu'il respire un air non filtré.</p>
+                    <p>Le chemin jusqu'à la navette est un enchevêtrement de débris et de racines. Les tronçons d'aluminium gisent dans la clairière comme des carcasses d'animaux mécaniques. La carlingue éventrée laisse voir des fils arrachés, des panneaux pendants, et cette odeur âcre de métal brûlé. Damien s'approche lentement, contournant ce qu'il reste du fuselage. Il retrouve l'accompagnatrice là où il l'a laissée. Son visage, à demi enseveli sous une plaque de métal, semble calme. Seule sa main dépasse, tournée vers le ciel, immobile. Damien détourne le regard.</p>
+                    <p>Il fouille le reste, méthodique. Aucun terminal ne s'allume. Les panneaux solaires sont brisés. Mais il trouve une batterie portative, encore stable, et deux modules de transfert énergétique. Pas grand-chose, mais assez pour bricoler.</p>
+                    <p>Il ne connaît rien à la survie, mais il sait raisonner. Si le signal de sa balise de secours est obstrué, c'est car il y a trop d'obstacles entre lui et les siens, là où il est. S'il veut contacter la cité, il lui faut de la hauteur. La balise doit être érigée à un point dégagé. Et de là où il se trouve, la seule chose qui domine l'horizon, c'est une montagne sombre, drapée de brume.</p>
+                    <p>Il marche tout le reste de la matinée. Rien de tout cela ne correspond à ce qu'on lui a enseigné à l'école. Il marche à travers la forêt, les sens en éveil.</p>
+                    <p>La nature le dépasse.</p>
+                    <p>Les arbres ne sont pas parfaitement alignés, leurs branches se tordent dans tous les sens. Le sol est recouvert de feuilles mortes, de mousse, d'insectes minuscules.</p>
+                    <p>Il reconnaît certains noms — chêne, bouleau, ronce — mais les voir en vrai lui semble presque irréel. Dans la cité, les arbres sont calibrés, droits, sans parasites ni écorces rugueuses. Ici, tout respire, tout déborde.</p>
+                    <p>À plusieurs reprises, il croit sentir un regard dans son dos. Un bruissement. Une silhouette entre deux rochers. Mais chaque fois qu'il se retourne, il n'y a rien.</p>
+                    <p>La nuit tombe alors qu'il atteint le pied de la montagne. Il dort peu, tendu, serrant la balise contre lui comme un talisman.</p>
+                    <p>Le lendemain, il commence à grimper. La pente est raide, la roche humide. L'effort est très fatiguant, mais il continue, guidé par une détermination sèche.</p>
+                    <p>La faim devient bientôt un ennemi plus tenace que la fatigue. Il cherche des fruits, des racines — sans oser en manger.</p>
+                    <p>Le troisième jour, il atteint le sommet. Le vent y est glacé, tranchant. Mais d'ici, il voit enfin le monde. Un océan de verdure s'étend à perte de vue, parsemé de vallées et de brumes. Et, loin, très loin, les reflets de structures étranges — comme des tours effondrées, des restes d'un autre âge.</p>
+                    <p>Il pose la balise sur un rocher plat, connecte les modules de batterie, et la rallume. Le voyant passe du rouge à l'orange, puis au vert. Signal émis. La fréquence monte, régulière.</p>
+                    <p>« Signal faible... synchronisation en cours. »</p>
+                    <p>Le voyant passe lentement au vert. Un rire lui échappe. Il lève les bras vers le ciel.</p>
+                    <p>— Ça marche !</p>
+                    <p>Il reste là longtemps, à écouter le bourdonnement rassurant du dispositif. Peut-être qu'on viendra le chercher. Peut-être qu'on le voit déjà. Mais personne ne répond.</p>
+
+                    <h3 class="montserrat">5. L'ancienne ville</h3>
+
+                    <p>Le vent s'engouffre dans les rues effondrées comme dans un orgue crevé. Damien avance lentement, entre deux murs qui tiennent encore debout par miracle. Des herbes hautes percent les fissures de l'asphalte, des racines tordues soulèvent les dalles, et au-dessus de lui, les tours grises se penchent comme des géants fatigués.</p>
+                    <p>Les bâtiments sont ouverts, éventrés. Des rideaux déchirés flottent encore à quelques fenêtres. Des enseignes rongées par la rouille se balancent, effleurant les façades dans un bruit d'os. Partout, la végétation a repris ses droits : les façades sont couvertes de lierre, des arbres ont poussé dans les cages d'escalier, et les toits s'effondrent sous le poids de la mousse et du temps.</p>
+                    <p>Damien marche sans bruit. Le sol craque sous ses pas, couvert de verre brisé et de poussière. Dans un ancien carrefour, il s'arrête un instant. Il y a là une carcasse de véhicule — sans roues, sans moteur, rongée jusqu'à l'armature. Il effleure le métal, froid et rugueux.</p>
+                    <p>Il pense aux descriptions des villes d'autrefois : grouillantes, pleines de lumière, de sons, d'odeurs. Ici, il ne reste que le silence et le vent. Au loin, un bruit. Il se retourne. Rien.</p>
+                    <p>Depuis qu'il est entré dans cette ville, il a la sensation d'être suivi. Ce n'est pas une peur franche, plutôt une impression ténue, un sixième sens qui le pousse à se retourner sans cesse.</p>
+                    <p>Les rues sont labyrinthiques, encombrées de gravats. Parfois, il croit voir quelque chose bouger entre deux murs : une ombre, furtive, qui disparaît aussitôt. Il se persuade que ce sont des animaux ou des ombres, ou encore que son esprit lui joue des tours.</p>
+                    <p>Mais le silence qui suit est trop dense, trop organisé. Comme une attente.</p>
+                    <p>Il continue d'avancer, son sac sur l'épaule. Il traverse un ancien pont dont la moitié s'est écroulée dans le vide. En contrebas, un fleuve s'écoule lentement, étouffé par les plantes. Plus loin, il découvre ce qui devait être une place : les restes d'une fontaine, une statue brisée, un banc tordu.</p>
+                    <p>Une pancarte tordue porte encore un mot illisible, mangé par la rouille : "Librairie", peut-être.</p>
+                    <p>Damien pousse la porte, qui grince faiblement. À l'intérieur, le plafond s'est effondré, et des arbres ont poussé à travers ce qui devait être des étagères. Des formes rectangulaires s'y entassent, rongées, déformées, couvertes de mousse. Il s'approche, intrigué. Ce sont des... objets ? Non, pas des tablettes. Pas des écrans. Des blocs de feuilles. De papier.</p>
+                    <p>Il en saisit un, le tourne lentement entre ses doigts. Le matériau est mou, presque spongieux. En l'ouvrant, des fragments se détachent et tombent en poussière. Sur les pages, des lignes d'encre délavée forment encore quelques signes. Des lettres.</p>
+                    <p>Dans les cités suspendues, tout est contenu dans les terminaux : données, récits, images, mémoire. Rien ne s'use, rien ne se déchire. Ici, au contraire, le savoir s'effrite au toucher.</p>
+                    <p>Damien s'avance parmi les étagères effondrées, les mains effleurant le bois pour se maintenir.</p>
+                    <p>Un mouvement, furtif, attire son regard dans un recoin sombre : une silhouette humaine disparaît derrière un tas de gravats.</p>
+                    <p>Il se fige, le cœur battant. Impossible. Il n'a jamais vu personne ici.</p>
+                    <p>Il fait un pas en avant, puis un autre, vers l'endroit exact où il a cru apercevoir cette présence. Rien. Juste l'ombre des arbres qui ont percé le plafond et le craquement des branches mortes sous le vent.</p>
+                    <p>Damien tend la main vers une planche de bois branlante qu'il pensait solide, et le sol grince sinistrement.</p>
+                    <p>Avant qu'il ait le temps de réagir, le bois cède sous ses pieds.</p>
+                    <p>Un craquement sec retentit — puis le sol cède sous lui.</p>
+                    <p>Il chute. Une seconde de vide, un choc brutal, et tout devient noir.</p>
+
+                    <h3 class="montserrat">6. Ceux d'en-bas</h3>
+
+                    <p>Lorsqu'il rouvre les yeux, tout est flou.</p>
+                    <p>Des silhouettes floues bougent autour de lui. Des voix basses, indéchiffrables.</p>
+                    <p>Il essaie de se redresser, mais une main l'en empêche doucement.</p>
+                    <p>Le monde reprend forme peu à peu : un plafond de pierre, une lumière vacillante, des visages penchés au-dessus de lui. Des humains.</p>
+                    <p>Il réalise petit à petit que ce sont des humains qui se penchent au-dessus de lui. Ils le regardent avec la même curiosité que lui.</p>
+                    <p>Il cligne des yeux, abasourdi.</p>
+                    <p>— Vous... vous êtes réels ?</p>
+                    <p>Des regards s'échangent. Un jeune homme à la barbe hirsute sourit.</p>
+                    <p>— Et toi, t'es quoi ?</p>
+                    <p>Ils rient, sans méchanceté. Damien se redresse lentement.</p>
+                    <p>— On m'a dit que... il n'y avait plus personne en bas. Plus depuis la...</p>
+                    <p>Il s'interrompt. Le mot "catastrophe" lui brûle les lèvres.</p>
+                    <p>— Viens. On va te faire visiter.</p>
+                    <p>Ils l'aident à se lever. Ses jambes tremblent. Il suit le petit groupe hors de la pièce.</p>
+                    <p>Dehors, il découvre un monde qu'il ne pensait pas possible : des ruelles formées dans les ruines, des habitations reconstruites à partir de débris.</p>
+                    <p>— Comment... comment vous survivez ici ?</p>
+                    <p>— Comme on peut, répond la femme.</p>
+                    <p>— Là-haut, dit Damien après un moment, on nous a toujours appris que la surface était... morte. Irradiée, stérile.</p>
+                    <p>La femme hausse un sourcil.</p>
+                    <p>— Et pourtant, tu respires.</p>
+                    <p>Il reste muet. Elle continue :</p>
+                    <p>— Ce n'est pas mort, non. C'est juste plus dur. On a appris à vivre autrement. À bricoler, à cultiver ce qui veut bien pousser.</p>
+                    <p>— Mais la catastrophe...</p>
+                    <p>Elle s'arrête, le fixe.</p>
+                    <p>— Vous en haut, vous appelez ça "la catastrophe". Nous, on dit juste "le basculement".</p>
+                    <p>Damien fronce les sourcils.</p>
+                    <p>— Qu'est-ce qui s'est passé, vraiment ?</p>
+                    <p>Elle hésite, puis détourne le regard.</p>
+                    <p>— Ce n'est pas un secret, pourtant vous l'avez effacé de vos livres. Il se crispe.</p>
+                    <p>— On n'a plus de livres. Tout est archivé sur nos terminaux.</p>
+                    <p>— Alors c'est encore pire, murmure-t-elle. Quand on efface un fichier, il disparaît pour de bon.</p>
+                    <p>— Après le basculement, poursuit-elle, vos dirigeants ont pris les plus riches, les plus instruits, les plus "essentiels". Ils ont bâti leurs cités dans le ciel, pour échapper à la maladie, à la faim, à la poussière. Ils ont dit qu'ils reviendraient quand tout serait redevenu vivable. Mais ça, c'était il y a des générations.</p>
+                    <p>Damien baisse les yeux.</p>
+                    <p>— On nous a dit que... Personne n'avait survécu.</p>
+                    <p>— C'était plus simple, non ? Un mensonge propre.</p>
+                    <p>Elle s'arrête devant une arche effondrée, caresse la pierre comme on caresse un souvenir.</p>
+                    <p>— Nous, on a survécu. On a appris. On a gardé les mains dans la terre pendant que vous regardiez le ciel.</p>
+                    <p>Damien relève la tête.</p>
+                    <p>Autour d'eux, la vie s'organise dans les ruines. Des toiles tendues entre les murs protègent du soleil et de la pluie. Des lampes à huile, suspendues à des cordes, diffusent une lumière tremblante qui danse sur la pierre humide. Des enfants transportent des seaux d'eau depuis un bassin alimenté par un système de rigoles — la pluie collectée sur les toits s'y écoule goutte à goutte.</p>
+                    <p>Plus loin, des hommes reforment des planches, des poutres ; les clous sont rares, alors ils les redressent un à un. Une femme souffle sur un feu, alimente une marmite ; une autre recoud des vêtements avec des fils tirés de vieux câbles.</p>
+                    <p>Tout semble fragile, et pourtant tout tient — assemblé avec patience, obstination, et ce quelque chose que la Cité a oublié : le besoin de vivre, pas seulement d'exister.</p>
+                    <p>— Et maintenant ? Qu'est-ce que vous voulez ?</p>
+                    <p>Elle le regarde droit dans les yeux.</p>
+                    <p>— Que vous redescendiez. Pas pour dominer, ni pour sauver. Pour partager. Un silence.</p>
+                    <p>— Vous avez le savoir, les machines, la médecine. Nous avons la terre, la patience, et la mémoire de ce qu'elle coûte.</p>
+                    <p>Damien ne répond pas. Il sent un poids nouveau dans sa poitrine — la première fissure dans ce qu'il croyait savoir.</p>
+                    <p>Plus loin, ils passent devant un vaste hangar éventré, transformé en abri. Le garçon ralentit : sur des lits de fortune, des gens toussent, d'autres délirent, d'autres encore restent immobiles, les yeux ouverts sur le vide. Une odeur de fièvre et d'humidité flotte dans l'air.</p>
+                    <p>À l'intérieur, la lumière du jour filtre à travers un toit troué. Des lits improvisés, faits de palettes, de draps rapiécés. Des corps allongés, des respirations lourdes. L'adolescent reste figé, le cœur battant. Il n'a jamais vu la maladie.</p>
+                    <p>Une main minuscule tire sur sa manche. Il baisse les yeux.</p>
+                    <p>Un enfant, pas plus de huit ans, le regarde avec des yeux clairs, immenses en souriant.</p>
+                    <p>— T'es tombé du ciel, toi ?</p>
+                    <p>Damien hoche la tête, un peu honteux.</p>
+                    <p>— On dirait, oui.</p>
+                    <p>— Moi, je suis Milan, dit l'enfant, avec la franchise des petits qui ne doutent pas. Tu restes ici maintenant ?</p>
+                    <p>Il ne sait pas quoi répondre. Milan montre du doigt un boîtier qu'il serre contre lui.</p>
+                    <p>— C'est cassé, je crois. C'est toi qui répare les trucs du ciel ?</p>
+                    <p>Il démonte le boîtier, ajuste deux plaques, reconnecte une cellule. La lumière revient, pâle. Milan applaudit faiblement, ravi.</p>
+                    <p>— Je savais que tu savais faire !</p>
+                    <p>La femme revient, un sourire discret aux lèvres.</p>
+                    <p>— Il t'a adopté, on dirait.</p>
+                    <p>Damien se relève lentement.</p>
+                    <p>— Il est malade ?</p>
+                    <p>— Oui. Comme beaucoup ici.</p>
+                    <p>— Il a un traitement ?</p>
+                    <p>— On fait ce qu'on peut. Il y a des jours meilleurs que d'autres.</p>
+                    <p>Il pense aux machines parfaites de la Cité, aux robots médicaux, à la blancheur immaculée des hôpitaux aériens.</p>
+                    <p>Ici, la vie tient dans une lumière tremblante, alimentée par des câbles dénudés et des prières muettes. Il reste là, immobile, longtemps, tandis qu'au-dehors la pluie recommence à tomber, fine et régulière, comme si le ciel lui-même s'en excusait.</p>
+                    <p>La femme lui propose de rester pour la nuit.</p>
+                    <p>Le soir, ils se retrouvent tous autour d'un feu clair, sous les arches d'un ancien entrepôt transformé en place commune. Des braises rouges dansent sur des visages marqués par la fatigue, mais illuminés par un calme rare.</p>
+                    <p>On lui tend un bol fumant : une soupe épaisse, au goût de terre et d'herbes sauvages. Il hésite, puis goûte. La saveur est âpre, mais réelle — rien de calibré, rien d'artificiel.</p>
+                    <p>— Ce n'est pas grand-chose, dit la femme. Ici, on partage ce qu'on trouve.</p>
+                    <p>Il hoche la tête. Autour de lui, des enfants rient, des adultes échangent des histoires à voix basse. Une vieille femme accorde un instrument de fortune fabriqué avec des pièces métalliques. La musique est hésitante, bancale, mais vibrante.</p>
+                    <p>Damien ferme les yeux un instant. Dans ce chaos de sons imparfaits, il sent battre quelque chose qu'il n'a jamais connu : la vie sans supervision.</p>
+                    <p>— Là-haut, dit-il doucement, on ne mange jamais ensemble. Chacun a ce dont il a besoin. Mais... ça n'a pas ce goût-là.</p>
+                    <p>La femme sourit, sans répondre.</p>
+
+                    <h3 class="montserrat">7. Le sauvetage</h3>
+
+                    <p>La nuit tombe sur les ruines.</p>
+                    <p>Damien marche seul, entre les pans de mur que la mousse a rendus vivants. Dans le ciel, une lumière pâle pulse faiblement, rythmée — un signal. Sa balise. Il l'a oubliée depuis sa chute.</p>
+                    <p>Il comprend trop tard.</p>
+                    <p>Un vrombissement déchire le silence. Les visages se lèvent d'un même geste. Un souffle puissant tord les arbres. Une lumière crue balaye les façades effondrées.</p>
+                    <p>— Qu'est-ce que c'est ? demande Milan, agrippé à sa manche.</p>
+                    <p>— Rentre à l'abri, vite.</p>
+                    <p>La femme — celle qui l'a recueilli — lève les yeux.</p>
+                    <p>— Ce sont les tiens, n'est-ce pas ?</p>
+                    <p>Damien ne répond pas. Le vacarme approche. Une navette descend lentement, ventre ouvert, saturant la nuit d'un halo blanc. Des silhouettes en combinaisons s'avancent, masquées, armées. Leurs voix métalliques couvrent le vent.</p>
+                    <p>— Zone contaminée ! Ne vous approchez pas !</p>
+                    <p>Les soldats de la cité braquent leurs armes sur le peuple d'en bas.</p>
+                    <p>Il reconnaît les uniformes argentés, les casques transparents, les emblèmes de la Cité. Deux soldats le repèrent.</p>
+                    <p>— Cible localisée ! C'est lui !</p>
+                    <p>Ils l'encerclent. Damien lève les mains.</p>
+                    <p>— Je vais bien ! Pas de panique !</p>
+                    <p>L'un d'eux scanne son bras : un bip aigu retentit.</p>
+                    <p>— Anomalie biologique détectée.</p>
+                    <p>— Quoi ? Non !</p>
+                    <p>Damien lutte, désespéré.</p>
+                    <p>Mais déjà, ils l'enferment dans un cylindre de verre transparent. L'air à l'intérieur se raréfie. Une buée monte sur les parois.</p>
+                    <p>Une main gantée ajuste un masque sur son visage.</p>
+                    <p>— Respirez. Vous rentrez chez vous.</p>
+                    <p>Il secoue la tête, suffoque. Les voix se brouillent, s'éloignent. À travers le verre, il aperçoit Milan, petit point flou, la femme qui le tient contre elle, les flammes, la navette qui s'élève.</p>
+                    <p>Puis le noir.</p>
+
+                    <h3 class="montserrat">8. S'échapper</h3>
+
+                    <p>Un sifflement régulier. Une lumière blanche. Tout est froid, immobile.</p>
+
+                    <p>Damien flotte dans une demi-conscience, prisonnier d'un sommeil sans rêve. Son corps ne répond pas. Sa respiration est contrôlée par un souffle artificiel.</p>
+
+                    <p>Il rouvre les yeux brutalement. Tout est flou d'abord, puis les contours se forment : des parois translucides, une buée légère, le halo d'une lampe médicale. Il est enfermé dans un cocon de verre, traversé de tubes et de câbles.</p>
+
+                    <p>À l'extérieur, deux silhouettes en uniforme s'éloignent, parlant à voix basse.</p>
+
+                    <p>Son cœur s'emballe.</p>
+
+                    <p>Il tire sur les sangles, d'abord en vain. Puis, d'un mouvement instinctif, il parvient à arracher un câble qui alimente le cocon.</p>
+
+                    <p>Il rampe hors du cocon, tremblant, à moitié nu, les muscles ankylosés. La pièce vibre doucement — il sent que la navette est en vol. Il titube jusqu'à une porte automatique, l'effleure. Elle s'ouvre dans un chuintement discret.</p>
+
+                    <p>Un couloir blanc, aseptisé. Le ronronnement des moteurs. Et, au loin, des pas.</p>
+
+                    <p>Damien se plaque contre le mur. Il avance à tâtons, guidé par la pulsation sourde des réacteurs, jusqu'à un sas qui donne sur la zone d'amarrage.</p>
+
+                    <p>À travers une baie vitrée, il voit la Cité suspendue apparaître, baignée dans la lumière froide du matin. Son ancienne maison. Le lieu qu'il rêvait autrefois de servir.</p>
+
+                    <p>Lorsque la navette se pose, les soldats descendent les cocons un à un. Un technicien s'approche de celui qui devait contenir Damien, scanne le couvercle — et pâlit.</p>
+                    <p>— Il n'est pas là.</p>
+
+                    <p>Le cri déclenche aussitôt une alarme. Damien comprend qu'il n'a que quelques secondes. Il bondit hors de sa cachette, traverse un couloir en courant. Des voix hurlent son nom derrière lui.</p>
+
+                    <p>Des drones se déploient, des barrières se ferment. La cité, d'ordinaire si paisible, devient une machine de capture.</p>
+
+                    <p>Il court. Encore. Comme au tout début.</p>
+
+                    <p>Les passants s'écartent, stupéfaits. Des soldats en combinaison hermétique le poursuivent, criant qu'il est contaminé.</p>
+
+                    <p>Damien traverse des passerelles, des couloirs lumineux, saute au-dessus d'un escalier mécanique. Autour de lui, la ville semble irréelle, trop propre, trop blanche.</p>
+
+                    <p>Un tir laser frôle sa jambe, brûle le sol.</p>
+
+                    <p>Il grimpe sur une coursive, se faufile dans un conduit de maintenance. Son souffle se fait court. La peur, l'adrénaline, la colère.</p>
+
+                    <p>Ses pieds claquent contre les dalles de verre. L'air est saturé de lumière blanche, de sirènes stridentes, d'ordres mécaniques qui résonnent dans les hauts-parleurs.</p>
+                    <p>— Citoyen D-444-3, arrêtez-vous immédiatement. Vous êtes en violation de protocole sanitaire.</p>
+
+                    <p>Il traverse un corridor suspendu. Sous ses pieds, la brume s'étend, opaque, comme un océan de lait. Au loin, il reconnaît les silhouettes familières de la Cité — les arches lisses, les jardins suspendus, les façades sans tache. Tout semble identique à avant. Sauf que cette fois, les regards ne sont plus bienveillants.</p>
+
+                    <p>Des drones le survolent, projecteurs braqués sur lui. Des habitants s'écartent avec des cris étouffés, se collant aux murs translucides pour ne pas être "contaminés". Damien court toujours.</p>
+
+                    <p>Au détour d'une passerelle, il bouscule quelqu'un — une vieille femme qu'il avait croisée le jour de son Assignation. Elle le regarde, stupéfaite, son panier de provisions éparpillé sur le sol.</p>
+                    <p>— Damien ? Que fais-tu ? Tu... tu es malade ?</p>
+
+                    <p>Il veut répondre, mais les mots restent coincés dans sa gorge. Derrière lui, les sirènes hurlent plus fort. Il repart.</p>
+
+                    <p>Il saute au-dessus d'un petit robot de nettoyage, qui s'agite en couinant.</p>
+                    <p>— Violation détectée. Rapport en cours.</p>
+
+                    <p>Un faisceau lumineux balaie le couloir, frôle son épaule.</p>
+
+                    <p>— Tu ne devrais pas être ici, Damien. Tu mets tout le monde en danger.</p>
+                    <p>— Ce n'est pas vrai ! Il n'y a pas de danger !</p>
+
+                    <p>Mais déjà, deux robots de sécurité apparaissent derrière lui, silhouettes argentées, luisant sous les néons.</p>
+
+                    <p>Il débouche alors dans un jardin suspendu.</p>
+                    <p>Un espace circulaire, baigné d'une lumière douce et verdâtre. Des arbres parfaits, taillés au millimètre, des fleurs identiques, alignées comme des soldats.</p>
+                    <p>Le sol est couvert d'un gazon synthétique, sans la moindre trace de terre.</p>
+
+                    <p>Au centre, un robot-jardinier s'affaire, une silhouette chromée surmontée d'un bras articulé. Il taille une haie avec une précision chirurgicale. Lorsque Damien entre dans le jardin, le robot relève la tête. Ses capteurs virent au rouge.</p>
+                    <p>— Anomalie détectée. Contamination biologique probable.</p>
+
+                    <p>Le bras mécanique se replie, puis se déploie à nouveau, brandissant une cisaille étincelante. Une autre main saisit un pulvérisateur, d'où s'échappe une brume âcre, désinfectante.</p>
+                    <p>— Procédure de stérilisation enclenchée. Veuillez rester immobile.</p>
+                    <p>— Non... attends !</p>
+
+                    <p>Damien recule. Le robot avance, son pas lourd écrasant les pétales parfaits qu'il avait lui-même alignés. Le gazon synthétique se froisse, la brume se densifie.</p>
+
+                    <p>Il attrape une pelle de jardinage posée au sol, la brandit maladroitement. Le robot s'approche encore, ses lames cliquetant comme des dents métalliques.</p>
+
+                    <p>Il n'a pas le choix. Dans un geste de panique, il frappe la base du bras mécanique. Une étincelle jaillit. Le robot vacille, sonde vocale déformée.</p>
+                    <p>— Dysfonction... maintenance requise...</p>
+                    <p>Puis il s'effondre, coupant net une haie de roses parfaites. Le silence retombe.</p>
+
+                    <p>Damien reste là, haletant, au milieu du jardin mutilé. Les fleurs identiques sont renversées, tordues, tachées de fluide synthétique. Pour la première fois, le jardin semble vivant.</p>
+
+                    <p>Mais déjà, les alarmes reprennent, plus proches cette fois.</p>
+                    <p>Le jardin s'illumine de flashes rouges, comme un champ d'alerte. Des drones descendent entre les arbres synthétiques, fouillant chaque recoin de leurs faisceaux blafards.</p>
+
+                    <p>Damien court, sans savoir où aller. Ses jambes brûlent, ses poumons se serrent, chaque respiration est un déchirement. Il longe une passerelle bordée de verre, franchit un portillon de maintenance laissé entrouvert.</p>
+
+                    <p>Il peut lire "Accès interdit" sur un écran.</p>
+                    <p>Il ignore l'avertissement et s'engouffre dans le passage. L'air y est plus froid, plus lourd. Derrière lui, des pas métalliques, le bourdonnement des rotors.</p>
+
+                    <p>Le couloir se rétrécit. Les murs, d'un blanc clinique changent progressivement en gris métallique. Des tuyaux émergent des murs et du plafond. Les sirènes s'étouffent, remplacées par le grondement sourd des machines — celles qu'il n'a jamais vues, celles dont on ne parle jamais.</p>
+
+                    <h3 class="montserrat">9. La zone interdite</h3>
+
+                    <p>L'air est plus lourd ici. Damien avance à pas feutrés, une main contre le mur pour garder l'équilibre. La lumière vacille au rythme d'un bourdonnement grave qui emplit tout l'espace. Devant lui s'étend un dédale de tuyaux, de pistons, de conduits en verre où circulent des liquides luminescents. Le sol tremble sous ses pas.</p>
+
+                    <p>La Cité, son monde suspendu, repose sur une forêt de machines colossales. Des turbines rugissent dans l'ombre, expulsant d'immenses nappes de vapeur. Des bras mécaniques s'étendent et se rétractent, huilés à la perfection, alimentant un réseau d'énergie tentaculaire. Partout, des cadrans clignotent, des jauges oscillent, et des faisceaux de lumière pulsent comme des battements de cœur.</p>
+
+                    <p>Damien s'arrête, fasciné.</p>
+                    <p>Jamais il n'a vu ce ventre de la Cité. Là-haut, tout est lisse, blanc, silencieux. Ici, c'est brut, vibrant, vivant. La perfection n'est qu'une façade — sous elle, le chaos maintient l'illusion d'équilibre. Il comprend alors que leur monde ne flotte pas par miracle, mais par une lutte constante contre la gravité, contre la ruine.</p>
+
+                    <p>Un bruit métallique le tire de sa contemplation. Une lueur rouge s'allume au fond du couloir. Puis un sifflement. Un drone surgit dans la pénombre. Plus massif que tous ceux qu'il a vus, presque animal. Ses appendices se replient et se déplient avec une précision effrayante. Une lentille unique balaye l'espace, cherchant.</p>
+
+                    <p>Damien se plaque derrière une conduite. Le drone émet un bip bref. Des pas lourds résonnent au-dessus : des soldats. Leur voix est calme, mécanique.</p>
+                    <p>— Secteur 17, balayage thermique. Cible détectée.</p>
+
+                    <p>Le cœur de Damien bat à tout rompre. Il rampe entre deux tuyaux, sa main frôlant des surfaces brûlantes. De la vapeur s'échappe d'une fissure et le recouvre d'un nuage opaque. Il s'enfonce plus loin, jusqu'à trouver une ouverture — un conduit d'entretien. Il s'y glisse, rampant à plat ventre, pendant que, juste au-dessus de lui, les soldats passent. Le métal gémit sous leur poids.</p>
+
+                    <p>Il retient sa respiration. Le grondement des turbines couvre à peine les voix :</p>
+                    <p>— On le veut vivant. Le Commandement a ordonné un confinement complet.</p>
+                    <p>— Si on l'endommage, c'est nous qu'ils recycleront.</p>
+
+                    <p>Damien progresse lentement, chaque geste mesuré. Il débouche enfin dans une alcôve latérale, ouverte sur un vaste puits vertical. Là, accroché à une structure métallique, un robot de maintenance pend. Il grimpe jusqu'à son flanc, les doigts crispés sur les plaques tièdes.</p>
+
+                    <p>Le robot est grand, presque humanoïde, mais sans visage. Une plateforme de contrôle circulaire s'ouvre à son sommet — il s'y hisse, haletant.</p>
+
+                    <p>À peine est-il debout qu'un faisceau lumineux l'aveugle.</p>
+                    <p>— Citoyen D-444-3, halte immédiate ! ordonne une voix amplifiée.</p>
+
+                    <p>Damien se fige. Les soldats sont là, alignés sur la passerelle d'en face, leurs armes braquées. Le drone plane à hauteur de sa tête, lentille rouge palpitante.</p>
+                    <p>— Descends du robot et rends-toi, dit l'un d'eux. Ce secteur est classé interdit au public.</p>
+                    <p>— Vous vivez au-dessus d'un gouffre et vous refusez de le voir !</p>
+
+                    <p>Un tir éclate. Le bras articulé du robot, celui qui le relie à la structure, explose dans un grésillement d'étincelles. Le choc projette Damien en avant ; il se retient in extremis. Le robot vacille, s'écrase sur une passerelle métallique plus bas.</p>
+
+                    <p>Le garçon roule sur le métal, sonné. Des étincelles jaillissent. Sans comprendre comment, sa main heurte un levier. Le robot frémit... puis se redresse d'un mouvement lourd et fluide.</p>
+
+                    <p>Les soldats reculent d'un pas.</p>
+                    <p>Leur calme apparent se fissure : le robot de maintenance est un mastodonte de plusieurs tonnes, capable de soulever les modules structurels de la Cité.</p>
+                    <p>— Descends immédiatement, répète un soldat. Tu mets en danger toute la section !</p>
+
+                    <p>Damien serre les dents.</p>
+                    <p>— En danger ? Vous avez bâti votre paradis sur du vide. Vous avez abandonné les autres pour flotter au-dessus d'eux. Vous appelez ça la perfection ? C'est de la fuite !</p>
+
+                    <p>Pendant qu'il parle, il manœuvre lentement le robot vers le bord de la passerelle. Le vide s'ouvre sous lui — un gouffre de nuages, sans fond.</p>
+
+                    <p>Les soldats s'avancent, armes levées.</p>
+                    <p>— Dernier avertissement, D-444-3. Si tu sautes, tu seras déclaré contaminé.</p>
+
+                    <p>Un silence.</p>
+                    <p>Le vent s'engouffre dans les conduits, comme un souffle immense. Damien croise le regard d'un soldat, à travers la visière opaque.</p>
+                    <p>— Peut-être que c'est déjà le cas, murmure-t-il.</p>
+                    <p>Et il se laisse tomber.</p>
+                    <p>Le robot bascule avec lui, dans un grondement de métal et de vent. Pendant une seconde, la lumière rouge du drone se reflète sur sa peau. Puis tout disparaît dans la brume.</p>
+
+                    <h3 class="montserrat">10. La balise</h3>
+
+                    <p>Le vent siffle dans ses oreilles, glacé, brutal. L’adolescent se sent minuscule face à l’immensité du ciel. Chaque instant suspend sa respiration. La chute paraît interminable. Il ferme les yeux un instant… puis les rouvre.</p>
+
+                    <p>Il repense à tout. À la Cité suspendue, blanche et parfaite, et à l’illusion sur laquelle elle repose. À ses parents, à ses amis, aux robots qui rendaient tout simple et net, à la vie ordonnée et immaculée qu’il a quittée. Et puis aux ruines, à Milan, aux visages de ceux d’en-bas, aux maladies, aux gestes fragiles de survie. À tout ce qu’il a appris depuis qu’il est tombé. La peur se mêle à la colère, à l’émerveillement et à une étrange admiration pour ce monde imparfait qui vit malgré tout.</p>
+
+                    <p>Le froid mord ses joues. Le vent fouette ses habits et ses cheveux. Damien sent son cœur battre à la vitesse du tonnerre. Il repense à sa formation, à la vie qu’on voulait lui imposer, et comprend avec une clarté crue que la perfection n’existe pas. Tout est fragile. Tout peut basculer.</p>
+
+                    <p>Ses doigts se crispent sur le métal du robot de maintenance. Le métal vibre sous lui, mais il sent qu’il est vivant. Le robot s’active, ses réacteurs crachent une poussée chaude. La vitesse diminue. Le garçon ouvre grand les yeux : il va toucher le sol, mais la chute n’est plus brutale, elle devient douce, presque contrôlée. Le robot amortit le choc, glisse sur la pente de la montagne, et finit par se poser sans violence sur la terre ferme.</p>
+
+                    <p>La nuit commence à tomber. Les ombres s’allongent. Damien lève les yeux et distingue enfin la balise au sommet de la montagne : un point lumineux pulsant, témoin de son appel au secours. Il comprend immédiatement : il ne peut pas la laisser active. Les habitants d’en-bas sont encore vulnérables. Si la Cité envoyait ses navettes ici, tout le monde serait découvert.</p>
+
+                    <p>Il se rue vers le sommet, le robot de maintenance sous lui, le vent fouettant son visage. Chaque pas est une lutte contre la fatigue et la pénombre, mais il avance, déterminé. Il saisit la balise avec force, la soulève, et, d’un geste net, l’écrase par terre. Des étincelles jaillissent des circuits électriques fracassés contre la pierre. Un souffle de soulagement l’envahit : le danger de nouvelles incursions est momentanément éloigné.</p>
+
+                    <p>Damien baisse les yeux. En contre-bas, ce n’est pas la blanche Cité flottante qu’il voit, mais l’ancienne ville en ruine : les bâtiments tombés, les rues couvertes de végétation, les lumières vacillantes des foyers qu’il a appris à connaître. Les silhouettes de ses sauveurs se dessinent, minuscules mais vivantes. Cette cité imparfaite, fragile et humaine, est son nouveau repère.</p>
+
+                    <p>Il reste là, immobile un instant, le souffle court, le cœur encore battant à tout rompre. La Cité suspendue est loin, inaccessible, et pour la première fois depuis longtemps, Damien se sent libre de choisir son monde.</p>
+
+                    <p>Là-haut, tu verras encore le ciel, mais n’oublie pas que c’est ici qu’il commence.</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/project-page-data.js"></script>
+    <script src="/scripts/tags.js"></script>
+    <script src="/scripts/transition.js" defer></script>
+    <script src="/scripts/sidenav.js"></script>
+    <script src="/scripts/lightbox.js"></script>
+</body>
