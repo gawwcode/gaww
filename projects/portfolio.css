@@ -19,3 +19,32 @@
   object-fit: cover;
 }
 
+/* Responsive : une seule colonne sur mobile */
+@media screen and (max-width: 1024px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .art-column {
+        max-width: 90%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        margin: 0;
+        display: flex;
+    }
+    .art-column img,
+    .art-column video {
+        width: 80vw;
+        max-width: 80vw;
+        height: auto;
+        margin-bottom: 12px;
+        object-fit: contain;
+    }
+}
+
+
+

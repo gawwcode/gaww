@@ -24,6 +24,14 @@
     max-width: 30%;
 }
 
+.ca3 {
+    max-width: 50%;
+}
+
+.ca4 {
+    max-width: 20%;
+}
+
 @media screen and (max-width: 800px) {
     .characters {
         flex-direction: column;
