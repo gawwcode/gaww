@@ -82,8 +82,10 @@ if (gradient && window.innerWidth > 768) {
 
 // ---------------------------------------- LOADING ----------------------------------------
 
-window.addEventListener("load", () => {
-    document.getElementById("loading").remove();
+// Remove the loading overlay as soon as DOM is parsed (improves perceived load)
+document.addEventListener("DOMContentLoaded", () => {
+    const loadingEl = document.getElementById("loading");
+    if (loadingEl) loadingEl.remove();
 });
 
 // ---------------------------------------- MENU ----------------------------------------

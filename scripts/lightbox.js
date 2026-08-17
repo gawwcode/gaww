@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ajoute l'image ou la vidéo
             if (media.tagName === 'IMG') {
                 const img = document.createElement('img');
-                img.src = media.src;
+                // Prefer the full-quality original if available (data-original), fall back to current src
+                img.src = media.dataset.original || media.src;
                 img.alt = media.alt || 'Enlarged media';
                 lightboxContent.appendChild(img);
             } else if (media.tagName === 'VIDEO') {
