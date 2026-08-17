@@ -26,5 +26,31 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.height = "100%";
         img.style.objectFit = "cover";
         item.appendChild(img);
+        item.style.opacity = '0.2';
     });
+
+    // --- Grid mouse-driven sliding + opacity (works even if images not loaded) ---
+    const rows = document.querySelectorAll(".prs-grid-row");
+    if (rows.length) {
+        const baseOpacity = 0.2, maxOpacity = 1, maxDistance = 300;
+        // Parallax factors per row; fallback to small factor if mismatch
+        const factors = [0.05, 0.1, 0.2, 0.1, 0.05];
+
+        document.addEventListener("mousemove", ({ clientX, clientY }) => {
+            const centerX = window.innerWidth / 2;
+            const deltaX = clientX - centerX;
+
+            rows.forEach((row, i) => {
+                const f = factors[i] !== undefined ? factors[i] : 0.08;
+                row.style.transform = `translateX(${deltaX * f}px)`;
+            });
+
+            items.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                const distance = Math.hypot(clientX - (rect.left + rect.width / 2), clientY - (rect.top + rect.height / 2));
+                const opacity = baseOpacity + (maxOpacity - baseOpacity) * (1 - Math.min(distance / maxDistance, 1));
+                item.style.opacity = opacity.toString();
+            });
+        });
+    }
 });

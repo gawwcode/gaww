@@ -71,16 +71,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const queue = [];
   const MAX_CONCURRENT = 2;
   let activeCount = 0;
+  let isPageVisible = true;
+  let resumeDelay = 0; // ms delay between starting queued tasks when resuming from background
 
   const processQueue = () => {
     if (!queue.length) return;
+    if (!isPageVisible) return; // don't start new work while hidden
+
+    let startDelay = 0;
     while (activeCount < MAX_CONCURRENT && queue.length) {
       const img = queue.shift();
-      activeCount += 1;
-      loadAndResize(img).finally(() => {
-        activeCount -= 1;
-        processQueue();
-      });
+      if (resumeDelay > 0) {
+        // stagger start to avoid CPU spikes when coming back from background
+        setTimeout(() => {
+          activeCount += 1;
+          loadAndResize(img).finally(() => {
+            activeCount -= 1;
+            processQueue();
+          });
+        }, startDelay);
+        startDelay += resumeDelay;
+      } else {
+        activeCount += 1;
+        loadAndResize(img).finally(() => {
+          activeCount -= 1;
+          processQueue();
+        });
+      }
     }
   };
 
@@ -108,4 +125,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fallback: enqueue all images with a small stagger
     imgs.forEach((img, i) => setTimeout(() => enqueue(img), i * 150));
   }
+
+  // Pause processing when page is hidden; resume with a small stagger when visible
+  const onVisibilityChange = () => {
+    if (document.hidden) {
+      isPageVisible = false;
+      // increase delay to be conservative while in background
+      resumeDelay = 500;
+    } else {
+      isPageVisible = true;
+      // small stagger to avoid immediate CPU spike
+      resumeDelay = 120;
+      // resume processing after a short grace period
+      setTimeout(() => processQueue(), 200);
+    }
+  };
+
+  document.addEventListener('visibilitychange', onVisibilityChange);
 });
