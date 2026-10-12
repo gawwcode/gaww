@@ -735,6 +735,13 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        -webkit-user-drag: none;
+        user-select: none;
+    }
+
+    .no-select img {
+        -webkit-user-drag: none;
+        user-select: none;
     }
 
 }

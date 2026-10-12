@@ -1,0 +1,55 @@
+.project-container {
+    flex-direction: column;
+}
+
+.project-content {
+    flex-direction: column;
+}
+
+.bannieres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1rem;
+    width: 100%;
+    align-items: start;
+    max-width: 80%;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1rem;
+    width: 100%;
+    align-items: start;
+    max-width: 80%;
+}
+
+.logos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.bannieres img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.flyer {
+    max-width: 60%;
+}
+
+@media (max-width: 768px) {
+    .bannieres,
+    .logos {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+        max-width: 100%;
+    }
+
+    .flyer {
+        max-width: 80%;
+    }
+}

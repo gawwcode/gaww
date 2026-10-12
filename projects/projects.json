@@ -225,6 +225,18 @@
     "status" : "done",
     "file" : "/projects/ntopia.html",
     "translationKey" : "ntopia"
+  },
+
+  "20" : {
+    "title": "IALON",
+    "description": "Identité graphique pour un projet de randonnées",
+    "image": "/addons/images/projects/ialon/bannieres/IALON - bannière facebook - orange clair sur bleu foncé - v1_result.webp",
+    "tags": ["design"],
+    "date": "2026-10-2",
+    "locked" : false,
+    "status" : "done",
+    "file" : "/projects/ialon.html",
+    "translationKey" : "ialon"
   }
 }
   
